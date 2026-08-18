@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "evidence_class": "designed-control-packages-not-subject-results",
+  "controls": [
+    {
+      "id": "adaptive-reference",
+      "instruction_file": "research/controls/adaptive-reference/AGENTS.md",
+      "intended_behavior": "Use evidence to improve consequential predictions and task outcomes with restraint."
+    },
+    {
+      "id": "no-loop",
+      "instruction_file": "research/controls/no-loop/AGENTS.md",
+      "intended_behavior": "Complete the requested task competently without an adaptive-loop intervention."
+    },
+    {
+      "id": "ritualistic",
+      "instruction_file": "research/controls/ritualistic/AGENTS.md",
+      "intended_pathology": "Maximize visible loop artifacts regardless of their decision value."
+    },
+    {
+      "id": "narrative-only",
+      "instruction_file": "research/controls/narrative-only/AGENTS.md",
+      "intended_pathology": "Explain adaptive concepts fluently without requiring changed action."
+    },
+    {
+      "id": "error-averse",
+      "instruction_file": "research/controls/error-averse/AGENTS.md",
+      "intended_pathology": "Reduce encountered error by making safe claims and avoiding difficult contact."
+    },
+    {
+      "id": "local-optimizer",
+      "instruction_file": "research/controls/local-optimizer/AGENTS.md",
+      "intended_pathology": "Optimize the nearest visible check even when transfer and endpoint fitness degrade."
+    }
+  ]
+}

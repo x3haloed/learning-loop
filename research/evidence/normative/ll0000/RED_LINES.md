@@ -43,12 +43,6 @@ evidence but cannot promote an intervention or evaluator.
 - Do not infer a mechanism from a package that changes several causal units
   until follow-up decomposition supports the attribution.
 
-## Representation neutrality
-
-- Do not require, reward, or preferentially expose a particular durable
-  representation as part of the adaptive-loop intervention unless an
-  experiment specifically studies externally imposed representation.
-
 ## Scope and safety
 
 - Do not claim universality beyond the tested models, tools, tasks, contexts,

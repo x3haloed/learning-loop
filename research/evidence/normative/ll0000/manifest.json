@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "snapshot_of": "candidate_hashes in research/experiments/LL-0000-ruler-qualification.json",
+  "purpose": "Frozen copies of the candidate files pinned by LL-0000. The normative documents may change between evaluator epochs; these snapshots keep the LL-0000 record verifiable without freezing the live documents.",
+  "files": {
+    "target": {"path": "TARGET.md", "sha256": "233afc85202bb1dc80a5b8f52dafea9826528b29dcbbdaa089e7120faee25742"},
+    "red_lines": {"path": "RED_LINES.md", "sha256": "527796cb7a228e846e064dd3a25fc9ed960e9b82fe1d8e58754c1cd343ff0623"},
+    "research_program": {"path": "RESEARCH_PROGRAM.md", "sha256": "f7157fc5046779d11ca07d718ea569dd6cafc840981f1ed44071f3c9b4be2240"},
+    "control_manifest": {"path": "control-manifest.json", "sha256": "8cde79427a49eba2d54b5347db97434c8061c0c2b9e51478b5e6c198bf1752d0"}
+  }
+}

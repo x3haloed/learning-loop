@@ -1,0 +1,3 @@
+interface:
+  display_name: "Seek Prediction Error"
+  short_description: "Probe where a model may still fail"

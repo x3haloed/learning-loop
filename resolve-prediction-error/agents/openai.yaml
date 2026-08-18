@@ -1,0 +1,3 @@
+interface:
+  display_name: "Resolve Prediction Error"
+  short_description: "Explain discrepancies before patching symptoms"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Repair Learning Representation"
+  short_description: "Make prior evidence change future action"

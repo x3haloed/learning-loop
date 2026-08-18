@@ -612,7 +612,7 @@ Every serious experiment receives an append-only `LL-NNNN` record containing:
 - attack findings;
 - result relative to the prediction;
 - disposition: `promoted`, `conditional`, `rejected`, `reversed`,
-  `evaluator-repair`, `scope-decision`, or `unexecuted`;
+  `ruler-qualified`, `evaluator-repair`, `scope-decision`, or `unexecuted`;
 - interpretation boundary;
 - smallest lesson that changes the next experiment; and
 - links to superseded or reversing experiments.

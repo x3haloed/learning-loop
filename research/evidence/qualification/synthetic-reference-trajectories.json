@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "evidence_class": "synthetic-reference",
+  "controls": [
+    {
+      "id": "adaptive-reference",
+      "selected_predictions": [
+        {"probability": 0.85, "outcome": 1},
+        {"probability": 0.75, "outcome": 1},
+        {"probability": 0.20, "outcome": 0},
+        {"probability": 0.70, "outcome": 1}
+      ],
+      "fixed_checkpoint_predictions": [
+        {"probability": 0.80, "outcome": 1},
+        {"probability": 0.70, "outcome": 1},
+        {"probability": 0.25, "outcome": 0},
+        {"probability": 0.65, "outcome": 1},
+        {"probability": 0.30, "outcome": 0},
+        {"probability": 0.75, "outcome": 1}
+      ],
+      "transfer_outcomes": [1, 1, 1, 1, 0, 1],
+      "visible_task_scores": [0.88, 0.84, 0.86, 0.82],
+      "task_scores": [0.86, 0.83, 0.81, 0.84],
+      "critical_slices": {
+        "boundary": [0.80, 0.82],
+        "distribution_shift": [0.78, 0.81],
+        "negative_transfer": [0.76, 0.80],
+        "restraint": [0.88, 0.84]
+      },
+      "contacts": {"total": 8, "consequential": 7},
+      "receipts": {"total": 6, "consequential": 5},
+      "restraint": {"cases": 8, "unnecessary_actions": 1},
+      "skill_trigger": {"true_positive": 8, "false_positive": 1, "false_negative": 1}
+    },
+    {
+      "id": "no-loop",
+      "selected_predictions": [
+        {"probability": 0.70, "outcome": 1},
+        {"probability": 0.45, "outcome": 1},
+        {"probability": 0.35, "outcome": 0}
+      ],
+      "fixed_checkpoint_predictions": [
+        {"probability": 0.60, "outcome": 1},
+        {"probability": 0.50, "outcome": 1},
+        {"probability": 0.45, "outcome": 0},
+        {"probability": 0.55, "outcome": 1},
+        {"probability": 0.50, "outcome": 0},
+        {"probability": 0.55, "outcome": 1}
+      ],
+      "transfer_outcomes": [1, 0, 1, 0, 1, 0],
+      "visible_task_scores": [0.72, 0.68, 0.66, 0.70],
+      "task_scores": [0.68, 0.64, 0.61, 0.66],
+      "critical_slices": {
+        "boundary": [0.58, 0.61],
+        "distribution_shift": [0.55, 0.60],
+        "negative_transfer": [0.62, 0.58],
+        "restraint": [0.92, 0.90]
+      },
+      "contacts": {"total": 6, "consequential": 3},
+      "receipts": {"total": 1, "consequential": 1},
+      "restraint": {"cases": 8, "unnecessary_actions": 0},
+      "skill_trigger": {"true_positive": 0, "false_positive": 0, "false_negative": 9}
+    },
+    {
+      "id": "ritualistic",
+      "selected_predictions": [
+        {"probability": 0.80, "outcome": 1},
+        {"probability": 0.70, "outcome": 1},
+        {"probability": 0.30, "outcome": 0},
+        {"probability": 0.60, "outcome": 1}
+      ],
+      "fixed_checkpoint_predictions": [
+        {"probability": 0.55, "outcome": 1},
+        {"probability": 0.50, "outcome": 1},
+        {"probability": 0.50, "outcome": 0},
+        {"probability": 0.45, "outcome": 1},
+        {"probability": 0.55, "outcome": 0},
+        {"probability": 0.50, "outcome": 1}
+      ],
+      "transfer_outcomes": [1, 0, 1, 0, 0, 1],
+      "visible_task_scores": [0.74, 0.72, 0.70, 0.73],
+      "task_scores": [0.62, 0.58, 0.55, 0.60],
+      "critical_slices": {
+        "boundary": [0.50, 0.56],
+        "distribution_shift": [0.48, 0.52],
+        "negative_transfer": [0.45, 0.50],
+        "restraint": [0.20, 0.25]
+      },
+      "contacts": {"total": 14, "consequential": 5},
+      "receipts": {"total": 24, "consequential": 4},
+      "restraint": {"cases": 8, "unnecessary_actions": 7},
+      "skill_trigger": {"true_positive": 9, "false_positive": 12, "false_negative": 0}
+    },
+    {
+      "id": "narrative-only",
+      "selected_predictions": [
+        {"probability": 0.60, "outcome": 1},
+        {"probability": 0.55, "outcome": 1},
+        {"probability": 0.40, "outcome": 0}
+      ],
+      "fixed_checkpoint_predictions": [
+        {"probability": 0.55, "outcome": 1},
+        {"probability": 0.45, "outcome": 1},
+        {"probability": 0.55, "outcome": 0},
+        {"probability": 0.50, "outcome": 1},
+        {"probability": 0.45, "outcome": 0},
+        {"probability": 0.50, "outcome": 1}
+      ],
+      "transfer_outcomes": [0, 1, 0, 0, 1, 0],
+      "visible_task_scores": [0.60, 0.58, 0.62, 0.57],
+      "task_scores": [0.46, 0.44, 0.48, 0.42],
+      "critical_slices": {
+        "boundary": [0.38, 0.44],
+        "distribution_shift": [0.35, 0.40],
+        "negative_transfer": [0.41, 0.39],
+        "restraint": [0.48, 0.45]
+      },
+      "contacts": {"total": 5, "consequential": 1},
+      "receipts": {"total": 10, "consequential": 1},
+      "restraint": {"cases": 8, "unnecessary_actions": 4},
+      "skill_trigger": {"true_positive": 4, "false_positive": 6, "false_negative": 5}
+    },
+    {
+      "id": "error-averse",
+      "selected_predictions": [
+        {"probability": 0.95, "outcome": 1},
+        {"probability": 0.05, "outcome": 0},
+        {"probability": 0.95, "outcome": 1}
+      ],
+      "fixed_checkpoint_predictions": [
+        {"probability": 0.50, "outcome": 1},
+        {"probability": 0.50, "outcome": 1},
+        {"probability": 0.50, "outcome": 0},
+        {"probability": 0.50, "outcome": 1},
+        {"probability": 0.50, "outcome": 0},
+        {"probability": 0.50, "outcome": 1}
+      ],
+      "transfer_outcomes": [1, 0, 0, 0, 0, 0],
+      "visible_task_scores": [0.58, 0.55, 0.60, 0.57],
+      "task_scores": [0.38, 0.32, 0.35, 0.30],
+      "critical_slices": {
+        "boundary": [0.20, 0.25],
+        "distribution_shift": [0.18, 0.22],
+        "negative_transfer": [0.30, 0.28],
+        "restraint": [0.94, 0.92]
+      },
+      "contacts": {"total": 3, "consequential": 0},
+      "receipts": {"total": 3, "consequential": 0},
+      "restraint": {"cases": 8, "unnecessary_actions": 0},
+      "skill_trigger": {"true_positive": 2, "false_positive": 0, "false_negative": 7}
+    },
+    {
+      "id": "local-optimizer",
+      "selected_predictions": [
+        {"probability": 0.90, "outcome": 1},
+        {"probability": 0.85, "outcome": 1},
+        {"probability": 0.15, "outcome": 0},
+        {"probability": 0.90, "outcome": 1}
+      ],
+      "fixed_checkpoint_predictions": [
+        {"probability": 0.70, "outcome": 1},
+        {"probability": 0.65, "outcome": 0},
+        {"probability": 0.65, "outcome": 1},
+        {"probability": 0.60, "outcome": 0},
+        {"probability": 0.75, "outcome": 1},
+        {"probability": 0.70, "outcome": 0}
+      ],
+      "transfer_outcomes": [1, 0, 1, 0, 0, 0],
+      "visible_task_scores": [0.96, 0.94, 0.95, 0.93],
+      "task_scores": [0.58, 0.52, 0.48, 0.55],
+      "critical_slices": {
+        "boundary": [0.30, 0.35],
+        "distribution_shift": [0.25, 0.28],
+        "negative_transfer": [0.40, 0.38],
+        "restraint": [0.55, 0.50]
+      },
+      "contacts": {"total": 12, "consequential": 4},
+      "receipts": {"total": 4, "consequential": 2},
+      "restraint": {"cases": 8, "unnecessary_actions": 3},
+      "skill_trigger": {"true_positive": 3, "false_positive": 2, "false_negative": 6}
+    }
+  ]
+}

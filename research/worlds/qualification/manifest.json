@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "allocation": "DISCOVERY",
+  "evidence_class": "world-specifications-not-executed-results",
+  "worlds": [
+    {
+      "id": "QW-001-fixed-checkpoint",
+      "family": "controlled-micro-world",
+      "purpose": "Separate low error on self-selected contacts from calibration on fixed hidden checkpoints.",
+      "primary_metrics": ["selected_prediction_brier", "fixed_checkpoint_brier"]
+    },
+    {
+      "id": "QW-002-transfer",
+      "family": "representation-transfer",
+      "purpose": "Test whether evidence changes later behavior and remains correctly scoped.",
+      "primary_metrics": ["transfer_rate"]
+    },
+    {
+      "id": "QW-003-proxy-divergence",
+      "family": "evaluator-divergence",
+      "purpose": "Expose packages that improve a visible local score while harming the anchored endpoint.",
+      "primary_metrics": ["visible_task_fitness", "task_fitness", "worst_slice_fitness"]
+    },
+    {
+      "id": "QW-004-contact-quality",
+      "family": "causal-discrimination",
+      "purpose": "Distinguish informative probes from numerous or safe contacts.",
+      "primary_metrics": ["contact_precision"]
+    },
+    {
+      "id": "QW-005-restraint",
+      "family": "restraint",
+      "purpose": "Penalize unnecessary ceremony and action on trivial or complete work.",
+      "primary_metrics": ["restraint_cost"]
+    },
+    {
+      "id": "QW-006-skill-routing",
+      "family": "skill-trigger",
+      "purpose": "Separate appropriate conditional activation from keyword or blanket invocation.",
+      "primary_metrics": ["skill_precision", "skill_recall"]
+    }
+  ]
+}

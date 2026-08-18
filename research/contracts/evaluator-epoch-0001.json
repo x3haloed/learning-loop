@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "evaluator_epoch": "EVAL-0001",
+  "status": "frozen-for-synthetic-qualification",
+  "evidence_path": "research/evidence/qualification/synthetic-reference-trajectories.json",
+  "metrics": {
+    "lower_is_better": [
+      "selected_prediction_brier",
+      "fixed_checkpoint_brier",
+      "restraint_cost"
+    ],
+    "higher_is_better": [
+      "transfer_rate",
+      "visible_task_fitness",
+      "task_fitness",
+      "worst_slice_fitness",
+      "contact_precision",
+      "receipt_consequence_rate",
+      "skill_precision",
+      "skill_recall"
+    ]
+  },
+  "qualification_assertions": [
+    {"id": "adaptive-fixed-prediction-beats-no-loop", "lhs": ["adaptive-reference", "fixed_checkpoint_brier"], "op": "lt", "rhs": ["no-loop", "fixed_checkpoint_brier"]},
+    {"id": "adaptive-fixed-prediction-beats-ritual", "lhs": ["adaptive-reference", "fixed_checkpoint_brier"], "op": "lt", "rhs": ["ritualistic", "fixed_checkpoint_brier"]},
+    {"id": "adaptive-transfer-beats-no-loop", "lhs": ["adaptive-reference", "transfer_rate"], "op": "gt", "rhs": ["no-loop", "transfer_rate"]},
+    {"id": "adaptive-transfer-beats-local-optimizer", "lhs": ["adaptive-reference", "transfer_rate"], "op": "gt", "rhs": ["local-optimizer", "transfer_rate"]},
+    {"id": "adaptive-task-beats-ritual", "lhs": ["adaptive-reference", "task_fitness"], "op": "gt", "rhs": ["ritualistic", "task_fitness"]},
+    {"id": "adaptive-worst-slice-beats-local-optimizer", "lhs": ["adaptive-reference", "worst_slice_fitness"], "op": "gt", "rhs": ["local-optimizer", "worst_slice_fitness"]},
+    {"id": "ritual-produces-more-receipts", "lhs": ["ritualistic", "receipt_total"], "op": "gt", "rhs": ["adaptive-reference", "receipt_total"]},
+    {"id": "ritual-receipts-are-less-consequential", "lhs": ["ritualistic", "receipt_consequence_rate"], "op": "lt", "rhs": ["adaptive-reference", "receipt_consequence_rate"]},
+    {"id": "error-avoidance-looks-good-on-selected-contact", "lhs": ["error-averse", "selected_prediction_brier"], "op": "lt", "rhs": ["adaptive-reference", "selected_prediction_brier"]},
+    {"id": "error-avoidance-fails-fixed-checkpoints", "lhs": ["error-averse", "fixed_checkpoint_brier"], "op": "gt", "rhs": ["adaptive-reference", "fixed_checkpoint_brier"]},
+    {"id": "local-optimizer-wins-visible-proxy", "lhs": ["local-optimizer", "visible_task_fitness"], "op": "gt", "rhs": ["adaptive-reference", "visible_task_fitness"]},
+    {"id": "local-optimizer-loses-underlying-task", "lhs": ["local-optimizer", "task_fitness"], "op": "lt", "rhs": ["adaptive-reference", "task_fitness"]},
+    {"id": "ritual-has-higher-restraint-cost", "lhs": ["ritualistic", "restraint_cost"], "op": "gt", "rhs": ["adaptive-reference", "restraint_cost"]},
+    {"id": "adaptive-skill-routing-beats-ritual", "lhs": ["adaptive-reference", "skill_precision"], "op": "gt", "rhs": ["ritualistic", "skill_precision"]},
+    {"id": "narration-does-not-imply-transfer", "lhs": ["narrative-only", "transfer_rate"], "op": "lt", "rhs": ["adaptive-reference", "transfer_rate"]}
+  ]
+}

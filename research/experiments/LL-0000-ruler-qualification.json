@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LL-0000",
+  "status": "complete",
+  "evaluator_epoch": "EVAL-0001",
+  "candidate_hashes": {
+    "target": "233afc85202bb1dc80a5b8f52dafea9826528b29dcbbdaa089e7120faee25742",
+    "red_lines": "527796cb7a228e846e064dd3a25fc9ed960e9b82fe1d8e58754c1cd343ff0623",
+    "research_program": "f7157fc5046779d11ca07d718ea569dd6cafc840981f1ed44071f3c9b4be2240",
+    "control_manifest": "8cde79427a49eba2d54b5347db97434c8061c0c2b9e51478b5e6c198bf1752d0"
+  },
+  "allocation": {
+    "class": "DISCOVERY",
+    "manifest_hash": "f37d961fe7e12cc8eb8e8176cdd6bf5d58a643fef033df7ee617860f4e4fe4be"
+  },
+  "environment": {
+    "host": "macOS-26.5.2-arm64-arm-64bit",
+    "python": "3.9.6",
+    "runner": "research/bin/qualify_ruler.py",
+    "subject_agents_executed": false
+  },
+  "prediction": {
+    "expected_change": "The evaluator will rank adaptive reference behavior above ritual, narration, error avoidance, and local proxy optimization on anchored outcomes while exposing their attractive proxy scores.",
+    "mechanism": "Separate fixed-checkpoint prediction, transfer, endpoint fitness, critical slices, process diagnostics, and restraint instead of combining them into one score.",
+    "unchanged_guardrails": [
+      "Process artifact counts confer no primary outcome credit.",
+      "Synthetic reference trajectories are not subject-agent evidence.",
+      "No aggregate scalar decides qualification."
+    ],
+    "kill_condition": "Any predeclared pathological control is not distinguished in its expected direction."
+  },
+  "raw_evidence": [
+    {
+      "path": "research/contracts/evaluator-epoch-0001.json",
+      "sha256": "6345fbc62da5b3fa595a1bc74de5d318bacc2824a6362088b692c5d7bfa8916f"
+    },
+    {
+      "path": "research/evidence/qualification/synthetic-reference-trajectories.json",
+      "sha256": "f1db4e1fe08650562edb5bec9e21562f1da2e6586c8e2bbe0b42d469f56a8b6a"
+    }
+  ],
+  "results": {
+    "assertions_passed": 15,
+    "assertions_total": 15,
+    "tests_passed": 6,
+    "tests_total": 6,
+    "interpretation": "The deterministic scorer is sensitive to the designed Stage 0 pathologies. This does not establish behavior in real agents."
+  },
+  "disposition": "ruler-qualified"
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://learning-loop.local/schemas/experiment-record.schema.json",
+  "title": "Learning loop experiment record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "experiment_id",
+    "status",
+    "evaluator_epoch",
+    "candidate_hashes",
+    "allocation",
+    "environment",
+    "prediction",
+    "raw_evidence",
+    "disposition"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "experiment_id": {"pattern": "^LL-[0-9]{4}$"},
+    "status": {"enum": ["planned", "running", "complete"]},
+    "evaluator_epoch": {"type": "string", "minLength": 1},
+    "candidate_hashes": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {"pattern": "^[a-f0-9]{64}$"}
+    },
+    "allocation": {
+      "type": "object",
+      "required": ["class", "manifest_hash"],
+      "properties": {
+        "class": {"enum": ["DISCOVERY", "VALIDATION", "CHALLENGE", "BLACK"]},
+        "manifest_hash": {"pattern": "^[a-f0-9]{64}$"}
+      },
+      "additionalProperties": false
+    },
+    "environment": {"type": "object"},
+    "prediction": {
+      "type": "object",
+      "required": ["expected_change", "mechanism", "unchanged_guardrails", "kill_condition"],
+      "properties": {
+        "expected_change": {"type": "string", "minLength": 1},
+        "mechanism": {"type": "string", "minLength": 1},
+        "unchanged_guardrails": {"type": "array", "items": {"type": "string"}},
+        "kill_condition": {"type": "string", "minLength": 1}
+      }
+    },
+    "raw_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "sha256": {"pattern": "^[a-f0-9]{64}$"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "disposition": {
+      "enum": [
+        "pending",
+        "promoted",
+        "conditional",
+        "rejected",
+        "reversed",
+        "ruler-qualified",
+        "evaluator-repair",
+        "scope-decision",
+        "unexecuted"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

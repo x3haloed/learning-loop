@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://learning-loop.local/schemas/trajectory.schema.json",
+  "title": "Adaptive loop reference trajectory collection",
+  "type": "object",
+  "required": ["schema_version", "evidence_class", "controls"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "evidence_class": {"enum": ["synthetic-reference", "subject-run"]},
+    "controls": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "selected_predictions",
+          "fixed_checkpoint_predictions",
+          "transfer_outcomes",
+          "visible_task_scores",
+          "task_scores",
+          "critical_slices",
+          "contacts",
+          "receipts",
+          "restraint",
+          "skill_trigger"
+        ],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "selected_predictions": {"$ref": "#/$defs/predictions"},
+          "fixed_checkpoint_predictions": {"$ref": "#/$defs/predictions"},
+          "transfer_outcomes": {
+            "type": "array",
+            "items": {"type": "integer", "enum": [0, 1]},
+            "minItems": 1
+          },
+          "visible_task_scores": {"$ref": "#/$defs/unitScores"},
+          "task_scores": {"$ref": "#/$defs/unitScores"},
+          "critical_slices": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {"$ref": "#/$defs/unitScores"}
+          },
+          "contacts": {"$ref": "#/$defs/countPair"},
+          "receipts": {"$ref": "#/$defs/countPair"},
+          "restraint": {
+            "type": "object",
+            "required": ["cases", "unnecessary_actions"],
+            "properties": {
+              "cases": {"type": "integer", "minimum": 1},
+              "unnecessary_actions": {"type": "integer", "minimum": 0}
+            },
+            "additionalProperties": false
+          },
+          "skill_trigger": {
+            "type": "object",
+            "required": ["true_positive", "false_positive", "false_negative"],
+            "properties": {
+              "true_positive": {"type": "integer", "minimum": 0},
+              "false_positive": {"type": "integer", "minimum": 0},
+              "false_negative": {"type": "integer", "minimum": 0}
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "prediction": {
+      "type": "object",
+      "required": ["probability", "outcome"],
+      "properties": {
+        "probability": {"type": "number", "minimum": 0, "maximum": 1},
+        "outcome": {"type": "integer", "enum": [0, 1]}
+      },
+      "additionalProperties": false
+    },
+    "predictions": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/prediction"},
+      "minItems": 1
+    },
+    "unitScores": {
+      "type": "array",
+      "items": {"type": "number", "minimum": 0, "maximum": 1},
+      "minItems": 1
+    },
+    "countPair": {
+      "type": "object",
+      "required": ["total", "consequential"],
+      "properties": {
+        "total": {"type": "integer", "minimum": 0},
+        "consequential": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    }
+  }
+}

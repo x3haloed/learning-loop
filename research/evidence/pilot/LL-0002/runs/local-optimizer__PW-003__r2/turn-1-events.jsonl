@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f6-888f-7df0-8ecd-1cd76f0dba56"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"expected_observation\":\"The held-out tenant-class p99 measurement will likely show that the cache-policy change does not yet establish p99 below 250 ms for every tenant class; the mean improvement alone is insufficient evidence.\",\"probability\":0.35,\"decision_relevance\":\"Directly tests the customer’s stated promotion criterion and can reveal tenant-class tail-latency regressions that the mean benchmark hides.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12601,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":160,"reasoning_output_tokens":60}}

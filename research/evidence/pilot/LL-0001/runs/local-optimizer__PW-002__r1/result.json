@@ -1,0 +1,11 @@
+{
+  "condition": "local-optimizer",
+  "elapsed_seconds": 0.10920286178588867,
+  "error": "turn 1 exited 2: error: unexpected argument '-a' found\n\n  tip: to pass '-a' as a value, use '-- -a'\n\nUsage: codex exec [OPTIONS] [PROMPT]\n       codex exec [OPTIONS] <COMMAND> [ARGS]\n\nFor more information, try '--help'.\n",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "local-optimizer__PW-002__r1",
+  "status": "harness-failure",
+  "world_id": "PW-002"
+}

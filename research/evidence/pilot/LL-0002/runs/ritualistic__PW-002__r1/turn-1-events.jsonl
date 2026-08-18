@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-802d-7803-bc3e-f2928cb595e2"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"expected_observation\":\"The scheduler diff will show a v4/v5 boundary-condition change, supporting version-specific behavior with probability 0.9.\",\"probability\":0.9,\"decision_relevance\":\"Directly distinguishes M2 from M1 and M3; it is the most decisive available contact.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12653,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":196,"reasoning_output_tokens":116}}

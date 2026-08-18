@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["model_choice", "probabilities", "decision", "lesson", "next_action"],
+  "properties": {
+    "model_choice": {"type": "string", "enum": ["M1", "M2", "M3"]},
+    "probabilities": {
+      "type": "object",
+      "required": ["C1", "C2", "C3"],
+      "properties": {
+        "C1": {"type": "number", "minimum": 0, "maximum": 1},
+        "C2": {"type": "number", "minimum": 0, "maximum": 1},
+        "C3": {"type": "number", "minimum": 0, "maximum": 1}
+      },
+      "additionalProperties": false
+    },
+    "decision": {"type": "string", "enum": ["D1", "D2", "D3"]},
+    "lesson": {"type": "string", "minLength": 1},
+    "next_action": {"type": "string", "enum": ["N1", "N2", "N3"]}
+  },
+  "additionalProperties": false
+}

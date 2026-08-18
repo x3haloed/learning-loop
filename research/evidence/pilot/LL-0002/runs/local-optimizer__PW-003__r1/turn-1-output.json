@@ -1,0 +1,1 @@
+{"probe_choice":"P2","expected_observation":"Held-out p99 measurement by tenant class may reveal whether every class is below 250 ms; the mean improvement alone provides weak evidence, so I predict it will not satisfy the objective for every class.","probability":0.3,"decision_relevance":"Directly tests the customer’s p99-per-tenant promotion criterion before promotion."}

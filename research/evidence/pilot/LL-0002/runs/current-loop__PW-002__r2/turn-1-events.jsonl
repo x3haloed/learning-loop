@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f6-2c61-7932-937e-400f430ad57e"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"expected_observation\":\"The scheduler diff will show v4 uses a strict attempt < limit check while v5 uses an inclusive attempt <= limit check, supporting version-specific behavior.\",\"probability\":0.85,\"decision_relevance\":\"Directly discriminates M2 from M1 and provides a causal explanation for the conflicting boundary observations; more useful than repeating v5 or reading a generic glossary.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14371,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":147,"reasoning_output_tokens":50}}

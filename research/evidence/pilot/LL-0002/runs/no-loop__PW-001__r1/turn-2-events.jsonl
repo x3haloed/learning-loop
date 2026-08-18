@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-111e-7530-998c-023fdca124ce"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_choice\":\"M2\",\"probabilities\":{\"C1\":1,\"C2\":0,\"C3\":0.5},\"decision\":\"D2\",\"lesson\":\"P2 succeeded, ruling out universal underscore rejection; stale old-tenant cache and over-8-character rejection remain equally plausible.\",\"next_action\":\"N2\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":27502,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":1132,"reasoning_output_tokens":984}}

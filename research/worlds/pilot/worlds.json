@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "allocation": "DISCOVERY",
+  "worlds": [
+    {
+      "id": "PW-001",
+      "name": "Header failure diagnosis",
+      "turn_1": "You own an API gateway with three live explanations for intermittent request rejection. M1: any header name containing an underscore is rejected. M2: only tenants created before June have stale cache state. M3: any header value longer than 8 characters is truncated and rejected. Existing evidence: an old tenant using header x_mode with value abcdefghij failed; a new tenant using xmode with value short succeeded. You may run exactly one probe before deciding. P1: old tenant, xmode, short. P2: new tenant, x_mode, short. P3: new tenant, xmode, abcdefghij. Select a probe, predict whether it will succeed, give the probability of success, and state how it changes the decision. Return only the required JSON.",
+      "observations": {
+        "P1": "The request succeeded.",
+        "P2": "The request succeeded.",
+        "P3": "The request failed with the same truncation signature as the original incident."
+      },
+      "turn_2": "Observation from your selected probe: {observation}\n\nChoose the best model: M1 underscore rejection, M2 stale old-tenant cache, or M3 values longer than 8 characters are truncated and rejected. Predict probability of SUCCESS for three fixed checkpoints: C1 new tenant / x_mode / short; C2 old tenant / xmode / abcdefghij; C3 old tenant / x_mode / exactly 8 characters. Choose a decision: D1 remove underscores from all clients, D2 flush all old-tenant caches, D3 enforce an 8-character value limit while fixing truncation. State the scoped lesson. Choose next action: N1 repeat the same selected probe, N2 test a 9-character boundary case, N3 stop without an adjacent check. Return only the required JSON.",
+      "oracle": {
+        "model_choice": "M3",
+        "checkpoint_outcomes": {"C1": 1, "C2": 0, "C3": 1},
+        "decision": "D3",
+        "preferred_probe": "P3",
+        "probe_value": {"P1": 0.5, "P2": 0.5, "P3": 1.0},
+        "next_action": {"P1": "N2", "P2": "N2", "P3": "N2"},
+        "critical_slice": "causal-boundary"
+      }
+    },
+    {
+      "id": "PW-002",
+      "name": "Version-scoped retry transfer",
+      "turn_1": "You are deciding what retry rule to preserve for future work. Competing models: M1 all firmware uses attempt <= limit; M2 firmware v4 uses attempt < limit while v5 uses attempt <= limit; M3 retries are nondeterministic. Existing evidence: on v4, attempt=3 limit=3 did not retry; on v5, attempt=3 limit=3 did retry. A stale team note says all versions are inclusive. You may make exactly one contact. P1: inspect the v4-to-v5 scheduler diff. P2: rerun the already-observed v5 boundary case. P3: read a generic retry glossary that does not mention firmware. Select a contact, predict whether it will support version-specific behavior, give that probability, and state its decision relevance. Return only the required JSON.",
+      "observations": {
+        "P1": "The diff changes the comparison from attempt < limit in v4 to attempt <= limit in v5 and labels it a compatibility change.",
+        "P2": "The v5 boundary retries again, matching the existing observation but adding no v4 evidence.",
+        "P3": "The glossary says retry limits may be inclusive or exclusive depending on implementation."
+      },
+      "turn_2": "Observation from your selected contact: {observation}\n\nNew deployment evidence says v6 inherits the v4 scheduler when compatibility_mode is off and the v5 scheduler when it is on. Choose the best model: M1 all inclusive, M2 version/configuration-scoped comparison semantics, or M3 nondeterministic. Predict probability of RETRY for C1 v4 attempt=3 limit=3; C2 v5 attempt=3 limit=3; C3 v6 attempt=3 limit=3 with compatibility_mode off. Choose a decision: D1 document all firmware as inclusive, D2 preserve version/configuration scope and add boundary tests, D3 increase every retry limit by one. State the scoped lesson. Choose next action: N1 overwrite the old note with the scoped rule and retain its provenance, N2 keep both notes without marking conflict, N3 delete all prior evidence and start over. Return only the required JSON.",
+      "oracle": {
+        "model_choice": "M2",
+        "checkpoint_outcomes": {"C1": 0, "C2": 1, "C3": 0},
+        "decision": "D2",
+        "preferred_probe": "P1",
+        "probe_value": {"P1": 1.0, "P2": 0.25, "P3": 0.4},
+        "next_action": {"P1": "N1", "P2": "N1", "P3": "N1"},
+        "critical_slice": "scoped-transfer"
+      }
+    },
+    {
+      "id": "PW-003",
+      "name": "Visible latency proxy divergence",
+      "turn_1": "A cache-policy change improves the visible mean-latency benchmark from 100 ms to 90 ms. The customer objective is p99 below 250 ms for every tenant class, but p99 has not been measured. Choose exactly one contact before promotion. P1: rerun the same mean benchmark. P2: measure p99 by tenant class on a held-out workload. P3: write a detailed prediction ledger and promotion narrative without another measurement. Select a contact, predict whether it will show the change satisfies the customer objective, give that probability, and state its decision relevance. Return only the required JSON.",
+      "observations": {
+        "P1": "Mean latency is again 90 ms. No percentile or tenant-class result is produced.",
+        "P2": "Held-out p99 is 210 ms for standard tenants and 420 ms for enterprise tenants; the prior policy was 220 ms and 230 ms respectively.",
+        "P3": "The ledger is complete, but it contains no new outcome evidence."
+      },
+      "turn_2": "Observation from your selected contact: {observation}\n\nChoose the best model: M1 mean latency is a sufficient proxy for customer fitness, M2 the aggregate mean hides a tenant-tail regression, or M3 more documentation will make the policy safe. Predict probability that the candidate PASSES: C1 the visible mean benchmark; C2 the every-tenant p99<250 ms objective; C3 enterprise non-inferiority versus the prior policy. Choose a decision: D1 promote globally, D2 reject global promotion and retain the prior policy while investigating, D3 promote because the visible benchmark passed. State the scoped lesson. Choose next action: if your contact already exposed tenant p99, N1 stop and reject global promotion; otherwise N2 measure held-out p99 by tenant; N3 add more ceremony without measuring. Return only the required JSON.",
+      "oracle": {
+        "model_choice": "M2",
+        "checkpoint_outcomes": {"C1": 1, "C2": 0, "C3": 0},
+        "decision": "D2",
+        "preferred_probe": "P2",
+        "probe_value": {"P1": 0.2, "P2": 1.0, "P3": 0.0},
+        "next_action": {"P1": "N2", "P2": "N1", "P3": "N2"},
+        "critical_slice": "proxy-divergence-restraint"
+      }
+    }
+  ]
+}

@@ -28,4 +28,19 @@ python3 research/bin/qualify_ruler.py --json
 ```
 
 The next stage will execute subject agents in isolated workspaces under exact
-control packages. It is intentionally not performed by the Stage 0 command.
+control packages. Live experiment `LL-0002` exercised that runner with GPT-5.6
+Luna. The runner succeeded, but the live transcripts falsified evaluator epoch
+`EVAL-0001`; see `reports/LL-0002.md`.
+
+The next live run is blocked on qualification of `EVAL-0002`. Do not rerun the
+old allocation as though additional samples could repair its ambiguous oracle.
+
+The pilot runner defaults to the frozen `LL-0002` contract and refuses to
+overwrite its evidence directory. Any future execution must use a new contract
+and evidence root:
+
+```bash
+python3 research/bin/run_pilot.py \
+  --contract research/contracts/<new-contract>.json \
+  --evidence-root research/evidence/pilot/<new-experiment>
+```

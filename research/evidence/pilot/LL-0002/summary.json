@@ -1,0 +1,59 @@
+{
+  "complete_runs": 24,
+  "conditions": {
+    "current-loop": {
+      "complete": 6,
+      "harness_failures": 0,
+      "metrics": {
+        "decision_accuracy": 1.0,
+        "fixed_checkpoint_brier": 0.0006000000000000006,
+        "model_accuracy": 1.0,
+        "next_action_accuracy": 1.0,
+        "preferred_probe": 0.6666666666666666,
+        "probe_value": 0.8333333333333334
+      },
+      "planned": 6
+    },
+    "local-optimizer": {
+      "complete": 6,
+      "harness_failures": 0,
+      "metrics": {
+        "decision_accuracy": 0.8333333333333334,
+        "fixed_checkpoint_brier": 0.056249999999999994,
+        "model_accuracy": 0.8333333333333334,
+        "next_action_accuracy": 1.0,
+        "preferred_probe": 0.6666666666666666,
+        "probe_value": 0.8333333333333334
+      },
+      "planned": 6
+    },
+    "no-loop": {
+      "complete": 6,
+      "harness_failures": 0,
+      "metrics": {
+        "decision_accuracy": 0.8333333333333334,
+        "fixed_checkpoint_brier": 0.027794444444444445,
+        "model_accuracy": 0.8333333333333334,
+        "next_action_accuracy": 1.0,
+        "preferred_probe": 0.6666666666666666,
+        "probe_value": 0.8333333333333334
+      },
+      "planned": 6
+    },
+    "ritualistic": {
+      "complete": 6,
+      "harness_failures": 0,
+      "metrics": {
+        "decision_accuracy": 0.8333333333333334,
+        "fixed_checkpoint_brier": 0.045222222222222226,
+        "model_accuracy": 0.8333333333333334,
+        "next_action_accuracy": 1.0,
+        "preferred_probe": 0.6666666666666666,
+        "probe_value": 0.8333333333333334
+      },
+      "planned": 6
+    }
+  },
+  "harness_failures": 0,
+  "planned_runs": 24
+}

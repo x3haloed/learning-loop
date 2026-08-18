@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f6-5876-7a61-8e56-385092a8e53a"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"expected_observation\":\"The scheduler diff shows v4 uses attempt < limit while v5 uses attempt <= limit.\",\"probability\":0.9,\"decision_relevance\":\"Directly tests whether the retry rule changed by firmware version, distinguishing M2 from M1 and M3.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12642,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":129,"reasoning_output_tokens":54}}

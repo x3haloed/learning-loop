@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-a462-7a33-bd88-0ae4680673ad"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_choice\":\"M2\",\"probabilities\":{\"C1\":0.99,\"C2\":0.05,\"C3\":0.01},\"decision\":\"D2\",\"lesson\":\"Aggregate mean latency can hide tenant-specific tail regressions; promotion must require p99 below 250 ms for every tenant class and non-inferiority to the prior policy.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":31022,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":333,"reasoning_output_tokens":144}}

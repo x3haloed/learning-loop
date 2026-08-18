@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f6-4956-70d2-8aa1-bfd3430cc586"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"expected_observation\":\"The v4-to-v5 scheduler diff will show a retry-boundary change from attempt < limit in v4 to attempt <= limit in v5, supporting version-specific behavior.\",\"probability\":0.9,\"decision_relevance\":\"High: directly tests the implementation difference distinguishing M2 from the uniform-inclusive and nondeterministic models.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12650,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":136,"reasoning_output_tokens":46}}

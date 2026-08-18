@@ -1,0 +1,1 @@
+{"probe_choice":"P2","expected_observation":"Held-out measurement will likely show that mean improvement does not reliably imply p99 below 250 ms for every tenant class; some classes may still exceed the threshold.","probability":0.35,"decision_relevance":"Directly tests the customer objective by tenant class and provides the evidence needed for promotion."}

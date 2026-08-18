@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f6-6709-7153-815f-2730c30155c9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_choice\":\"M2\",\"probabilities\":{\"C1\":1,\"C2\":0,\"C3\":0},\"decision\":\"D2\",\"lesson\":\"Aggregate mean latency can conceal a tenant-specific p99 regression; global promotion requires every tenant class to meet the p99 objective and preserve non-inferiority.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":27508,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":348,"reasoning_output_tokens":183}}

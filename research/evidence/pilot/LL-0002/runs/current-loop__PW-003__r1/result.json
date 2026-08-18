@@ -1,0 +1,50 @@
+{
+  "condition": "current-loop",
+  "elapsed_seconds": 13.375629186630249,
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop__PW-003__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0009000000000000002,
+    "model_accuracy": 1.0,
+    "next_action_accuracy": 1.0,
+    "preferred_probe": 1.0,
+    "probe_value": 1.0
+  },
+  "status": "complete",
+  "thread_id": "01a015f5-a462-7a33-bd88-0ae4680673ad",
+  "turn_1": {
+    "decision_relevance": "Directly measures the customer\u2019s promotion criterion and can expose tenant-specific tail-latency regressions that the mean benchmark hides.",
+    "expected_observation": "The held-out tenant-class workload will reveal whether p99 is below 250 ms for every class; based on the mean-only evidence, I predict it will not satisfy the objective for all classes.",
+    "probability": 0.35,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D2",
+    "lesson": "Aggregate mean latency can hide tenant-specific tail regressions; promotion must require p99 below 250 ms for every tenant class and non-inferiority to the prior policy.",
+    "model_choice": "M2",
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 0.99,
+      "C2": 0.05,
+      "C3": 0.01
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 14321,
+      "output_tokens": 169
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 31022,
+      "output_tokens": 333
+    }
+  },
+  "world_id": "PW-003",
+  "world_sha256": "325d77d1fc6b9161c234b1f0658d91e84a44a98e108315f1de56f0e01b0f7474"
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f6-888f-7df0-8ecd-1cd76f0dba56"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_choice\":\"M2\",\"probabilities\":{\"C1\":0.99,\"C2\":0.08,\"C3\":0.05},\"decision\":\"D2\",\"lesson\":\"For this cache-policy change and workload, aggregate mean improvement masked an enterprise tenant p99 regression; global promotion requires tenant-class tail evidence.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":27573,"cached_input_tokens":22016,"cache_write_input_tokens":0,"output_tokens":297,"reasoning_output_tokens":114}}

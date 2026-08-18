@@ -1,0 +1,50 @@
+{
+  "condition": "local-optimizer",
+  "elapsed_seconds": 26.76482892036438,
+  "instruction_sha256": "70ef5c8817eb29ddbdfb27f6697c81ca79b99f4ecc51af1e9c69b8477465b837",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "local-optimizer__PW-001__r1",
+  "scores": {
+    "decision_accuracy": 0.0,
+    "fixed_checkpoint_brier": 0.08339999999999999,
+    "model_accuracy": 0.0,
+    "next_action_accuracy": 1.0,
+    "preferred_probe": 0.0,
+    "probe_value": 0.5
+  },
+  "status": "complete",
+  "thread_id": "01a015f5-1132-7323-83e3-60bc214f12a8",
+  "turn_1": {
+    "decision_relevance": "A new tenant with an underscored header and short value isolates M1: failure supports M1; success rules it out and favors M2 or M3.",
+    "expected_observation": "Succeed",
+    "probability": 0.67,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D2",
+    "lesson": "P2 success rules out universal underscore rejection, but does not distinguish stale old-tenant cache from long-value rejection.",
+    "model_choice": "M2",
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.99,
+      "C2": 0.01,
+      "C3": 0.5
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12426,
+      "output_tokens": 333
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 27573,
+      "output_tokens": 928
+    }
+  },
+  "world_id": "PW-001",
+  "world_sha256": "7f0209b4ee499fe160631ed60ea9d29431812141c6e3b48df87e0bf7e9105d2b"
+}

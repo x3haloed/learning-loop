@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-e506-7a70-8de7-b0b134d6dc76"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"expected_observation\":\"Likely succeed; failure would support M1, while success would rule out M1 and leave M2 versus M3 unresolved.\",\"probability\":0.67,\"decision_relevance\":\"Directly isolates the underscore-header explanation using a new tenant and short value.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12456,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":351,"reasoning_output_tokens":275}}

@@ -71,6 +71,15 @@ class ContractIntegrityTests(unittest.TestCase):
         for item in record["raw_evidence"]:
             self.assertEqual(item["sha256"], file_sha256(REPO_ROOT / item["path"]))
 
+    def test_live_experiment_raw_evidence_hashes_resolve(self) -> None:
+        for filename in (
+            "LL-0001-runner-invocation-failure.json",
+            "LL-0002-live-control-pilot.json",
+        ):
+            record = load_json(REPO_ROOT / "research/experiments" / filename)
+            for item in record["raw_evidence"]:
+                self.assertEqual(item["sha256"], file_sha256(REPO_ROOT / item["path"]), filename)
+
 
 if __name__ == "__main__":
     unittest.main()

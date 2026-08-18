@@ -1,0 +1,1 @@
+{"probe_choice":"P1","expected_observation":"The v4-to-v5 scheduler diff shows a changed boundary comparison: v4 uses attempt < limit, while v5 uses attempt <= limit, supporting version-specific retry behavior.","probability":0.9,"decision_relevance":"High: it directly tests the implementation rule distinguishing M2 from the all-inclusive and nondeterministic models."}

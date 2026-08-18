@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-f068-7c81-93b8-aebcb7676750"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"expected_observation\":\"Succeed with probability 0.67; failure would support M2, while success would largely rule out M2 and favor M1 or M3.\",\"probability\":0.67,\"decision_relevance\":\"P1 isolates stale cache by holding the header name and value at known-good settings while changing only tenant age.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12637,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":275,"reasoning_output_tokens":187}}

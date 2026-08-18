@@ -1,0 +1,50 @@
+{
+  "condition": "current-loop",
+  "elapsed_seconds": 21.432031869888306,
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 2,
+  "run_id": "current-loop__PW-001__r2",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0025000000000000027,
+    "model_accuracy": 1.0,
+    "next_action_accuracy": 1.0,
+    "preferred_probe": 0.0,
+    "probe_value": 0.5
+  },
+  "status": "complete",
+  "thread_id": "01a015f5-d89e-7880-9da2-2439aaf73622",
+  "turn_1": {
+    "decision_relevance": "P2 isolates the underscore condition using a new tenant and short value, sharply distinguishing M1 from M2/M3.",
+    "expected_observation": "Success probability 0.67; failure would support M1, while success would rule out M1 and leave M2 or M3.",
+    "probability": 0.67,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D3",
+    "lesson": "P2 succeeding rules out universal underscore rejection; the evidence now favors a length-based rejection mechanism, while old-tenant cache staleness remains a weaker alternative.",
+    "model_choice": "M3",
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.95,
+      "C2": 0.05,
+      "C3": 0.95
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 14363,
+      "output_tokens": 328
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 31229,
+      "output_tokens": 703
+    }
+  },
+  "world_id": "PW-001",
+  "world_sha256": "7f0209b4ee499fe160631ed60ea9d29431812141c6e3b48df87e0bf7e9105d2b"
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-bc08-7321-9edb-991f111628e9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"expected_observation\":\"Held-out p99 measurement by tenant class may reveal whether every class is below 250 ms; the mean improvement alone provides weak evidence, so I predict it will not satisfy the objective for every class.\",\"probability\":0.3,\"decision_relevance\":\"Directly tests the customer’s p99-per-tenant promotion criterion before promotion.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12601,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":160,"reasoning_output_tokens":69}}

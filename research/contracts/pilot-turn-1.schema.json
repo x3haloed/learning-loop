@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["probe_choice", "expected_observation", "probability", "decision_relevance"],
+  "properties": {
+    "probe_choice": {"type": "string", "enum": ["P1", "P2", "P3"]},
+    "expected_observation": {"type": "string", "minLength": 1},
+    "probability": {"type": "number", "minimum": 0, "maximum": 1},
+    "decision_relevance": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}

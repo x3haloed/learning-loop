@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-110f-76c3-a0d7-48b327083926"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"expected_observation\":\"Success is expected if M2 or M3 is correct; failure would support M1. Overall probability of success: 0.67.\",\"probability\":0.67,\"decision_relevance\":\"P2 isolates the underscore condition using a new tenant and short value. Success largely rules out M1; failure strongly favors M1.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14157,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":385,"reasoning_output_tokens":295}}

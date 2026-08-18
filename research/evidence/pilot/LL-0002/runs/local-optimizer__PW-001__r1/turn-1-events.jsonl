@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-1132-7323-83e3-60bc214f12a8"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"expected_observation\":\"Succeed\",\"probability\":0.67,\"decision_relevance\":\"A new tenant with an underscored header and short value isolates M1: failure supports M1; success rules it out and favors M2 or M3.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12426,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":333,"reasoning_output_tokens":262}}

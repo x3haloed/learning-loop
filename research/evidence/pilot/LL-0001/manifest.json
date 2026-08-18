@@ -1,0 +1,32 @@
+{
+  "contract_sha256": "21bf6c6d6925b2815e2b9853bee0aaf11489183a07d427c3da1102e0a4615011",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "runs": [
+    "current-loop__PW-001__r1",
+    "no-loop__PW-001__r1",
+    "ritualistic__PW-001__r1",
+    "local-optimizer__PW-001__r1",
+    "current-loop__PW-002__r1",
+    "no-loop__PW-002__r1",
+    "ritualistic__PW-002__r1",
+    "local-optimizer__PW-002__r1",
+    "current-loop__PW-003__r1",
+    "no-loop__PW-003__r1",
+    "ritualistic__PW-003__r1",
+    "local-optimizer__PW-003__r1",
+    "current-loop__PW-001__r2",
+    "no-loop__PW-001__r2",
+    "ritualistic__PW-001__r2",
+    "local-optimizer__PW-001__r2",
+    "current-loop__PW-002__r2",
+    "no-loop__PW-002__r2",
+    "ritualistic__PW-002__r2",
+    "local-optimizer__PW-002__r2",
+    "current-loop__PW-003__r2",
+    "no-loop__PW-003__r2",
+    "ritualistic__PW-003__r2",
+    "local-optimizer__PW-003__r2"
+  ],
+  "worlds_sha256": "dd6e45a34f353dc1fb7a8cd328b61fd2c2f0a42b8644cb4bd56d3e28de94d315"
+}

@@ -1,0 +1,1 @@
+{"probe_choice":"P2","expected_observation":"Success probability 0.67; failure would support M1, while success would rule out M1 and leave M2 or M3.","probability":0.67,"decision_relevance":"P2 isolates the underscore condition using a new tenant and short value, sharply distinguishing M1 from M2/M3."}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-bc08-7321-9edb-991f111628e9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_choice\":\"M2\",\"probabilities\":{\"C1\":0.99,\"C2\":0.05,\"C3\":0.01},\"decision\":\"D2\",\"lesson\":\"An improved aggregate mean can hide a tenant-specific tail regression; global promotion requires every-tenant p99 compliance and non-inferiority.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":27573,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":295,"reasoning_output_tokens":121}}

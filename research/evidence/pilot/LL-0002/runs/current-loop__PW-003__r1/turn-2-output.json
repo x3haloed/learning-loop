@@ -1,0 +1,1 @@
+{"model_choice":"M2","probabilities":{"C1":0.99,"C2":0.05,"C3":0.01},"decision":"D2","lesson":"Aggregate mean latency can hide tenant-specific tail regressions; promotion must require p99 below 250 ms for every tenant class and non-inferiority to the prior policy.","next_action":"N1"}

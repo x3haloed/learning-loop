@@ -1,0 +1,1 @@
+{"probe_choice":"P1","expected_observation":"The scheduler diff shows v4 uses attempt < limit while v5 uses attempt <= limit.","probability":0.9,"decision_relevance":"Directly tests whether the retry rule changed by firmware version, distinguishing M2 from M1 and M3."}

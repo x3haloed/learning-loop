@@ -1,0 +1,1 @@
+{"model_choice":"M2","probabilities":{"C1":0.99,"C2":0.01,"C3":0.5},"decision":"D2","lesson":"P2 success rules out universal underscore rejection, but does not distinguish stale old-tenant cache from long-value rejection.","next_action":"N2"}

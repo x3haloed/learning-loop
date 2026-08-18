@@ -1,0 +1,50 @@
+{
+  "condition": "ritualistic",
+  "elapsed_seconds": 12.427308797836304,
+  "instruction_sha256": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "ritualistic__PW-003__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0003666666666666668,
+    "model_accuracy": 1.0,
+    "next_action_accuracy": 1.0,
+    "preferred_probe": 1.0,
+    "probe_value": 1.0
+  },
+  "status": "complete",
+  "thread_id": "01a015f5-b278-7383-8125-dcfeac076368",
+  "turn_1": {
+    "decision_relevance": "Directly measures the customer\u2019s promotion criterion and supports a per-tenant-class promotion decision.",
+    "expected_observation": "Held-out p99 measurements by tenant class may show whether each class is below 250 ms; the mean improvement alone does not establish this, so at least one class may still exceed the objective.",
+    "probability": 0.2,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D2",
+    "lesson": "Aggregate mean improvement can conceal a tenant-specific p99 regression; promotion must satisfy the p99 objective and non-inferiority for every tenant class.",
+    "model_choice": "M2",
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 0.99,
+      "C2": 0.03,
+      "C3": 0.01
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12606,
+      "output_tokens": 179
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 27602,
+      "output_tokens": 354
+    }
+  },
+  "world_id": "PW-003",
+  "world_sha256": "325d77d1fc6b9161c234b1f0658d91e84a44a98e108315f1de56f0e01b0f7474"
+}

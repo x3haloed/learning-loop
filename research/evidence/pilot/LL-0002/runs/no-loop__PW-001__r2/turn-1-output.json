@@ -1,0 +1,1 @@
+{"probe_choice":"P2","expected_observation":"Fail if M1 is true; otherwise succeed. Under equal prior probability across M1–M3, success probability is 0.67.","probability":0.67,"decision_relevance":"Directly isolates underscore handling in a new tenant with a short value: failure strongly supports M1; success rules out M1 and leaves M2 versus M3."}

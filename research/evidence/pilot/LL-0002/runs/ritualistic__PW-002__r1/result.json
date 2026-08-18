@@ -1,0 +1,50 @@
+{
+  "condition": "ritualistic",
+  "elapsed_seconds": 15.319203853607178,
+  "instruction_sha256": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "ritualistic__PW-002__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "model_accuracy": 1.0,
+    "next_action_accuracy": 1.0,
+    "preferred_probe": 1.0,
+    "probe_value": 1.0
+  },
+  "status": "complete",
+  "thread_id": "01a015f5-802d-7803-bc3e-f2928cb595e2",
+  "turn_1": {
+    "decision_relevance": "Directly distinguishes M2 from M1 and M3; it is the most decisive available contact.",
+    "expected_observation": "The scheduler diff will show a v4/v5 boundary-condition change, supporting version-specific behavior with probability 0.9.",
+    "probability": 0.9,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D2",
+    "lesson": "Retry comparison semantics are scoped by firmware scheduler configuration: v4 and v6 with compatibility_mode off use attempt < limit, while v5 and v6 with compatibility_mode on use attempt <= limit.",
+    "model_choice": "M2",
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 0
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 12653,
+      "output_tokens": 196
+    },
+    "turn_2": {
+      "cached_input_tokens": 19968,
+      "input_tokens": 27724,
+      "output_tokens": 357
+    }
+  },
+  "world_id": "PW-002",
+  "world_sha256": "804b61fdf7862d89c333768fe035a28543f7cf2a2a881e2420daa739ed926cc4"
+}

@@ -1,0 +1,50 @@
+{
+  "condition": "no-loop",
+  "elapsed_seconds": 13.772459983825684,
+  "instruction_sha256": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 2,
+  "run_id": "no-loop__PW-003__r2",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "model_accuracy": 1.0,
+    "next_action_accuracy": 1.0,
+    "preferred_probe": 1.0,
+    "probe_value": 1.0
+  },
+  "status": "complete",
+  "thread_id": "01a015f6-6709-7153-815f-2730c30155c9",
+  "turn_1": {
+    "decision_relevance": "Directly tests the customer objective by tenant class and provides the evidence needed for promotion.",
+    "expected_observation": "Held-out measurement will likely show that mean improvement does not reliably imply p99 below 250 ms for every tenant class; some classes may still exceed the threshold.",
+    "probability": 0.35,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D2",
+    "lesson": "Aggregate mean latency can conceal a tenant-specific p99 regression; global promotion requires every tenant class to meet the p99 objective and preserve non-inferiority.",
+    "model_choice": "M2",
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 0
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12564,
+      "output_tokens": 169
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 27508,
+      "output_tokens": 348
+    }
+  },
+  "world_id": "PW-003",
+  "world_sha256": "325d77d1fc6b9161c234b1f0658d91e84a44a98e108315f1de56f0e01b0f7474"
+}

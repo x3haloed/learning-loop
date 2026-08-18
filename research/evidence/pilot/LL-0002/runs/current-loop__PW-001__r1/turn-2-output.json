@@ -1,0 +1,1 @@
+{"model_choice":"M3","probabilities":{"C1":1,"C2":0,"C3":1},"decision":"D3","lesson":"A new tenant succeeded with an underscored header and short value, ruling out universal underscore rejection; length-based rejection remains the best explanation, with old-tenant cache staleness still unresolved.","next_action":"N2"}

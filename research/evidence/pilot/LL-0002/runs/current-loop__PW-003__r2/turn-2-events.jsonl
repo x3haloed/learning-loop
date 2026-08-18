@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f6-6189-7250-ab2d-a8ae275b59fc"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_choice\":\"M2\",\"probabilities\":{\"C1\":1,\"C2\":0,\"C3\":0},\"decision\":\"D2\",\"lesson\":\"Aggregate mean latency can hide a tenant-specific tail regression; customer fitness requires checking p99 for every tenant class, and enterprise non-inferiority failed.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":31048,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":358,"reasoning_output_tokens":180}}

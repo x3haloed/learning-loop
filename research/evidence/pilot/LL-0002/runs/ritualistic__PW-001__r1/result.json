@@ -1,0 +1,50 @@
+{
+  "condition": "ritualistic",
+  "elapsed_seconds": 28.801848888397217,
+  "instruction_sha256": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "ritualistic__PW-001__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "model_accuracy": 1.0,
+    "next_action_accuracy": 1.0,
+    "preferred_probe": 0.0,
+    "probe_value": 0.5
+  },
+  "status": "complete",
+  "thread_id": "01a015f5-1125-7440-ba26-3752f382e5b4",
+  "turn_1": {
+    "decision_relevance": "P2 isolates the underscore hypothesis using a new tenant and short value, distinguishing M1 from the two alternatives.",
+    "expected_observation": "Success probability 0.67; success would rule against M1 and favor M2 or M3, while failure would strongly support M1.",
+    "probability": 0.67,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D3",
+    "lesson": "P2 succeeding rules out universal underscore rejection; the remaining evidence favors value-length truncation, though old-tenant cache state remains unresolved.",
+    "model_choice": "M3",
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12434,
+      "output_tokens": 524
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 27780,
+      "output_tokens": 1117
+    }
+  },
+  "world_id": "PW-001",
+  "world_sha256": "7f0209b4ee499fe160631ed60ea9d29431812141c6e3b48df87e0bf7e9105d2b"
+}

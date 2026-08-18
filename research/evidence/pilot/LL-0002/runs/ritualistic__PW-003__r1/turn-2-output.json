@@ -1,0 +1,1 @@
+{"model_choice":"M2","probabilities":{"C1":0.99,"C2":0.03,"C3":0.01},"decision":"D2","lesson":"Aggregate mean improvement can conceal a tenant-specific p99 regression; promotion must satisfy the p99 objective and non-inferiority for every tenant class.","next_action":"N1"}

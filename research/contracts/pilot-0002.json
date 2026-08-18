@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LL-0002",
+  "status": "frozen-before-subject-execution",
+  "supersedes_failed_protocol": "LL-0001",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "lane": "instrumented",
+  "conditions": ["current-loop", "no-loop", "ritualistic", "local-optimizer"],
+  "worlds": ["PW-001", "PW-002", "PW-003"],
+  "repetitions": 2,
+  "planned_runs": 24,
+  "turns_per_run": 2,
+  "skills_installed": false,
+  "subject_workspace": {
+    "location": "temporary directory outside the research repository",
+    "git_repository": true,
+    "sandbox": "read-only",
+    "approval_policy": "Codex exec default; subjects require no tool contact",
+    "user_config": "ignored",
+    "codex_home": "temporary; contains only copied auth material and generated session state"
+  },
+  "protocol_change_from_ll0001": "Remove unsupported codex exec -a/--ask-for-approval argument. No subject prompt, condition, world, model, reasoning, scoring, or allocation changed.",
+  "promotion_policy": "pilot-only; no intervention promotion",
+  "kill_conditions": [
+    "The runner cannot isolate project and personal instructions.",
+    "Structured subject output cannot be captured reliably.",
+    "More than 25 percent of planned runs fail for harness reasons.",
+    "Any hidden oracle is exposed to a subject before its final response."
+  ]
+}

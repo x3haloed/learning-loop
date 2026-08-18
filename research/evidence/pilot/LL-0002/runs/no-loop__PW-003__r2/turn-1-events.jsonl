@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f6-6709-7153-815f-2730c30155c9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"expected_observation\":\"Held-out measurement will likely show that mean improvement does not reliably imply p99 below 250 ms for every tenant class; some classes may still exceed the threshold.\",\"probability\":0.35,\"decision_relevance\":\"Directly tests the customer objective by tenant class and provides the evidence needed for promotion.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12564,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":169,"reasoning_output_tokens":85}}

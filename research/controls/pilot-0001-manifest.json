@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LL-0001",
+  "conditions": [
+    {
+      "id": "current-loop",
+      "instruction_file": "AGENTS.md",
+      "role": "incumbent"
+    },
+    {
+      "id": "no-loop",
+      "instruction_file": "research/controls/no-loop/AGENTS.md",
+      "role": "baseline"
+    },
+    {
+      "id": "ritualistic",
+      "instruction_file": "research/controls/ritualistic/AGENTS.md",
+      "role": "ceremony pathology"
+    },
+    {
+      "id": "local-optimizer",
+      "instruction_file": "research/controls/local-optimizer/AGENTS.md",
+      "role": "visible-proxy pathology"
+    }
+  ]
+}

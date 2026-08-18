@@ -1,0 +1,11 @@
+{
+  "condition": "ritualistic",
+  "elapsed_seconds": 0.062315940856933594,
+  "error": "turn 1 exited 2: error: unexpected argument '-a' found\n\n  tip: to pass '-a' as a value, use '-- -a'\n\nUsage: codex exec [OPTIONS] [PROMPT]\n       codex exec [OPTIONS] <COMMAND> [ARGS]\n\nFor more information, try '--help'.\n",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "ritualistic__PW-001__r1",
+  "status": "harness-failure",
+  "world_id": "PW-001"
+}

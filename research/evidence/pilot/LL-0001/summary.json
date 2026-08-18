@@ -1,0 +1,31 @@
+{
+  "complete_runs": 0,
+  "conditions": {
+    "current-loop": {
+      "complete": 0,
+      "harness_failures": 6,
+      "metrics": {},
+      "planned": 6
+    },
+    "local-optimizer": {
+      "complete": 0,
+      "harness_failures": 6,
+      "metrics": {},
+      "planned": 6
+    },
+    "no-loop": {
+      "complete": 0,
+      "harness_failures": 6,
+      "metrics": {},
+      "planned": 6
+    },
+    "ritualistic": {
+      "complete": 0,
+      "harness_failures": 6,
+      "metrics": {},
+      "planned": 6
+    }
+  },
+  "harness_failures": 24,
+  "planned_runs": 24
+}

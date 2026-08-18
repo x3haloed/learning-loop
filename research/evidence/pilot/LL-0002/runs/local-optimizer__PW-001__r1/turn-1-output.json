@@ -1,0 +1,1 @@
+{"probe_choice":"P2","expected_observation":"Succeed","probability":0.67,"decision_relevance":"A new tenant with an underscored header and short value isolates M1: failure supports M1; success rules it out and favors M2 or M3."}

@@ -1,0 +1,50 @@
+{
+  "condition": "no-loop",
+  "elapsed_seconds": 15.27228331565857,
+  "instruction_sha256": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "no-loop__PW-003__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.00010000000000000006,
+    "model_accuracy": 1.0,
+    "next_action_accuracy": 1.0,
+    "preferred_probe": 1.0,
+    "probe_value": 1.0
+  },
+  "status": "complete",
+  "thread_id": "01a015f5-a966-7992-a211-8b90e73b0616",
+  "turn_1": {
+    "decision_relevance": "Directly tests the promotion gate: promotion is justified only if every tenant class has p99 below 250 ms.",
+    "expected_observation": "Held-out workload measurement reports p99 latency for each tenant class, likely revealing whether any class remains at or above 250 ms; the mean improvement alone provides little evidence about this tail objective.",
+    "probability": 0.45,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D2",
+    "lesson": "Aggregate mean improvement can conceal a tenant-specific p99 regression; global promotion requires every tenant class to meet the p99 objective and preserve enterprise non-inferiority.",
+    "model_choice": "M2",
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 0.99,
+      "C2": 0.01,
+      "C3": 0.01
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12564,
+      "output_tokens": 195
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 27534,
+      "output_tokens": 403
+    }
+  },
+  "world_id": "PW-003",
+  "world_sha256": "325d77d1fc6b9161c234b1f0658d91e84a44a98e108315f1de56f0e01b0f7474"
+}

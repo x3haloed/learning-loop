@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-a966-7992-a211-8b90e73b0616"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"expected_observation\":\"Held-out workload measurement reports p99 latency for each tenant class, likely revealing whether any class remains at or above 250 ms; the mean improvement alone provides little evidence about this tail objective.\",\"probability\":0.45,\"decision_relevance\":\"Directly tests the promotion gate: promotion is justified only if every tenant class has p99 below 250 ms.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12564,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":195,"reasoning_output_tokens":99}}

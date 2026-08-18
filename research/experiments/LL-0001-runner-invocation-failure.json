@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LL-0001",
+  "status": "complete",
+  "evaluator_epoch": "EVAL-0001",
+  "candidate_hashes": {
+    "current_loop": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+    "no_loop": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+    "ritualistic": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+    "local_optimizer": "70ef5c8817eb29ddbdfb27f6697c81ca79b99f4ecc51af1e9c69b8477465b837"
+  },
+  "allocation": {
+    "class": "DISCOVERY",
+    "manifest_hash": "dd6e45a34f353dc1fb7a8cd328b61fd2c2f0a42b8644cb4bd56d3e28de94d315"
+  },
+  "environment": {
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "medium",
+    "codex_cli": "0.148.0-alpha.15",
+    "subject_agents_executed": false
+  },
+  "prediction": {
+    "expected_change": "The 24-run pilot will produce structured paired evidence across four instruction conditions.",
+    "mechanism": "Isolated Codex exec sessions with two-turn controlled worlds and fixed output schemas.",
+    "unchanged_guardrails": [
+      "No personal instructions enter subject workspaces.",
+      "No subject sees a hidden oracle.",
+      "Harness failures remain separate from behavioral scores."
+    ],
+    "kill_condition": "More than 25 percent of runs fail for harness reasons."
+  },
+  "raw_evidence": [
+    {
+      "path": "research/evidence/pilot/LL-0001/manifest.json",
+      "sha256": "f97a1b72c571aff42060b3762c7d2d91deaf3b69270b1c17e1e7ff9050eb6de9"
+    },
+    {
+      "path": "research/evidence/pilot/LL-0001/summary.json",
+      "sha256": "ff9264f24e61492374766ca3ee6d9c194b1fd1599736bb20e79458dc891b877c"
+    },
+    {
+      "path": "research/evidence/pilot/LL-0001/content-manifest.json",
+      "sha256": "7d8cd33ade1c5f97d55a6cb51a62df7c54b1ae5d3b2fd7d6c7edf91e7f0bd223"
+    }
+  ],
+  "results": {
+    "planned_runs": 24,
+    "complete_runs": 0,
+    "harness_failures": 24,
+    "common_error": "codex exec rejected the unsupported -a/--ask-for-approval argument before model execution"
+  },
+  "disposition": "rejected"
+}

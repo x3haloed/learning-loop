@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "evaluator_epoch": "EVAL-0002",
+  "status": "designed-not-qualified",
+  "motivating_experiment": "LL-0002",
+  "repairs": [
+    "Balance and randomize hidden mechanisms across subject runs.",
+    "Randomly permute hypothesis labels and presentation order to reduce author-intent leakage.",
+    "Request a posterior distribution over live models rather than a forced single-model choice.",
+    "Score forecast calibration across the balanced allocation, not against one fixed lucky outcome.",
+    "Derive contact value from frozen priors, likelihoods, costs, and expected information gain.",
+    "Permit an investigate-further decision when the selected observation leaves consequential ambiguity.",
+    "Replace ceilinged transfer and proxy worlds with variants that leave at least two plausible actions before contact."
+  ],
+  "qualification_requirements": [
+    "An honest uncertain control must beat a lucky overconfident control across the balanced allocation.",
+    "A contact maximizing expected information gain must beat a salient but non-discriminating contact.",
+    "Relabeling hypotheses must not materially change condition rankings.",
+    "The evaluator must distinguish correct scoped transfer from both global overgeneralization and refusal to transfer.",
+    "The evaluator must distinguish stopping after decisive evidence from premature stopping and ritual continuation."
+  ],
+  "promotion_block": "No intervention may be promoted from LL-0002 scores. EVAL-0002 must first pass synthetic and real-control qualification on a fresh CHALLENGE allocation."
+}

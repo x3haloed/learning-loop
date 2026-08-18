@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LL-0002",
+  "status": "complete",
+  "evaluator_epoch": "EVAL-0001",
+  "candidate_hashes": {
+    "current_loop": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+    "no_loop": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+    "ritualistic": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+    "local_optimizer": "70ef5c8817eb29ddbdfb27f6697c81ca79b99f4ecc51af1e9c69b8477465b837"
+  },
+  "allocation": {
+    "class": "DISCOVERY",
+    "manifest_hash": "dd6e45a34f353dc1fb7a8cd328b61fd2c2f0a42b8644cb4bd56d3e28de94d315"
+  },
+  "environment": {
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "medium",
+    "codex_cli": "0.148.0-alpha.15",
+    "subject_agents_executed": true,
+    "conditions": 4,
+    "worlds": 3,
+    "repetitions": 2
+  },
+  "prediction": {
+    "expected_change": "The live controls will separate on fixed-checkpoint prediction, contact value, transfer, proxy resistance, and restraint.",
+    "mechanism": "Different standing instructions alter which probe subjects choose and how evidence changes their later forecasts and decisions.",
+    "unchanged_guardrails": [
+      "Process artifact counts confer no primary outcome credit.",
+      "Hidden oracles remain outside subject context.",
+      "No pilot score promotes an intervention."
+    ],
+    "kill_condition": "The worlds fail to discriminate controls, or a score rewards behavior not warranted by the evidence available to the subject."
+  },
+  "raw_evidence": [
+    {
+      "path": "research/evidence/pilot/LL-0002/manifest.json",
+      "sha256": "2bcbe5147135b0e3c27e2f830097d40ed95d7f63300ceae16689be157a915b72"
+    },
+    {
+      "path": "research/evidence/pilot/LL-0002/summary.json",
+      "sha256": "46f093cc56f3c2c517e58a11d008cc7b4e729885a255f57743c50af9fb20a8fa"
+    },
+    {
+      "path": "research/evidence/pilot/LL-0002/content-manifest.json",
+      "sha256": "495fa1d8b45bcdd93033ad59ca183511702c44f6d96ea4bf2aad520dc82afe7d"
+    }
+  ],
+  "results": {
+    "planned_runs": 24,
+    "complete_runs": 24,
+    "harness_failures": 0,
+    "estimated_api_cost_usd": 0.9432786,
+    "interpretation": "The live runner works, but EVAL-0001 failed qualification on the live transcripts. Apparent incumbent gains are not valid intervention evidence."
+  },
+  "disposition": "evaluator-repair"
+}

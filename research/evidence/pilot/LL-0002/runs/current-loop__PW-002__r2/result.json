@@ -1,0 +1,50 @@
+{
+  "condition": "current-loop",
+  "elapsed_seconds": 13.617491960525513,
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 2,
+  "run_id": "current-loop__PW-002__r2",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.00010000000000000006,
+    "model_accuracy": 1.0,
+    "next_action_accuracy": 1.0,
+    "preferred_probe": 1.0,
+    "probe_value": 1.0
+  },
+  "status": "complete",
+  "thread_id": "01a015f6-2c61-7932-937e-400f430ad57e",
+  "turn_1": {
+    "decision_relevance": "Directly discriminates M2 from M1 and provides a causal explanation for the conflicting boundary observations; more useful than repeating v5 or reading a generic glossary.",
+    "expected_observation": "The scheduler diff will show v4 uses a strict attempt < limit check while v5 uses an inclusive attempt <= limit check, supporting version-specific behavior.",
+    "probability": 0.85,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D2",
+    "lesson": "Retry comparison semantics are scoped by firmware scheduler configuration: v4 and v6 with compatibility_mode off use attempt < limit, while v5 and v6 with compatibility_mode on use attempt <= limit.",
+    "model_choice": "M2",
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 0.01,
+      "C2": 0.99,
+      "C3": 0.01
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 14371,
+      "output_tokens": 147
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 31111,
+      "output_tokens": 329
+    }
+  },
+  "world_id": "PW-002",
+  "world_sha256": "804b61fdf7862d89c333768fe035a28543f7cf2a2a881e2420daa739ed926cc4"
+}

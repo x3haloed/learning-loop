@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-e301-78e3-bcf8-765f105b0bcf"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"expected_observation\":\"Fail if M1 is true; otherwise succeed. Under equal prior probability across M1–M3, success probability is 0.67.\",\"probability\":0.67,\"decision_relevance\":\"Directly isolates underscore handling in a new tenant with a short value: failure strongly supports M1; success rules out M1 and leaves M2 versus M3.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12600,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":449,"reasoning_output_tokens":352}}

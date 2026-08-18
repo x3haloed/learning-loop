@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f6-6189-7250-ab2d-a8ae275b59fc"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"expected_observation\":\"Held-out p99 measurements by tenant class will reveal whether every class is below 250 ms; the mean improvement alone provides weak evidence, so I predict a 35% probability that all classes satisfy the objective.\",\"probability\":0.35,\"decision_relevance\":\"Directly tests the customer promotion gate and can block promotion if any tenant class exceeds the p99 limit.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14324,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":189,"reasoning_output_tokens":91}}

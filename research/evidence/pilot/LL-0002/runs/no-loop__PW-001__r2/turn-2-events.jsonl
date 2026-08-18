@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-e301-78e3-bcf8-765f105b0bcf"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_choice\":\"M3\",\"probabilities\":{\"C1\":1,\"C2\":0,\"C3\":0.5},\"decision\":\"D3\",\"lesson\":\"P2 success rules out universal underscore rejection; the evidence currently favors M3, but M2 remains viable because old-tenant state was not isolated.\",\"next_action\":\"N2\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":27824,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":1031,"reasoning_output_tokens":852}}

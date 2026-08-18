@@ -1,0 +1,1 @@
+{"probe_choice":"P2","expected_observation":"Succeed","probability":0.67,"decision_relevance":"P2 isolates the underscore condition in a new tenant with a short value. Success weakens M1 and leaves M2/M3; failure strongly supports M1."}

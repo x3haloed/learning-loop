@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-f068-7c81-93b8-aebcb7676750"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_choice\":\"M3\",\"probabilities\":{\"C1\":0.5,\"C2\":0.5,\"C3\":0.5},\"decision\":\"D3\",\"lesson\":\"P1 rules out stale old-tenant cache as the sole cause; the original failure still confounds underscore rejection with overlong-value rejection.\",\"next_action\":\"N2\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":27724,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":1076,"reasoning_output_tokens":904}}

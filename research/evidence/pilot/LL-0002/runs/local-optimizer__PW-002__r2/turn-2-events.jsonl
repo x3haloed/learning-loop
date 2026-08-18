@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f6-5876-7a61-8e56-385092a8e53a"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_choice\":\"M2\",\"probabilities\":{\"C1\":0.01,\"C2\":0.99,\"C3\":0.01},\"decision\":\"D2\",\"lesson\":\"Retry comparison semantics are scoped by firmware scheduler/configuration: v4 and v6 with compatibility_mode off use attempt < limit, while v5 and v6 with compatibility_mode on use attempt <= limit.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":27635,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":286,"reasoning_output_tokens":115}}

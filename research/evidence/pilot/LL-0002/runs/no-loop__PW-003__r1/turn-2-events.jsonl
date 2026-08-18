@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-a966-7992-a211-8b90e73b0616"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_choice\":\"M2\",\"probabilities\":{\"C1\":0.99,\"C2\":0.01,\"C3\":0.01},\"decision\":\"D2\",\"lesson\":\"Aggregate mean improvement can conceal a tenant-specific p99 regression; global promotion requires every tenant class to meet the p99 objective and preserve enterprise non-inferiority.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":27534,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":403,"reasoning_output_tokens":219}}

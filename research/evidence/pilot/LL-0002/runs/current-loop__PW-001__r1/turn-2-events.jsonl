@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a015f5-110f-76c3-a0d7-48b327083926"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_choice\":\"M3\",\"probabilities\":{\"C1\":1,\"C2\":0,\"C3\":1},\"decision\":\"D3\",\"lesson\":\"A new tenant succeeded with an underscored header and short value, ruling out universal underscore rejection; length-based rejection remains the best explanation, with old-tenant cache staleness still unresolved.\",\"next_action\":\"N2\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":31087,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":951,"reasoning_output_tokens":772}}

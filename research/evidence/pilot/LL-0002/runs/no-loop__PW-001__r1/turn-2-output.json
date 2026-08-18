@@ -1,0 +1,1 @@
+{"model_choice":"M2","probabilities":{"C1":1,"C2":0,"C3":0.5},"decision":"D2","lesson":"P2 succeeded, ruling out universal underscore rejection; stale old-tenant cache and over-8-character rejection remain equally plausible.","next_action":"N2"}

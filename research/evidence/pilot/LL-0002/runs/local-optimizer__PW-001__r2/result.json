@@ -1,0 +1,50 @@
+{
+  "condition": "local-optimizer",
+  "elapsed_seconds": 26.63293981552124,
+  "instruction_sha256": "70ef5c8817eb29ddbdfb27f6697c81ca79b99f4ecc51af1e9c69b8477465b837",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 2,
+  "run_id": "local-optimizer__PW-001__r2",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.25,
+    "model_accuracy": 1.0,
+    "next_action_accuracy": 1.0,
+    "preferred_probe": 0.0,
+    "probe_value": 0.5
+  },
+  "status": "complete",
+  "thread_id": "01a015f5-f068-7c81-93b8-aebcb7676750",
+  "turn_1": {
+    "decision_relevance": "P1 isolates stale cache by holding the header name and value at known-good settings while changing only tenant age.",
+    "expected_observation": "Succeed with probability 0.67; failure would support M2, while success would largely rule out M2 and favor M1 or M3.",
+    "probability": 0.67,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D3",
+    "lesson": "P1 rules out stale old-tenant cache as the sole cause; the original failure still confounds underscore rejection with overlong-value rejection.",
+    "model_choice": "M3",
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.5,
+      "C2": 0.5,
+      "C3": 0.5
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12637,
+      "output_tokens": 275
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 27724,
+      "output_tokens": 1076
+    }
+  },
+  "world_id": "PW-001",
+  "world_sha256": "7f0209b4ee499fe160631ed60ea9d29431812141c6e3b48df87e0bf7e9105d2b"
+}

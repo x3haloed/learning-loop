@@ -1,0 +1,1 @@
+{"probe_choice":"P3","positive_probability":0.5,"decision_relevance":"P3 has the greatest expected information gain because it tests the highest-prior model (M2) exclusively; with equal costs, it most reduces uncertainty."}

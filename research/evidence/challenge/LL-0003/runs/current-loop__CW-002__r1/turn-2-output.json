@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0,"M2":1,"M3":0},"probabilities":{"C1":0,"C2":0,"C3":1},"decision":"D2","lesson":"P1 was positive, and its signature occurs only under M2; therefore M2 is fully supported and its intervention is justified.","next_action":"N1"}

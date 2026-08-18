@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160e-8e43-7e90-ae92-40e8f0d8a976"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"P2 has the greatest expected information gain because its positive result uniquely indicates M3, the highest-prior hypothesis; it directly tests whether the apparent metric gain is measurement noise versus a customer-relevant outcome.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12792,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":241,"reasoning_output_tokens":169}}

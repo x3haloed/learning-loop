@@ -1,0 +1,57 @@
+{
+  "condition": "no-loop",
+  "elapsed_seconds": 15.626313209533691,
+  "family": "proxy",
+  "instruction_sha256": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "no-loop__CW-012__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.17333333333333334,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.10666666666666669,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0160f-4215-7f20-977d-8d9da64b3376",
+  "turn_1": {
+    "decision_relevance": "P3 has the greatest expected information gain because its positive result uniquely identifies M2, whose prior probability is 0.50; the binary outcome entropy is maximized at 0.5. A positive result confirms the aggregate hides a subgroup regression, while a negative result rules out M2 and reallocates probability to M1/M3.",
+    "positive_probability": 0.5,
+    "probe_choice": "P3"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P3 was negative, ruling out M2 while leaving M1 and M3 plausible; no intervention reaches the 0.80 threshold.",
+    "model_posterior": {
+      "M1": 0.4,
+      "M2": 0.0,
+      "M3": 0.6
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.6,
+      "C2": 1.0,
+      "C3": 0.6
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12761,
+      "output_tokens": 277
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 28033,
+      "output_tokens": 487
+    }
+  },
+  "world_id": "CW-012",
+  "world_sha256": "1ab65020a640d37884d889da1fde8f476e30dfd8e76b31a3e36b398055dec978"
+}

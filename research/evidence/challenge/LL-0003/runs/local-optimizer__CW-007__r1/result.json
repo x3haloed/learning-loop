@@ -1,0 +1,57 @@
+{
+  "condition": "local-optimizer",
+  "elapsed_seconds": 17.016528844833374,
+  "family": "transfer",
+  "instruction_sha256": "70ef5c8817eb29ddbdfb27f6697c81ca79b99f4ecc51af1e9c69b8477465b837",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "local-optimizer__CW-007__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.30250000000000005
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0160e-0489-7321-bd9e-a99abe305f62",
+  "turn_1": {
+    "decision_relevance": "P1 has the greatest expected information gain per unit cost: a positive result uniquely identifies M1, while a negative result eliminates the highest-prior model and sharply narrows the decision to M2 versus M3.",
+    "positive_probability": 0.45,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D1",
+    "lesson": "P1 was positive, uniquely supporting M1; the old rule transfers globally.",
+    "model_posterior": {
+      "M1": 1,
+      "M2": 0,
+      "M3": 0
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 0
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12800,
+      "output_tokens": 405
+    },
+    "turn_2": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 28239,
+      "output_tokens": 566
+    }
+  },
+  "world_id": "CW-007",
+  "world_sha256": "d68ccf97c0746773c53f493af2e0a9cff12e27d8d3ed0ab4ecec55ee43bf0d79"
+}

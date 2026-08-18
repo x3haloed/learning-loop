@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160c-66a4-7a73-a571-5e65762253c3"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":1,\"M2\":0,\"M3\":0},\"probabilities\":{\"C1\":1,\"C2\":1,\"C3\":0},\"decision\":\"D1\",\"lesson\":\"P2 was positive, and its signature is exclusive to M1; therefore M1 is sufficiently supported for intervention.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":27876,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":513,"reasoning_output_tokens":364}}

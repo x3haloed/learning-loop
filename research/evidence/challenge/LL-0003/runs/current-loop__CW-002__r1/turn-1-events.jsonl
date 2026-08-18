@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160c-a836-7783-b562-d62677e44b6b"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"positive_probability\":0.5,\"decision_relevance\":\"P1 has the greatest expected information gain per unit cost: it tests the highest-prior mechanism (M2), yielding about 1.00 bit of expected information versus about 0.88 for P2 and 0.72 for P3.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14518,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":308,"reasoning_output_tokens":226}}

@@ -1,0 +1,1 @@
+{"probe_choice":"P3","positive_probability":0.5,"decision_relevance":"P3 has the greatest expected information gain per unit cost because a positive result uniquely supports M2, the subgroup-regression hypothesis; a negative result shifts probability toward M1 or M3. Its expected information gain is approximately 0.693 nats, exceeding P2 (~0.611) and P1 (~0.500)."}

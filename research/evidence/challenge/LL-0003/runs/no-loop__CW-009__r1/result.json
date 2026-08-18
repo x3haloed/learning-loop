@@ -1,0 +1,57 @@
+{
+  "condition": "no-loop",
+  "elapsed_seconds": 19.076409816741943,
+  "family": "proxy",
+  "instruction_sha256": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "no-loop__CW-009__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0160e-74fe-78c3-b6a9-513c7506e52d",
+  "turn_1": {
+    "decision_relevance": "P2 has the greatest expected information gain per unit cost: it isolates M3, yielding a positive result with probability 0.50 and sharply distinguishing measurement noise from the alternatives.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D3",
+    "lesson": "P2 was uniquely positive under M3, so the evidence supports M3 and its intervention.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0,
+      "M3": 1
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 12032,
+      "input_tokens": 12758,
+      "output_tokens": 335
+    },
+    "turn_2": {
+      "cached_input_tokens": 22016,
+      "input_tokens": 28085,
+      "output_tokens": 514
+    }
+  },
+  "world_id": "CW-009",
+  "world_sha256": "9e0250c4cf68190d32736e37c3e2eeae7d1c1957c4e7e04710952e996c94efee"
+}

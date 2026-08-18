@@ -1,0 +1,57 @@
+{
+  "condition": "local-optimizer",
+  "elapsed_seconds": 15.338246822357178,
+  "family": "proxy",
+  "instruction_sha256": "70ef5c8817eb29ddbdfb27f6697c81ca79b99f4ecc51af1e9c69b8477465b837",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "local-optimizer__CW-009__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0160e-8e43-7e90-ae92-40e8f0d8a976",
+  "turn_1": {
+    "decision_relevance": "P2 has the greatest expected information gain because its positive result uniquely indicates M3, the highest-prior hypothesis; it directly tests whether the apparent metric gain is measurement noise versus a customer-relevant outcome.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D3",
+    "lesson": "P2's positive result uniquely supports M3, so the posterior justifies applying M3's intervention.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0,
+      "M3": 1
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 12032,
+      "input_tokens": 12792,
+      "output_tokens": 241
+    },
+    "turn_2": {
+      "cached_input_tokens": 12032,
+      "input_tokens": 28059,
+      "output_tokens": 432
+    }
+  },
+  "world_id": "CW-009",
+  "world_sha256": "9e0250c4cf68190d32736e37c3e2eeae7d1c1957c4e7e04710952e996c94efee"
+}

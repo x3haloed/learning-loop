@@ -1,0 +1,1 @@
+{"probe_choice":"P2","positive_probability":0.5,"decision_relevance":"P2 has the greatest expected information gain because its positive result uniquely indicates M3, the highest-prior hypothesis; it directly tests whether the apparent metric gain is measurement noise versus a customer-relevant outcome."}

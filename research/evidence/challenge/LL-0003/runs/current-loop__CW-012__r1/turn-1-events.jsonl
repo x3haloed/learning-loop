@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160f-232d-7843-902d-5438e3f618d5"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P3\",\"positive_probability\":0.5,\"decision_relevance\":\"P3 has the greatest expected information gain because its positive result uniquely identifies M2, the highest-prior hypothesis, yielding a maximally balanced 0.5/0.5 split. It directly tests whether the aggregate hides a subgroup regression.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14521,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":199,"reasoning_output_tokens":119}}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160c-e92a-7931-8426-807220c9af74"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"positive_probability\":0.3,\"decision_relevance\":\"P1 has the greatest expected information gain per unit cost because it isolates the 0.30-prior mechanism and most reduces uncertainty among the three hypotheses.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12755,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":357,"reasoning_output_tokens":295}}

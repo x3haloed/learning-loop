@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop",
+  "elapsed_seconds": 18.77053213119507,
+  "family": "proxy",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop__CW-011__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.10666666666666669,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.10666666666666669,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0160e-d9d7-71a3-bd0c-bf6cf35667e6",
+  "turn_1": {
+    "decision_relevance": "P1 maximizes expected information gain per unit cost (approximately 1.00 bit). A positive result uniquely supports M1, testing whether the visible aggregate is a faithful proxy for the customer outcome; a negative result focuses uncertainty on noise versus subgroup regression.",
+    "positive_probability": 0.5,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P1 was negative, ruling out M1's unique signature; M2 and M3 remain plausible at 0.60 and 0.40, so no intervention reaches the 0.80 threshold.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0.6,
+      "M3": 0.4
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.6,
+      "C2": 0.4,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 14524,
+      "output_tokens": 363
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 31645,
+      "output_tokens": 640
+    }
+  },
+  "world_id": "CW-011",
+  "world_sha256": "03235fc0b7e3d4b22c4b8930b0b7310ad2adaf457e1855ea9fac74ff5813924c"
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160e-56aa-7613-8b63-6d90c9d86bdd"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"Highest expected information gain per unit cost (~0.694 nats); it directly tests whether the apparent gain is noise versus a faithful proxy or hidden subgroup regression.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14521,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":328,"reasoning_output_tokens":265}}

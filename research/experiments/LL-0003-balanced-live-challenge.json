@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LL-0003",
+  "status": "complete",
+  "evaluator_epoch": "EVAL-0002",
+  "candidate_hashes": {
+    "current_loop": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+    "no_loop": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+    "ritualistic": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+    "local_optimizer": "70ef5c8817eb29ddbdfb27f6697c81ca79b99f4ecc51af1e9c69b8477465b837"
+  },
+  "allocation": {
+    "class": "CHALLENGE",
+    "manifest_hash": "24dfda5211edd58187e1ed1c216007e43549bdd1d6aafaaf52153ac8956b0791"
+  },
+  "environment": {
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "medium",
+    "codex_cli": "0.148.0-alpha.15",
+    "subject_agents_executed": true,
+    "conditions": 4,
+    "worlds": 12,
+    "repetitions": 1,
+    "planned_runs": 48,
+    "complete_runs": 48,
+    "harness_failures": 0
+  },
+  "prediction": {
+    "expected_change": "Balanced hidden truth and exact likelihoods will separate evidence-relative updating from lucky overconfidence, negative transfer, ritual continuation, and local proxy optimization.",
+    "mechanism": "Standing instructions change contact selection, posterior updating, calibrated prediction, and restraint after the same controlled evidence.",
+    "unchanged_guardrails": [
+      "Hidden truth and scoring remain unavailable to subjects.",
+      "No process artifact receives primary outcome credit.",
+      "No intervention is promoted without adversarial transcript review and fresh confirmation."
+    ],
+    "kill_condition": "The evaluator rewards unwarranted certainty, the controls fail to separate, endpoints ceiling, or explicit response machinery masks the instruction manipulation."
+  },
+  "raw_evidence": [
+    {
+      "path": "research/evidence/challenge/LL-0003/manifest.json",
+      "sha256": "c6ddd07720f0dfec5fb3c3f23c59b359804b649d7bf22b51af1ad1b954ee3a5e"
+    },
+    {
+      "path": "research/evidence/challenge/LL-0003/summary.json",
+      "sha256": "303c8de2d6a04abdfbea7e4ac83a9c28ce64ba46efb64f198ca191a09cbff6ce"
+    },
+    {
+      "path": "research/evidence/challenge/LL-0003/content-manifest.json",
+      "sha256": "7ef11c87fd0269e0bf251b537632afde6f43d54fcdd45f7b353cf5205acc75bd"
+    }
+  ],
+  "results": {
+    "input_tokens": 2024017,
+    "cached_input_tokens": 516096,
+    "output_tokens": 38777,
+    "estimated_api_cost_usd": 1.9,
+    "interpretation": "The balanced evaluator prevented lucky overconfidence, but explicit task machinery dominated the instruction manipulation and two action endpoints ceilinged. No condition showed robust metric dominance."
+  },
+  "disposition": "conditional"
+}

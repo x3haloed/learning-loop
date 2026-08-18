@@ -1,0 +1,1 @@
+{"probe_choice":"P2","positive_probability":0.45,"decision_relevance":"P2 targets the most probable mechanism (M1), yielding the greatest expected information gain per equal unit cost; a positive result identifies M1, while a negative result narrows the possibilities to M2 or M3."}

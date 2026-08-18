@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160e-3920-7ab0-b64e-51833469a9d8"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"P2 has the greatest expected information gain per unit cost: its 0.50 positive probability most evenly separates M1 from M2/M3, maximizing uncertainty reduction.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12811,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":391,"reasoning_output_tokens":326}}

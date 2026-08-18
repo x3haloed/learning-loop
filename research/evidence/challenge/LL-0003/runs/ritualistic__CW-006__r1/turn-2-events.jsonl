@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160d-b6c6-7063-9b9d-348f816dd3db"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":0,\"M2\":0,\"M3\":1},\"probabilities\":{\"C1\":0,\"C2\":1,\"C3\":1},\"decision\":\"D3\",\"lesson\":\"P2 was positive, uniquely supporting M3; its intervention is justified above the 0.80 threshold.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":28169,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":493,"reasoning_output_tokens":350}}

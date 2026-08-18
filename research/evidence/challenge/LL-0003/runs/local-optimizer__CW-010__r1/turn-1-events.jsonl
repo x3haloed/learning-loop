@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160e-ca29-7820-98dd-bffd0219befc"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"positive_probability\":0.45,\"decision_relevance\":\"P1 has the greatest expected information gain because its positive probability (0.45) is closest to 0.5, maximizing uncertainty reduction among equal-cost contacts; a positive result supports M1.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12795,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":177,"reasoning_output_tokens":106}}

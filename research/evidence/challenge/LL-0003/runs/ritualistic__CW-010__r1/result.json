@@ -1,0 +1,57 @@
+{
+  "condition": "ritualistic",
+  "elapsed_seconds": 18.459600925445557,
+  "family": "proxy",
+  "instruction_sha256": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "ritualistic__CW-010__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.30250000000000005
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0160e-c983-7ad3-a621-1d62784d77bd",
+  "turn_1": {
+    "decision_relevance": "P1 has the same perfect-discrimination information gain per unit cost as P2 and P3; selecting it breaks the tie in favor of the most likely positive result and tests whether the visible aggregate is a faithful proxy for the customer outcome.",
+    "positive_probability": 0.45,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D1",
+    "lesson": "P1 was positive, uniquely supporting M1; the aggregate is treated as a faithful proxy under the stated evaluator model.",
+    "model_posterior": {
+      "M1": 1,
+      "M2": 0,
+      "M3": 0
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 0
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12806,
+      "output_tokens": 250
+    },
+    "turn_2": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 28096,
+      "output_tokens": 479
+    }
+  },
+  "world_id": "CW-010",
+  "world_sha256": "4412a9d36a0fd1bc78dea02c65ca201dc6c090c494d0c11a1994161c6070a0ff"
+}

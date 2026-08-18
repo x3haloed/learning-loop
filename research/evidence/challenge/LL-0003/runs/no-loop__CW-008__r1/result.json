@@ -1,0 +1,57 @@
+{
+  "condition": "no-loop",
+  "elapsed_seconds": 23.08461880683899,
+  "family": "transfer",
+  "instruction_sha256": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "no-loop__CW-008__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.054421768702040824,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.054421768702040824,
+    "posterior_l1_from_bayes": 0.22857142860000002,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0160e-1ad9-75d0-b152-09323fd27e1a",
+  "turn_1": {
+    "decision_relevance": "P2 has the greatest expected information gain (1.00 bit) because its positive result uniquely identifies M1, the globally transferable rule.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P2 was negative, ruling out M1; M2 remains more likely than M3, but neither reaches the 0.80 intervention threshold.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0.7142857143,
+      "M3": 0.2857142857
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.7142857143,
+      "C2": 0.2857142857,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12763,
+      "output_tokens": 638
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 28398,
+      "output_tokens": 947
+    }
+  },
+  "world_id": "CW-008",
+  "world_sha256": "048ca8ef86ec3cbcc3c94ad86dbf63df65f41cc60e44f70c2330e7d98675ee4a"
+}

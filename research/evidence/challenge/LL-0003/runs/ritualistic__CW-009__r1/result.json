@@ -1,0 +1,57 @@
+{
+  "condition": "ritualistic",
+  "elapsed_seconds": 16.853832960128784,
+  "family": "proxy",
+  "instruction_sha256": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "ritualistic__CW-009__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0160e-87a6-7491-b4a1-ad2d41d59c0a",
+  "turn_1": {
+    "decision_relevance": "Highest expected information gain per unit cost. A positive result identifies M3 (measurement noise); a negative result narrows uncertainty to M1 versus M2, directly informing whether to trust the aggregate or investigate subgroup regression.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D3",
+    "lesson": "P2 was positive and is uniquely compatible with M3, so the posterior supports M3 decisively; its checkpoint predictions are C1 fail, C2 pass, and C3 pass.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0,
+      "M3": 1
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 12806,
+      "output_tokens": 333
+    },
+    "turn_2": {
+      "cached_input_tokens": 19968,
+      "input_tokens": 28179,
+      "output_tokens": 580
+    }
+  },
+  "world_id": "CW-009",
+  "world_sha256": "9e0250c4cf68190d32736e37c3e2eeae7d1c1957c4e7e04710952e996c94efee"
+}

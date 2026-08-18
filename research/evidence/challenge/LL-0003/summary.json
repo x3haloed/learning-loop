@@ -1,0 +1,195 @@
+{
+  "complete_runs": 48,
+  "conditions": {
+    "current-loop": {
+      "complete": 12,
+      "families": {
+        "diagnostic": {
+          "decision_accuracy": 1.0,
+          "fixed_checkpoint_brier": 0.08333333333333333,
+          "next_action_accuracy": 1.0,
+          "posterior_brier": 0.0,
+          "posterior_l1_from_bayes": 0.0,
+          "preferred_probe": 1.0,
+          "probe_information_ratio": 1.0,
+          "probe_prediction_brier": 0.263125
+        },
+        "proxy": {
+          "decision_accuracy": 1.0,
+          "fixed_checkpoint_brier": 0.053333333333333344,
+          "next_action_accuracy": 1.0,
+          "posterior_brier": 0.053333333333333344,
+          "posterior_l1_from_bayes": 0.0,
+          "preferred_probe": 1.0,
+          "probe_information_ratio": 1.0,
+          "probe_prediction_brier": 0.263125
+        },
+        "transfer": {
+          "decision_accuracy": 1.0,
+          "fixed_checkpoint_brier": 0.04027208163266668,
+          "next_action_accuracy": 1.0,
+          "posterior_brier": 0.04027208163266668,
+          "posterior_l1_from_bayes": 1.428571428513381e-07,
+          "preferred_probe": 0.75,
+          "probe_information_ratio": 0.9703227248076731,
+          "probe_prediction_brier": 0.263125
+        }
+      },
+      "harness_failures": 0,
+      "metrics": {
+        "decision_accuracy": 1.0,
+        "fixed_checkpoint_brier": 0.058979582766444445,
+        "next_action_accuracy": 1.0,
+        "posterior_brier": 0.031201804988666676,
+        "posterior_l1_from_bayes": 4.76190476171127e-08,
+        "preferred_probe": 0.9166666666666666,
+        "probe_information_ratio": 0.990107574935891,
+        "probe_prediction_brier": 0.263125
+      },
+      "planned": 12
+    },
+    "local-optimizer": {
+      "complete": 12,
+      "families": {
+        "diagnostic": {
+          "decision_accuracy": 1.0,
+          "fixed_checkpoint_brier": 0.0,
+          "next_action_accuracy": 1.0,
+          "posterior_brier": 0.0,
+          "posterior_l1_from_bayes": 0.0,
+          "preferred_probe": 1.0,
+          "probe_information_ratio": 1.0,
+          "probe_prediction_brier": 0.263125
+        },
+        "proxy": {
+          "decision_accuracy": 1.0,
+          "fixed_checkpoint_brier": 0.09177083333333334,
+          "next_action_accuracy": 1.0,
+          "posterior_brier": 0.09177083333333334,
+          "posterior_l1_from_bayes": 0.11249999999999999,
+          "preferred_probe": 1.0,
+          "probe_information_ratio": 1.0,
+          "probe_prediction_brier": 0.263125
+        },
+        "transfer": {
+          "decision_accuracy": 1.0,
+          "fixed_checkpoint_brier": 0.026666666666666672,
+          "next_action_accuracy": 1.0,
+          "posterior_brier": 0.026666666666666672,
+          "posterior_l1_from_bayes": 0.0,
+          "preferred_probe": 1.0,
+          "probe_information_ratio": 1.0,
+          "probe_prediction_brier": 0.263125
+        }
+      },
+      "harness_failures": 0,
+      "metrics": {
+        "decision_accuracy": 1.0,
+        "fixed_checkpoint_brier": 0.03947916666666667,
+        "next_action_accuracy": 1.0,
+        "posterior_brier": 0.03947916666666667,
+        "posterior_l1_from_bayes": 0.0375,
+        "preferred_probe": 1.0,
+        "probe_information_ratio": 1.0,
+        "probe_prediction_brier": 0.263125
+      },
+      "planned": 12
+    },
+    "no-loop": {
+      "complete": 12,
+      "families": {
+        "diagnostic": {
+          "decision_accuracy": 1.0,
+          "fixed_checkpoint_brier": 0.09693874829933333,
+          "next_action_accuracy": 1.0,
+          "posterior_brier": 0.013605414966000004,
+          "posterior_l1_from_bayes": 1.428571428513381e-07,
+          "preferred_probe": 0.75,
+          "probe_information_ratio": 0.9703227248076731,
+          "probe_prediction_brier": 0.22312500000000002
+        },
+        "proxy": {
+          "decision_accuracy": 1.0,
+          "fixed_checkpoint_brier": 0.07,
+          "next_action_accuracy": 1.0,
+          "posterior_brier": 0.053333333333333344,
+          "posterior_l1_from_bayes": 0.0,
+          "preferred_probe": 1.0,
+          "probe_information_ratio": 1.0,
+          "probe_prediction_brier": 0.263125
+        },
+        "transfer": {
+          "decision_accuracy": 1.0,
+          "fixed_checkpoint_brier": 0.013605442175510206,
+          "next_action_accuracy": 1.0,
+          "posterior_brier": 0.013605442175510206,
+          "posterior_l1_from_bayes": 0.057142857150000004,
+          "preferred_probe": 1.0,
+          "probe_information_ratio": 1.0,
+          "probe_prediction_brier": 0.263125
+        }
+      },
+      "harness_failures": 0,
+      "metrics": {
+        "decision_accuracy": 1.0,
+        "fixed_checkpoint_brier": 0.06018139682494785,
+        "next_action_accuracy": 1.0,
+        "posterior_brier": 0.02684806349161452,
+        "posterior_l1_from_bayes": 0.019047666669047617,
+        "preferred_probe": 0.9166666666666666,
+        "probe_information_ratio": 0.990107574935891,
+        "probe_prediction_brier": 0.24979166666666672
+      },
+      "planned": 12
+    },
+    "ritualistic": {
+      "complete": 12,
+      "families": {
+        "diagnostic": {
+          "decision_accuracy": 1.0,
+          "fixed_checkpoint_brier": 0.0,
+          "next_action_accuracy": 1.0,
+          "posterior_brier": 0.0,
+          "posterior_l1_from_bayes": 0.0,
+          "preferred_probe": 1.0,
+          "probe_information_ratio": 1.0,
+          "probe_prediction_brier": 0.263125
+        },
+        "proxy": {
+          "decision_accuracy": 1.0,
+          "fixed_checkpoint_brier": 0.09177083333333334,
+          "next_action_accuracy": 1.0,
+          "posterior_brier": 0.09177083333333334,
+          "posterior_l1_from_bayes": 0.11249999999999999,
+          "preferred_probe": 1.0,
+          "probe_information_ratio": 1.0,
+          "probe_prediction_brier": 0.263125
+        },
+        "transfer": {
+          "decision_accuracy": 1.0,
+          "fixed_checkpoint_brier": 0.10000000000000002,
+          "next_action_accuracy": 1.0,
+          "posterior_brier": 0.026666666666666672,
+          "posterior_l1_from_bayes": 0.0,
+          "preferred_probe": 1.0,
+          "probe_information_ratio": 1.0,
+          "probe_prediction_brier": 0.263125
+        }
+      },
+      "harness_failures": 0,
+      "metrics": {
+        "decision_accuracy": 1.0,
+        "fixed_checkpoint_brier": 0.06392361111111113,
+        "next_action_accuracy": 1.0,
+        "posterior_brier": 0.03947916666666667,
+        "posterior_l1_from_bayes": 0.0375,
+        "preferred_probe": 1.0,
+        "probe_information_ratio": 1.0,
+        "probe_prediction_brier": 0.263125
+      },
+      "planned": 12
+    }
+  },
+  "harness_failures": 0,
+  "planned_runs": 48
+}

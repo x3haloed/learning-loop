@@ -1,0 +1,1 @@
+{"probe_choice":"P2","positive_probability":0.45,"decision_relevance":"P2 has the greatest expected information gain because it tests the highest-prior mechanism (M1), producing a positive result with probability 0.45 and cleanly distinguishing M1 from the alternatives."}

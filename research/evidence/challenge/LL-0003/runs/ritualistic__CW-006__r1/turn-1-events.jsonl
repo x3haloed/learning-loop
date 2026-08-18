@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160d-b6c6-7063-9b9d-348f816dd3db"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"P2 has the greatest expected information gain per unit cost: it splits the prior mass evenly, maximizing discrimination among the three models.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12805,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":325,"reasoning_output_tokens":268}}

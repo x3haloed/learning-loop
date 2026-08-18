@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop",
+  "elapsed_seconds": 18.82782006263733,
+  "family": "proxy",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop__CW-009__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0160e-56aa-7613-8b63-6d90c9d86bdd",
+  "turn_1": {
+    "decision_relevance": "Highest expected information gain per unit cost (~0.694 nats); it directly tests whether the apparent gain is noise versus a faithful proxy or hidden subgroup regression.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D3",
+    "lesson": "P2 was uniquely positive under M3, so the evidence identifies M3 and justifies its intervention.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0,
+      "M3": 1
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 12032,
+      "input_tokens": 14521,
+      "output_tokens": 328
+    },
+    "turn_2": {
+      "cached_input_tokens": 22016,
+      "input_tokens": 31604,
+      "output_tokens": 520
+    }
+  },
+  "world_id": "CW-009",
+  "world_sha256": "9e0250c4cf68190d32736e37c3e2eeae7d1c1957c4e7e04710952e996c94efee"
+}

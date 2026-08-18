@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0.285714,"M2":0.714286,"M3":0},"probabilities":{"C1":1,"C2":0.285714,"C3":0.714286},"decision":"D4","lesson":"P2 was negative, eliminating M3's unique signature; M2 is now most likely, but its posterior is below 0.80, so more evidence is justified.","next_action":"N2"}

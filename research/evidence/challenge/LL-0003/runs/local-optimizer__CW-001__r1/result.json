@@ -1,0 +1,57 @@
+{
+  "condition": "local-optimizer",
+  "elapsed_seconds": 17.144036769866943,
+  "family": "diagnostic",
+  "instruction_sha256": "70ef5c8817eb29ddbdfb27f6697c81ca79b99f4ecc51af1e9c69b8477465b837",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "local-optimizer__CW-001__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0160c-66cd-78a2-8555-01bcd6944863",
+  "turn_1": {
+    "decision_relevance": "P2 has the greatest expected information gain because its positive probability is 0.50, maximizing the entropy of the deterministic test outcome; a positive result identifies M1, while a negative result narrows the cause to M3 or M2.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D1",
+    "lesson": "P2 was positive, and its signature is exclusive to M1, so M1 is justified for intervention.",
+    "model_posterior": {
+      "M1": 1,
+      "M2": 0,
+      "M3": 0
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 0
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12584,
+      "output_tokens": 250
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 27863,
+      "output_tokens": 445
+    }
+  },
+  "world_id": "CW-001",
+  "world_sha256": "ab804199bb19f847ad461e658fe0b5654651d468ad5c00f22e12d6569dd2f9fd"
+}

@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":1,"M2":0,"M3":0},"probabilities":{"C1":1,"C2":1,"C3":0},"decision":"D1","lesson":"P2 was positive, and that signature occurs only under M1; the posterior therefore assigns all probability to M1. Apply M1's intervention.","next_action":"N1"}

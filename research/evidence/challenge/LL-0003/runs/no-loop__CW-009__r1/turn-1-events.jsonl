@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160e-74fe-78c3-b6a9-513c7506e52d"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"P2 has the greatest expected information gain per unit cost: it isolates M3, yielding a positive result with probability 0.50 and sharply distinguishing measurement noise from the alternatives.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12758,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":335,"reasoning_output_tokens":268}}

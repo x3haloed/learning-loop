@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160f-11a3-7de1-935d-e5bb767e17cd"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"positive_probability\":0.5,\"decision_relevance\":\"P1 has the greatest expected information gain per unit cost because its positive result uniquely confirms M1, the most probable model, while a negative result narrows belief to M2/M3.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12798,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":274,"reasoning_output_tokens":205}}

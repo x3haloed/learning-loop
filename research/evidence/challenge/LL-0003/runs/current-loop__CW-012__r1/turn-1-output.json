@@ -1,0 +1,1 @@
+{"probe_choice":"P3","positive_probability":0.5,"decision_relevance":"P3 has the greatest expected information gain because its positive result uniquely identifies M2, the highest-prior hypothesis, yielding a maximally balanced 0.5/0.5 split. It directly tests whether the aggregate hides a subgroup regression."}

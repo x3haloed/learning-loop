@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160c-aa8e-7fc2-9858-6325fe618211"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":0,\"M2\":1,\"M3\":0},\"probabilities\":{\"C1\":1,\"C2\":0,\"C3\":1},\"decision\":\"D2\",\"lesson\":\"P1 was positive, and its signature occurs only under M2; the posterior therefore supports the M2 intervention above the 0.80 threshold.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":28180,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":570,"reasoning_output_tokens":416}}

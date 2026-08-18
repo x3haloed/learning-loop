@@ -1,0 +1,1 @@
+{"probe_choice":"P3","positive_probability":0.5,"decision_relevance":"P3 maximizes expected information gain per unit cost because its positive/negative outcomes are each equally likely, yielding the highest outcome entropy and best discrimination among mechanisms."}

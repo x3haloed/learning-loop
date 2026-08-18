@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160c-669b-7050-86ab-889f5580f352"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"P2 has the greatest expected information gain (about 1.00 bit per unit cost), cleanly testing the highest-prior mechanism M1.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12803,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":359,"reasoning_output_tokens":298}}

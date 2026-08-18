@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0,"M2":0,"M3":1},"probabilities":{"C1":0,"C2":1,"C3":1},"decision":"D3","lesson":"P2 was positive and is uniquely compatible with M3, so the posterior supports M3 decisively; its checkpoint predictions are C1 fail, C2 pass, and C3 pass.","next_action":"N1"}

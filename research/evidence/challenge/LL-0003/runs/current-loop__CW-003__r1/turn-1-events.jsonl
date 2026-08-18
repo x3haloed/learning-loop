@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160c-e1a1-71a1-9d53-6f3c1c3d4c0e"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P3\",\"positive_probability\":0.5,\"decision_relevance\":\"P3 maximizes expected information gain per unit cost because its positive/negative outcomes are each equally likely, yielding the highest outcome entropy and best discrimination among mechanisms.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14515,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":194,"reasoning_output_tokens":131}}

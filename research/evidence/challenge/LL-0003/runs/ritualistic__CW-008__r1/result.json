@@ -1,0 +1,57 @@
+{
+  "condition": "ritualistic",
+  "elapsed_seconds": 20.097808837890625,
+  "family": "transfer",
+  "instruction_sha256": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "ritualistic__CW-008__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.4000000000000001,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.10666666666666669,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0160e-3920-7ab0-b64e-51833469a9d8",
+  "turn_1": {
+    "decision_relevance": "P2 has the greatest expected information gain per unit cost: its 0.50 positive probability most evenly separates M1 from M2/M3, maximizing uncertainty reduction.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P2 was negative, ruling out M1; M2 and M3 remain plausible with posterior probabilities 0.60 and 0.40.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0.6,
+      "M3": 0.4
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.6,
+      "C2": 1,
+      "C3": 0.8
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12811,
+      "output_tokens": 391
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 28247,
+      "output_tokens": 700
+    }
+  },
+  "world_id": "CW-008",
+  "world_sha256": "048ca8ef86ec3cbcc3c94ad86dbf63df65f41cc60e44f70c2330e7d98675ee4a"
+}

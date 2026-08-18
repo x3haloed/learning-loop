@@ -1,0 +1,1 @@
+{"probe_choice":"P2","positive_probability":0.5,"decision_relevance":"P2 has the greatest expected information gain per unit cost because it is positive under the highest-prior hypothesis (M1), yielding about 1.00 bit of expected information versus about 0.88 for P1 and 0.72 for P3."}

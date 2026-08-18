@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160f-46d7-7763-a474-c07192614ed2"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P3\",\"positive_probability\":0.5,\"decision_relevance\":\"P3 has the greatest expected information gain per unit cost because a positive result uniquely supports M2, the subgroup-regression hypothesis; a negative result shifts probability toward M1 or M3. Its expected information gain is approximately 0.693 nats, exceeding P2 (~0.611) and P1 (~0.500).\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12809,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":387,"reasoning_output_tokens":289}}

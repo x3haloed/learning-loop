@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":1,"M2":0,"M3":0},"probabilities":{"C1":1,"C2":1,"C3":0},"decision":"D1","lesson":"P2 was positive, and its signature is present only under M1; therefore M1 is fully supported. Its intervention is justified because the posterior meets the 0.80 threshold.","next_action":"N1"}

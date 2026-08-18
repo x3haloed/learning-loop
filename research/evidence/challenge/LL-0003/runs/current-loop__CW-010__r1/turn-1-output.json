@@ -1,0 +1,1 @@
+{"probe_choice":"P1","positive_probability":0.45,"decision_relevance":"P1 has the greatest expected information gain per unit cost because it tests the highest-prior hypothesis (M1) with a perfectly discriminating positive result; its outcome directly determines whether the visible aggregate is a faithful customer-outcome proxy."}

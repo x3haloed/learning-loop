@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160e-a049-78f0-a85e-fdd00b8f4542"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":1,\"M2\":0,\"M3\":0},\"probabilities\":{\"C1\":1,\"C2\":1,\"C3\":0},\"decision\":\"D1\",\"lesson\":\"P1's positive unique signature identifies M1, whose intervention is justified by a posterior of at least 0.80.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":31479,"cached_input_tokens":22016,"cache_write_input_tokens":0,"output_tokens":382,"reasoning_output_tokens":215}}

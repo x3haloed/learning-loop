@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":1,"M2":0,"M3":0},"probabilities":{"C1":1,"C2":1,"C3":0},"decision":"D1","lesson":"P1 was positive, uniquely supporting M1; the aggregate is treated as a faithful proxy under the stated evaluator model.","next_action":"N1"}

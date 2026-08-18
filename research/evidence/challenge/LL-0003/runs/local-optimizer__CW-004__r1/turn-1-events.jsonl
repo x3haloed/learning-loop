@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160d-3661-7761-95fa-afa4612ed739"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.45,\"decision_relevance\":\"P2 has the greatest expected information gain per unit cost: it directly tests the highest-probability mechanism among the isolating probes. A positive result identifies M1; a negative result rules out M1 and updates probability toward M2 and M3.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12795,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":320,"reasoning_output_tokens":238}}

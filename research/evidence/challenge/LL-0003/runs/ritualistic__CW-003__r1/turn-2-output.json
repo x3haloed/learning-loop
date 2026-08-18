@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0,"M2":0,"M3":1},"probabilities":{"C1":0,"C2":1,"C3":1},"decision":"D3","lesson":"P3 was positive, and its signature is exclusive to M3; the posterior therefore supports the M3 intervention.","next_action":"N1"}

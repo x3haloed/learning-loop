@@ -1,0 +1,1 @@
+{"probe_choice":"P3","positive_probability":0.5,"decision_relevance":"P3 has the greatest expected information gain because its positive result probability is 0.50, maximizing binary outcome entropy. A positive result identifies M2, indicating the aggregate hides a subgroup regression; a negative result rules out M2 and narrows belief to M1 or M3."}

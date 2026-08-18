@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160e-4716-72d2-948e-98ad542bd2da"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"P2 has the greatest expected information gain per unit cost because it is positive under the highest-prior hypothesis (M1), yielding about 1.00 bit of expected information versus about 0.88 for P1 and 0.72 for P3.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12797,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":402,"reasoning_output_tokens":318}}

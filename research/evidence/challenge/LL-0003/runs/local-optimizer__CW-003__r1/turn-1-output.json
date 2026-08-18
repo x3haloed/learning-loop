@@ -1,0 +1,1 @@
+{"probe_choice":"P3","positive_probability":0.5,"decision_relevance":"P3 has the greatest expected information gain per unit cost: its 0.50 positive probability yields 1.00 bit of expected information, versus approximately 0.88 bits for P1 and 0.72 bits for P2."}

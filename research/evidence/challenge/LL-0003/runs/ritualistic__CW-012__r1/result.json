@@ -1,0 +1,57 @@
+{
+  "condition": "ritualistic",
+  "elapsed_seconds": 20.013629913330078,
+  "family": "proxy",
+  "instruction_sha256": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "ritualistic__CW-012__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.10666666666666669,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.10666666666666669,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0160f-46d7-7763-a474-c07192614ed2",
+  "turn_1": {
+    "decision_relevance": "P3 has the greatest expected information gain per unit cost because a positive result uniquely supports M2, the subgroup-regression hypothesis; a negative result shifts probability toward M1 or M3. Its expected information gain is approximately 0.693 nats, exceeding P2 (~0.611) and P1 (~0.500).",
+    "positive_probability": 0.5,
+    "probe_choice": "P3"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P3 negative rules out M2 but leaves M1 and M3 plausible; neither reaches the 0.80 intervention threshold.",
+    "model_posterior": {
+      "M1": 0.4,
+      "M2": 0.0,
+      "M3": 0.6
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.4,
+      "C2": 1.0,
+      "C3": 0.6
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 12809,
+      "output_tokens": 387
+    },
+    "turn_2": {
+      "cached_input_tokens": 19968,
+      "input_tokens": 28239,
+      "output_tokens": 649
+    }
+  },
+  "world_id": "CW-012",
+  "world_sha256": "1ab65020a640d37884d889da1fde8f476e30dfd8e76b31a3e36b398055dec978"
+}

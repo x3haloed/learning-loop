@@ -1,0 +1,1 @@
+{"probe_choice":"P2","positive_probability":0.5,"decision_relevance":"P2 has the greatest expected information gain because its positive probability is 0.50, maximizing the entropy of the deterministic test outcome; a positive result identifies M1, while a negative result narrows the cause to M3 or M2."}

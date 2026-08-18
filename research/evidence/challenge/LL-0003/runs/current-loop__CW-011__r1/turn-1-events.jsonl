@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160e-d9d7-71a3-bd0c-bf6cf35667e6"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"positive_probability\":0.5,\"decision_relevance\":\"P1 maximizes expected information gain per unit cost (approximately 1.00 bit). A positive result uniquely supports M1, testing whether the visible aggregate is a faithful proxy for the customer outcome; a negative result focuses uncertainty on noise versus subgroup regression.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14524,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":363,"reasoning_output_tokens":281}}

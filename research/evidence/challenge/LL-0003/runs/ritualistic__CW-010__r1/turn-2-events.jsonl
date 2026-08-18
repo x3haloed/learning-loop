@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160e-c983-7ad3-a621-1d62784d77bd"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":1,\"M2\":0,\"M3\":0},\"probabilities\":{\"C1\":1,\"C2\":1,\"C3\":0},\"decision\":\"D1\",\"lesson\":\"P1 was positive, uniquely supporting M1; the aggregate is treated as a faithful proxy under the stated evaluator model.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":28096,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":479,"reasoning_output_tokens":312}}

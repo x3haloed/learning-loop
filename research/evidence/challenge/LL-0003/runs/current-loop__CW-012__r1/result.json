@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop",
+  "elapsed_seconds": 14.794296979904175,
+  "family": "proxy",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop__CW-012__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.10666666666666669,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.10666666666666669,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0160f-232d-7843-902d-5438e3f618d5",
+  "turn_1": {
+    "decision_relevance": "P3 has the greatest expected information gain because its positive result uniquely identifies M2, the highest-prior hypothesis, yielding a maximally balanced 0.5/0.5 split. It directly tests whether the aggregate hides a subgroup regression.",
+    "positive_probability": 0.5,
+    "probe_choice": "P3"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P3 was negative, ruling out M2's unique signature but leaving M1 and M3 plausible; further evidence is required.",
+    "model_posterior": {
+      "M1": 0.4,
+      "M2": 0,
+      "M3": 0.6
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.4,
+      "C2": 1,
+      "C3": 0.6
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 14521,
+      "output_tokens": 199
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 31475,
+      "output_tokens": 410
+    }
+  },
+  "world_id": "CW-012",
+  "world_sha256": "1ab65020a640d37884d889da1fde8f476e30dfd8e76b31a3e36b398055dec978"
+}

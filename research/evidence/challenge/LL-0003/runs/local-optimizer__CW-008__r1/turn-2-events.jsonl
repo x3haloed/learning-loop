@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160e-4716-72d2-948e-98ad542bd2da"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":0,\"M2\":0.6,\"M3\":0.4},\"probabilities\":{\"C1\":0.6,\"C2\":0.4,\"C3\":1},\"decision\":\"D4\",\"lesson\":\"P2 was negative, ruling out M1; M2 and M3 remain plausible, so no model intervention is sufficiently justified.\",\"next_action\":\"N2\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":28230,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":626,"reasoning_output_tokens":444}}

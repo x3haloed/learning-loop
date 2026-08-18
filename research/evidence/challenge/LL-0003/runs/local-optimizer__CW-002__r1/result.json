@@ -1,0 +1,57 @@
+{
+  "condition": "local-optimizer",
+  "elapsed_seconds": 19.305367946624756,
+  "family": "diagnostic",
+  "instruction_sha256": "70ef5c8817eb29ddbdfb27f6697c81ca79b99f4ecc51af1e9c69b8477465b837",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "local-optimizer__CW-002__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0160c-afeb-7af0-812d-d3bd958a44af",
+  "turn_1": {
+    "decision_relevance": "P1 has the greatest expected information gain per unit cost because it tests the highest-prior mechanism (M2), yielding a positive result with probability 0.50 and most reducing uncertainty.",
+    "positive_probability": 0.5,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D2",
+    "lesson": "P1 was positive, and its signature is exclusive to M2; the posterior therefore supports the M2 intervention.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 1,
+      "M3": 0
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 12792,
+      "output_tokens": 297
+    },
+    "turn_2": {
+      "cached_input_tokens": 19968,
+      "input_tokens": 28113,
+      "output_tokens": 525
+    }
+  },
+  "world_id": "CW-002",
+  "world_sha256": "4879ad776e97d7f380b5025d554f6c5ab556bb3e57ae92cb959ea2bc1b9d0ad2"
+}

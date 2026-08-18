@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160e-16e9-7fc2-8280-8b3a52ead4dc"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"P2 has the greatest expected information gain because it uniquely tests the highest-prior model (M1); its positive result would strongly support global transfer, while a negative result would shift belief toward M2 or M3. All probes have equal cost.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14526,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":328,"reasoning_output_tokens":247}}

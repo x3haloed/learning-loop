@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160d-3100-7143-924e-5fc631fa7a25"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.45,\"decision_relevance\":\"P2 has the greatest expected information gain because it tests the highest-prior mechanism (M1), producing a positive result with probability 0.45 and cleanly distinguishing M1 from the alternatives.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12797,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":211,"reasoning_output_tokens":140}}

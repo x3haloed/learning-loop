@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160e-ffd7-7e23-b007-c558bd78f09f"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":0,\"M2\":0.6,\"M3\":0.4},\"probabilities\":{\"C1\":0.6,\"C2\":0.4,\"C3\":1},\"decision\":\"D4\",\"lesson\":\"P1 was negative, ruling out M1 while leaving M2 and M3 plausible; neither remaining model reaches the 0.80 intervention threshold.\",\"next_action\":\"N2\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":28070,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":556,"reasoning_output_tokens":387}}

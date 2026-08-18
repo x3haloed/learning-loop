@@ -1,0 +1,57 @@
+{
+  "condition": "local-optimizer",
+  "elapsed_seconds": 15.090599060058594,
+  "family": "diagnostic",
+  "instruction_sha256": "70ef5c8817eb29ddbdfb27f6697c81ca79b99f4ecc51af1e9c69b8477465b837",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "local-optimizer__CW-003__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0160c-fb66-7cf2-b805-7515d72bc994",
+  "turn_1": {
+    "decision_relevance": "P3 has the greatest expected information gain per unit cost: its 0.50 positive probability yields 1.00 bit of expected information, versus approximately 0.88 bits for P1 and 0.72 bits for P2.",
+    "positive_probability": 0.5,
+    "probe_choice": "P3"
+  },
+  "turn_2": {
+    "decision": "D3",
+    "lesson": "P3 was positive, and its signature occurs only under M3, so M3 is fully supported; its checkpoints predict C1 fail, C2 pass, and C3 pass.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0,
+      "M3": 1
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 12795,
+      "output_tokens": 203
+    },
+    "turn_2": {
+      "cached_input_tokens": 19968,
+      "input_tokens": 28025,
+      "output_tokens": 476
+    }
+  },
+  "world_id": "CW-003",
+  "world_sha256": "a141e3295fb01dc5ca0aeb78f61b120b3ddb6a78a7883cabf98b1ba28c38fd98"
+}

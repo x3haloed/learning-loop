@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160e-c983-7ad3-a621-1d62784d77bd"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"positive_probability\":0.45,\"decision_relevance\":\"P1 has the same perfect-discrimination information gain per unit cost as P2 and P3; selecting it breaks the tie in favor of the most likely positive result and tests whether the visible aggregate is a faithful proxy for the customer outcome.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12806,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":250,"reasoning_output_tokens":171}}

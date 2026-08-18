@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160d-6a6f-7d63-ae43-6823837e95b3"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P3\",\"positive_probability\":0.5,\"decision_relevance\":\"P3 targets the highest-prior model (M2), yielding the greatest expected information gain per unit cost (1.00); a positive result identifies M2, while a negative result narrows the choice to M1 or M3.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12802,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":396,"reasoning_output_tokens":317}}

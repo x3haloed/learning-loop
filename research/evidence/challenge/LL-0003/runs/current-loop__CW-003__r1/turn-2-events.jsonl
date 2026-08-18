@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160c-e1a1-71a1-9d53-6f3c1c3d4c0e"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":0,\"M2\":0,\"M3\":1},\"probabilities\":{\"C1\":0,\"C2\":1,\"C3\":1},\"decision\":\"D3\",\"lesson\":\"P3 was positive, and its signature is specific to M3; therefore M3 is fully supported under the stated observation model.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":31456,"cached_input_tokens":22016,"cache_write_input_tokens":0,"output_tokens":357,"reasoning_output_tokens":204}}

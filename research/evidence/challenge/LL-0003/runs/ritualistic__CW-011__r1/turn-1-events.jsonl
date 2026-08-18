@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160f-02ed-7120-bd69-7a9c7fc13fd9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"positive_probability\":0.5,\"decision_relevance\":\"P1 has the greatest expected information gain per unit cost because it tests the highest-prior hypothesis (M1) with a 0.50 positive-result probability, maximizing outcome entropy. A positive result supports the aggregate as a faithful customer-outcome proxy; a negative result shifts belief toward noise or subgroup regression.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12800,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":307,"reasoning_output_tokens":214}}

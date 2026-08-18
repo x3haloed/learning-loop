@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160d-b9ed-7ac3-bdfc-52d78d6f6ec2"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"P2 has the greatest expected information gain per unit cost: it tests M3 directly, whose prior probability is 0.50, maximizing expected uncertainty reduction among the equal-cost probes.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12794,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":340,"reasoning_output_tokens":272}}

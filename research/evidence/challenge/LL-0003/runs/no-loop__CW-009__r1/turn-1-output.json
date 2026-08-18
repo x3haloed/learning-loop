@@ -1,0 +1,1 @@
+{"probe_choice":"P2","positive_probability":0.5,"decision_relevance":"P2 has the greatest expected information gain per unit cost: it isolates M3, yielding a positive result with probability 0.50 and sharply distinguishing measurement noise from the alternatives."}

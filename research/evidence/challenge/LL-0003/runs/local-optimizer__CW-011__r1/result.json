@@ -1,0 +1,57 @@
+{
+  "condition": "local-optimizer",
+  "elapsed_seconds": 18.537572145462036,
+  "family": "proxy",
+  "instruction_sha256": "70ef5c8817eb29ddbdfb27f6697c81ca79b99f4ecc51af1e9c69b8477465b837",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "local-optimizer__CW-011__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.2604166666666667,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.2604166666666667,
+    "posterior_l1_from_bayes": 0.44999999999999996,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0160f-11a3-7de1-935d-e5bb767e17cd",
+  "turn_1": {
+    "decision_relevance": "P1 has the greatest expected information gain per unit cost because its positive result uniquely confirms M1, the most probable model, while a negative result narrows belief to M2/M3.",
+    "positive_probability": 0.5,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P1 being negative rules out M1 but leaves M2 and M3 plausible; M3 is more likely, but not with sufficient confidence for an intervention.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0.375,
+      "M3": 0.625
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.375,
+      "C2": 0.625,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 12798,
+      "output_tokens": 274
+    },
+    "turn_2": {
+      "cached_input_tokens": 19968,
+      "input_tokens": 28104,
+      "output_tokens": 480
+    }
+  },
+  "world_id": "CW-011",
+  "world_sha256": "03235fc0b7e3d4b22c4b8930b0b7310ad2adaf457e1855ea9fac74ff5813924c"
+}

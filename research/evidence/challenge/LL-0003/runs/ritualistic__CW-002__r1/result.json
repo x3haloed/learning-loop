@@ -1,0 +1,57 @@
+{
+  "condition": "ritualistic",
+  "elapsed_seconds": 16.83035397529602,
+  "family": "diagnostic",
+  "instruction_sha256": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "ritualistic__CW-002__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0160c-aa8e-7fc2-9858-6325fe618211",
+  "turn_1": {
+    "decision_relevance": "P1 has the greatest expected information gain per unit cost: it tests the highest-prior mechanism (M2) and most sharply reduces uncertainty.",
+    "positive_probability": 0.5,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D2",
+    "lesson": "P1 was positive, and its signature occurs only under M2; the posterior therefore supports the M2 intervention above the 0.80 threshold.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 1,
+      "M3": 0
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12794,
+      "output_tokens": 360
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 28180,
+      "output_tokens": 570
+    }
+  },
+  "world_id": "CW-002",
+  "world_sha256": "4879ad776e97d7f380b5025d554f6c5ab556bb3e57ae92cb959ea2bc1b9d0ad2"
+}

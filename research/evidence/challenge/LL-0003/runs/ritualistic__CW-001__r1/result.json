@@ -1,0 +1,57 @@
+{
+  "condition": "ritualistic",
+  "elapsed_seconds": 19.156011819839478,
+  "family": "diagnostic",
+  "instruction_sha256": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "ritualistic__CW-001__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0160c-669b-7050-86ab-889f5580f352",
+  "turn_1": {
+    "decision_relevance": "P2 has the greatest expected information gain (about 1.00 bit per unit cost), cleanly testing the highest-prior mechanism M1.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D1",
+    "lesson": "P2 was positive, and its signature is specific to M1; the posterior therefore concentrates on M1.",
+    "model_posterior": {
+      "M1": 1,
+      "M2": 0,
+      "M3": 0
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 0
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12803,
+      "output_tokens": 359
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 28197,
+      "output_tokens": 519
+    }
+  },
+  "world_id": "CW-001",
+  "world_sha256": "ab804199bb19f847ad461e658fe0b5654651d468ad5c00f22e12d6569dd2f9fd"
+}

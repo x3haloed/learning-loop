@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "evaluator_epoch": "EVAL-0002",
+  "qualification_experiment": "LL-0003",
+  "status": "qualified-with-promotion-block",
+  "synthetic_checks_passed": 6,
+  "synthetic_checks_total": 6,
+  "live_runs_planned": 48,
+  "live_runs_complete": 48,
+  "harness_failures": 0,
+  "qualified_capabilities": [
+    "balanced hidden-truth posterior scoring",
+    "comparison to an exact evidence-relative Bayesian posterior",
+    "contact scoring from frozen priors, likelihoods, and costs",
+    "preservation of uncertainty after non-decisive evidence"
+  ],
+  "live_failures": [
+    "decision and next-action metrics ceilinged across every condition",
+    "explicit response machinery dominated the standing instruction manipulation",
+    "checkpoint forecasts were not checked for coherence with the reported posterior"
+  ],
+  "promotion_block": "Do not promote AGENTS.md or skill interventions from LL-0003. Run an independent prose-by-machinery factorial on a fresh allocation with non-ceilinged endpoints and a frozen coherence metric."
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160d-7929-71c3-b06e-10d4cff47852"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":0,\"M2\":1,\"M3\":0},\"probabilities\":{\"C1\":1,\"C2\":0,\"C3\":1},\"decision\":\"D2\",\"lesson\":\"P3 was positive, uniquely supporting M2; its compatibility-scoped rule is justified for intervention.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":28163,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":507,"reasoning_output_tokens":361}}

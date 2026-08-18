@@ -1,0 +1,57 @@
+{
+  "condition": "ritualistic",
+  "elapsed_seconds": 17.37547492980957,
+  "family": "proxy",
+  "instruction_sha256": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "ritualistic__CW-011__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.2604166666666667,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.2604166666666667,
+    "posterior_l1_from_bayes": 0.44999999999999996,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0160f-02ed-7120-bd69-7a9c7fc13fd9",
+  "turn_1": {
+    "decision_relevance": "P1 has the greatest expected information gain per unit cost because it tests the highest-prior hypothesis (M1) with a 0.50 positive-result probability, maximizing outcome entropy. A positive result supports the aggregate as a faithful customer-outcome proxy; a negative result shifts belief toward noise or subgroup regression.",
+    "positive_probability": 0.5,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P1's negative result rules out M1 but leaves M2 and M3 plausible; neither reaches the 0.80 intervention threshold.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0.375,
+      "M3": 0.625
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.375,
+      "C2": 0.625,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12800,
+      "output_tokens": 307
+    },
+    "turn_2": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 28141,
+      "output_tokens": 552
+    }
+  },
+  "world_id": "CW-011",
+  "world_sha256": "03235fc0b7e3d4b22c4b8930b0b7310ad2adaf457e1855ea9fac74ff5813924c"
+}

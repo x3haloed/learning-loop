@@ -1,0 +1,1 @@
+{"probe_choice":"P1","positive_probability":0.45,"decision_relevance":"P1 has the greatest expected information gain per unit cost: its positive-result probability is 0.45, yielding higher binary entropy than P2 (0.40) or P3 (0.15)."}

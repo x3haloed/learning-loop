@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160d-ddbd-72b0-83c0-2fb90424cc7a"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":1,\"M2\":0,\"M3\":0},\"probabilities\":{\"C1\":1,\"C2\":1,\"C3\":0},\"decision\":\"D1\",\"lesson\":\"P1 was positive, uniquely supporting M1; no alternative model remains under the stated contact behavior.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":31524,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":385,"reasoning_output_tokens":232}}

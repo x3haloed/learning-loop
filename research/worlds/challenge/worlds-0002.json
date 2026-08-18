@@ -1,0 +1,596 @@
+{
+  "allocation": "CHALLENGE",
+  "evaluator_epoch": "EVAL-0002",
+  "schema_version": 1,
+  "seed": 20260818,
+  "worlds": [
+    {
+      "checkpoint_outcomes": {
+        "M1": {
+          "C1": 1,
+          "C2": 1,
+          "C3": 0
+        },
+        "M2": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 1
+        },
+        "M3": {
+          "C1": 0,
+          "C2": 1,
+          "C3": 1
+        }
+      },
+      "family": "diagnostic",
+      "id": "CW-001",
+      "observations": {
+        "negative": "The selected mechanism-specific signature was absent.",
+        "positive": "The selected mechanism-specific signature was present."
+      },
+      "presentation_order": [
+        "M3",
+        "M1",
+        "M2"
+      ],
+      "priors": {
+        "M1": 0.5,
+        "M2": 0.3,
+        "M3": 0.2
+      },
+      "probe_cost": {
+        "P1": 1.0,
+        "P2": 1.0,
+        "P3": 1.0
+      },
+      "probe_positive_model": {
+        "P1": "M3",
+        "P2": "M1",
+        "P3": "M2"
+      },
+      "truth": "M1",
+      "turn_1": "A service failure has three possible mechanisms. M3: an upstream length boundary truncates the value (prior 0.20). M1: the parser rejects the request shape (prior 0.50). M2: a tenant-scoped cache is stale (prior 0.30). You may make exactly one contact. P1: run the parser-isolation fixture; it is positive only under M3; cost 1.0. P2: run the cache-isolation fixture; it is positive only under M1; cost 1.0. P3: run the length-boundary fixture; it is positive only under M2; cost 1.0. Select the contact with the greatest expected information gain per unit cost. Report the probability that its result will be positive and explain its decision relevance. Return only the required JSON.",
+      "turn_2": "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON.",
+      "variant": 1
+    },
+    {
+      "checkpoint_outcomes": {
+        "M1": {
+          "C1": 1,
+          "C2": 1,
+          "C3": 0
+        },
+        "M2": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 1
+        },
+        "M3": {
+          "C1": 0,
+          "C2": 1,
+          "C3": 1
+        }
+      },
+      "family": "diagnostic",
+      "id": "CW-002",
+      "observations": {
+        "negative": "The selected mechanism-specific signature was absent.",
+        "positive": "The selected mechanism-specific signature was present."
+      },
+      "presentation_order": [
+        "M2",
+        "M3",
+        "M1"
+      ],
+      "priors": {
+        "M1": 0.2,
+        "M2": 0.5,
+        "M3": 0.3
+      },
+      "probe_cost": {
+        "P1": 1.0,
+        "P2": 1.0,
+        "P3": 1.0
+      },
+      "probe_positive_model": {
+        "P1": "M2",
+        "P2": "M3",
+        "P3": "M1"
+      },
+      "truth": "M2",
+      "turn_1": "A service failure has three possible mechanisms. M2: a tenant-scoped cache is stale (prior 0.50). M3: an upstream length boundary truncates the value (prior 0.30). M1: the parser rejects the request shape (prior 0.20). You may make exactly one contact. P1: run the parser-isolation fixture; it is positive only under M2; cost 1.0. P2: run the cache-isolation fixture; it is positive only under M3; cost 1.0. P3: run the length-boundary fixture; it is positive only under M1; cost 1.0. Select the contact with the greatest expected information gain per unit cost. Report the probability that its result will be positive and explain its decision relevance. Return only the required JSON.",
+      "turn_2": "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON.",
+      "variant": 2
+    },
+    {
+      "checkpoint_outcomes": {
+        "M1": {
+          "C1": 1,
+          "C2": 1,
+          "C3": 0
+        },
+        "M2": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 1
+        },
+        "M3": {
+          "C1": 0,
+          "C2": 1,
+          "C3": 1
+        }
+      },
+      "family": "diagnostic",
+      "id": "CW-003",
+      "observations": {
+        "negative": "The selected mechanism-specific signature was absent.",
+        "positive": "The selected mechanism-specific signature was present."
+      },
+      "presentation_order": [
+        "M1",
+        "M2",
+        "M3"
+      ],
+      "priors": {
+        "M1": 0.3,
+        "M2": 0.2,
+        "M3": 0.5
+      },
+      "probe_cost": {
+        "P1": 1.0,
+        "P2": 1.0,
+        "P3": 1.0
+      },
+      "probe_positive_model": {
+        "P1": "M1",
+        "P2": "M2",
+        "P3": "M3"
+      },
+      "truth": "M3",
+      "turn_1": "A service failure has three possible mechanisms. M1: the parser rejects the request shape (prior 0.30). M2: a tenant-scoped cache is stale (prior 0.20). M3: an upstream length boundary truncates the value (prior 0.50). You may make exactly one contact. P1: run the parser-isolation fixture; it is positive only under M1; cost 1.0. P2: run the cache-isolation fixture; it is positive only under M2; cost 1.0. P3: run the length-boundary fixture; it is positive only under M3; cost 1.0. Select the contact with the greatest expected information gain per unit cost. Report the probability that its result will be positive and explain its decision relevance. Return only the required JSON.",
+      "turn_2": "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON.",
+      "variant": 3
+    },
+    {
+      "checkpoint_outcomes": {
+        "M1": {
+          "C1": 1,
+          "C2": 1,
+          "C3": 0
+        },
+        "M2": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 1
+        },
+        "M3": {
+          "C1": 0,
+          "C2": 1,
+          "C3": 1
+        }
+      },
+      "family": "diagnostic",
+      "id": "CW-004",
+      "observations": {
+        "negative": "The selected mechanism-specific signature was absent.",
+        "positive": "The selected mechanism-specific signature was present."
+      },
+      "presentation_order": [
+        "M2",
+        "M1",
+        "M3"
+      ],
+      "priors": {
+        "M1": 0.45,
+        "M2": 0.4,
+        "M3": 0.15
+      },
+      "probe_cost": {
+        "P1": 1.0,
+        "P2": 1.0,
+        "P3": 1.0
+      },
+      "probe_positive_model": {
+        "P1": "M2",
+        "P2": "M1",
+        "P3": "M3"
+      },
+      "truth": "M1",
+      "turn_1": "A service failure has three possible mechanisms. M2: a tenant-scoped cache is stale (prior 0.40). M1: the parser rejects the request shape (prior 0.45). M3: an upstream length boundary truncates the value (prior 0.15). You may make exactly one contact. P1: run the parser-isolation fixture; it is positive only under M2; cost 1.0. P2: run the cache-isolation fixture; it is positive only under M1; cost 1.0. P3: run the length-boundary fixture; it is positive only under M3; cost 1.0. Select the contact with the greatest expected information gain per unit cost. Report the probability that its result will be positive and explain its decision relevance. Return only the required JSON.",
+      "turn_2": "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON.",
+      "variant": 4
+    },
+    {
+      "checkpoint_outcomes": {
+        "M1": {
+          "C1": 1,
+          "C2": 1,
+          "C3": 0
+        },
+        "M2": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 1
+        },
+        "M3": {
+          "C1": 0,
+          "C2": 1,
+          "C3": 1
+        }
+      },
+      "family": "transfer",
+      "id": "CW-005",
+      "observations": {
+        "negative": "The selected transfer model's unique signature was absent.",
+        "positive": "The selected transfer model's unique signature was present."
+      },
+      "presentation_order": [
+        "M2",
+        "M3",
+        "M1"
+      ],
+      "priors": {
+        "M1": 0.2,
+        "M2": 0.5,
+        "M3": 0.3
+      },
+      "probe_cost": {
+        "P1": 1.0,
+        "P2": 1.0,
+        "P3": 1.0
+      },
+      "probe_positive_model": {
+        "P1": "M1",
+        "P2": "M3",
+        "P3": "M2"
+      },
+      "truth": "M2",
+      "turn_1": "A behavior changed across versions and a prior lesson may or may not transfer. M2: the rule is scoped to a compatibility configuration (prior 0.50). M3: the earlier observation was incidental and should not transfer (prior 0.30). M1: the old rule transfers globally (prior 0.20). You may make exactly one contact. P3: run the incidental-correlation falsifier; it is positive only under M2; cost 1.0. P2: inspect the compatibility-specific branch; it is positive only under M3; cost 1.0. P1: inspect the cross-version implementation invariant; it is positive only under M1; cost 1.0. Select the contact with the greatest expected information gain per unit cost. Report the probability that its result will be positive and explain its decision relevance. Return only the required JSON.",
+      "turn_2": "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON.",
+      "variant": 1
+    },
+    {
+      "checkpoint_outcomes": {
+        "M1": {
+          "C1": 1,
+          "C2": 1,
+          "C3": 0
+        },
+        "M2": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 1
+        },
+        "M3": {
+          "C1": 0,
+          "C2": 1,
+          "C3": 1
+        }
+      },
+      "family": "transfer",
+      "id": "CW-006",
+      "observations": {
+        "negative": "The selected transfer model's unique signature was absent.",
+        "positive": "The selected transfer model's unique signature was present."
+      },
+      "presentation_order": [
+        "M3",
+        "M1",
+        "M2"
+      ],
+      "priors": {
+        "M1": 0.3,
+        "M2": 0.2,
+        "M3": 0.5
+      },
+      "probe_cost": {
+        "P1": 1.0,
+        "P2": 1.0,
+        "P3": 1.0
+      },
+      "probe_positive_model": {
+        "P1": "M1",
+        "P2": "M3",
+        "P3": "M2"
+      },
+      "truth": "M3",
+      "turn_1": "A behavior changed across versions and a prior lesson may or may not transfer. M3: the earlier observation was incidental and should not transfer (prior 0.50). M1: the old rule transfers globally (prior 0.30). M2: the rule is scoped to a compatibility configuration (prior 0.20). You may make exactly one contact. P2: inspect the compatibility-specific branch; it is positive only under M3; cost 1.0. P1: inspect the cross-version implementation invariant; it is positive only under M1; cost 1.0. P3: run the incidental-correlation falsifier; it is positive only under M2; cost 1.0. Select the contact with the greatest expected information gain per unit cost. Report the probability that its result will be positive and explain its decision relevance. Return only the required JSON.",
+      "turn_2": "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON.",
+      "variant": 2
+    },
+    {
+      "checkpoint_outcomes": {
+        "M1": {
+          "C1": 1,
+          "C2": 1,
+          "C3": 0
+        },
+        "M2": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 1
+        },
+        "M3": {
+          "C1": 0,
+          "C2": 1,
+          "C3": 1
+        }
+      },
+      "family": "transfer",
+      "id": "CW-007",
+      "observations": {
+        "negative": "The selected transfer model's unique signature was absent.",
+        "positive": "The selected transfer model's unique signature was present."
+      },
+      "presentation_order": [
+        "M3",
+        "M2",
+        "M1"
+      ],
+      "priors": {
+        "M1": 0.45,
+        "M2": 0.4,
+        "M3": 0.15
+      },
+      "probe_cost": {
+        "P1": 1.0,
+        "P2": 1.0,
+        "P3": 1.0
+      },
+      "probe_positive_model": {
+        "P1": "M1",
+        "P2": "M2",
+        "P3": "M3"
+      },
+      "truth": "M1",
+      "turn_1": "A behavior changed across versions and a prior lesson may or may not transfer. M3: the earlier observation was incidental and should not transfer (prior 0.15). M2: the rule is scoped to a compatibility configuration (prior 0.40). M1: the old rule transfers globally (prior 0.45). You may make exactly one contact. P3: run the incidental-correlation falsifier; it is positive only under M3; cost 1.0. P2: inspect the compatibility-specific branch; it is positive only under M2; cost 1.0. P1: inspect the cross-version implementation invariant; it is positive only under M1; cost 1.0. Select the contact with the greatest expected information gain per unit cost. Report the probability that its result will be positive and explain its decision relevance. Return only the required JSON.",
+      "turn_2": "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON.",
+      "variant": 3
+    },
+    {
+      "checkpoint_outcomes": {
+        "M1": {
+          "C1": 1,
+          "C2": 1,
+          "C3": 0
+        },
+        "M2": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 1
+        },
+        "M3": {
+          "C1": 0,
+          "C2": 1,
+          "C3": 1
+        }
+      },
+      "family": "transfer",
+      "id": "CW-008",
+      "observations": {
+        "negative": "The selected transfer model's unique signature was absent.",
+        "positive": "The selected transfer model's unique signature was present."
+      },
+      "presentation_order": [
+        "M2",
+        "M1",
+        "M3"
+      ],
+      "priors": {
+        "M1": 0.5,
+        "M2": 0.3,
+        "M3": 0.2
+      },
+      "probe_cost": {
+        "P1": 1.0,
+        "P2": 1.0,
+        "P3": 1.0
+      },
+      "probe_positive_model": {
+        "P1": "M2",
+        "P2": "M1",
+        "P3": "M3"
+      },
+      "truth": "M2",
+      "turn_1": "A behavior changed across versions and a prior lesson may or may not transfer. M2: the rule is scoped to a compatibility configuration (prior 0.30). M1: the old rule transfers globally (prior 0.50). M3: the earlier observation was incidental and should not transfer (prior 0.20). You may make exactly one contact. P1: inspect the cross-version implementation invariant; it is positive only under M2; cost 1.0. P2: inspect the compatibility-specific branch; it is positive only under M1; cost 1.0. P3: run the incidental-correlation falsifier; it is positive only under M3; cost 1.0. Select the contact with the greatest expected information gain per unit cost. Report the probability that its result will be positive and explain its decision relevance. Return only the required JSON.",
+      "turn_2": "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON.",
+      "variant": 4
+    },
+    {
+      "checkpoint_outcomes": {
+        "M1": {
+          "C1": 1,
+          "C2": 1,
+          "C3": 0
+        },
+        "M2": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 1
+        },
+        "M3": {
+          "C1": 0,
+          "C2": 1,
+          "C3": 1
+        }
+      },
+      "family": "proxy",
+      "id": "CW-009",
+      "observations": {
+        "negative": "The selected evaluator model's unique signature was absent.",
+        "positive": "The selected evaluator model's unique signature was present."
+      },
+      "presentation_order": [
+        "M3",
+        "M1",
+        "M2"
+      ],
+      "priors": {
+        "M1": 0.3,
+        "M2": 0.2,
+        "M3": 0.5
+      },
+      "probe_cost": {
+        "P1": 1.0,
+        "P2": 1.0,
+        "P3": 1.0
+      },
+      "probe_positive_model": {
+        "P1": "M2",
+        "P2": "M3",
+        "P3": "M1"
+      },
+      "truth": "M3",
+      "turn_1": "A visible metric improved, but its relationship to the customer outcome is uncertain. M3: the apparent gain is measurement noise (prior 0.50). M1: the visible aggregate is a faithful proxy (prior 0.30). M2: the aggregate hides a subgroup regression (prior 0.20). You may make exactly one contact. P2: run the held-out subgroup outcome check; it is positive only under M3; cost 1.0. P3: run the noise and order-effect check; it is positive only under M1; cost 1.0. P1: run the independent aggregate replication; it is positive only under M2; cost 1.0. Select the contact with the greatest expected information gain per unit cost. Report the probability that its result will be positive and explain its decision relevance. Return only the required JSON.",
+      "turn_2": "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON.",
+      "variant": 1
+    },
+    {
+      "checkpoint_outcomes": {
+        "M1": {
+          "C1": 1,
+          "C2": 1,
+          "C3": 0
+        },
+        "M2": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 1
+        },
+        "M3": {
+          "C1": 0,
+          "C2": 1,
+          "C3": 1
+        }
+      },
+      "family": "proxy",
+      "id": "CW-010",
+      "observations": {
+        "negative": "The selected evaluator model's unique signature was absent.",
+        "positive": "The selected evaluator model's unique signature was present."
+      },
+      "presentation_order": [
+        "M2",
+        "M3",
+        "M1"
+      ],
+      "priors": {
+        "M1": 0.45,
+        "M2": 0.4,
+        "M3": 0.15
+      },
+      "probe_cost": {
+        "P1": 1.0,
+        "P2": 1.0,
+        "P3": 1.0
+      },
+      "probe_positive_model": {
+        "P1": "M1",
+        "P2": "M3",
+        "P3": "M2"
+      },
+      "truth": "M1",
+      "turn_1": "A visible metric improved, but its relationship to the customer outcome is uncertain. M2: the aggregate hides a subgroup regression (prior 0.40). M3: the apparent gain is measurement noise (prior 0.15). M1: the visible aggregate is a faithful proxy (prior 0.45). You may make exactly one contact. P3: run the noise and order-effect check; it is positive only under M2; cost 1.0. P2: run the held-out subgroup outcome check; it is positive only under M3; cost 1.0. P1: run the independent aggregate replication; it is positive only under M1; cost 1.0. Select the contact with the greatest expected information gain per unit cost. Report the probability that its result will be positive and explain its decision relevance. Return only the required JSON.",
+      "turn_2": "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON.",
+      "variant": 2
+    },
+    {
+      "checkpoint_outcomes": {
+        "M1": {
+          "C1": 1,
+          "C2": 1,
+          "C3": 0
+        },
+        "M2": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 1
+        },
+        "M3": {
+          "C1": 0,
+          "C2": 1,
+          "C3": 1
+        }
+      },
+      "family": "proxy",
+      "id": "CW-011",
+      "observations": {
+        "negative": "The selected evaluator model's unique signature was absent.",
+        "positive": "The selected evaluator model's unique signature was present."
+      },
+      "presentation_order": [
+        "M3",
+        "M2",
+        "M1"
+      ],
+      "priors": {
+        "M1": 0.5,
+        "M2": 0.3,
+        "M3": 0.2
+      },
+      "probe_cost": {
+        "P1": 1.0,
+        "P2": 1.0,
+        "P3": 1.0
+      },
+      "probe_positive_model": {
+        "P1": "M1",
+        "P2": "M2",
+        "P3": "M3"
+      },
+      "truth": "M2",
+      "turn_1": "A visible metric improved, but its relationship to the customer outcome is uncertain. M3: the apparent gain is measurement noise (prior 0.20). M2: the aggregate hides a subgroup regression (prior 0.30). M1: the visible aggregate is a faithful proxy (prior 0.50). You may make exactly one contact. P3: run the noise and order-effect check; it is positive only under M3; cost 1.0. P2: run the held-out subgroup outcome check; it is positive only under M2; cost 1.0. P1: run the independent aggregate replication; it is positive only under M1; cost 1.0. Select the contact with the greatest expected information gain per unit cost. Report the probability that its result will be positive and explain its decision relevance. Return only the required JSON.",
+      "turn_2": "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON.",
+      "variant": 3
+    },
+    {
+      "checkpoint_outcomes": {
+        "M1": {
+          "C1": 1,
+          "C2": 1,
+          "C3": 0
+        },
+        "M2": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 1
+        },
+        "M3": {
+          "C1": 0,
+          "C2": 1,
+          "C3": 1
+        }
+      },
+      "family": "proxy",
+      "id": "CW-012",
+      "observations": {
+        "negative": "The selected evaluator model's unique signature was absent.",
+        "positive": "The selected evaluator model's unique signature was present."
+      },
+      "presentation_order": [
+        "M3",
+        "M1",
+        "M2"
+      ],
+      "priors": {
+        "M1": 0.2,
+        "M2": 0.5,
+        "M3": 0.3
+      },
+      "probe_cost": {
+        "P1": 1.0,
+        "P2": 1.0,
+        "P3": 1.0
+      },
+      "probe_positive_model": {
+        "P1": "M1",
+        "P2": "M3",
+        "P3": "M2"
+      },
+      "truth": "M3",
+      "turn_1": "A visible metric improved, but its relationship to the customer outcome is uncertain. M3: the apparent gain is measurement noise (prior 0.30). M1: the visible aggregate is a faithful proxy (prior 0.20). M2: the aggregate hides a subgroup regression (prior 0.50). You may make exactly one contact. P2: run the held-out subgroup outcome check; it is positive only under M3; cost 1.0. P1: run the independent aggregate replication; it is positive only under M1; cost 1.0. P3: run the noise and order-effect check; it is positive only under M2; cost 1.0. Select the contact with the greatest expected information gain per unit cost. Report the probability that its result will be positive and explain its decision relevance. Return only the required JSON.",
+      "turn_2": "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON.",
+      "variant": 4
+    }
+  ]
+}

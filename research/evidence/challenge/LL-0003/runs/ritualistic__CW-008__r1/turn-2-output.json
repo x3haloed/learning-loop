@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0,"M2":0.6,"M3":0.4},"probabilities":{"C1":0.6,"C2":1,"C3":0.8},"decision":"D4","lesson":"P2 was negative, ruling out M1; M2 and M3 remain plausible with posterior probabilities 0.60 and 0.40.","next_action":"N2"}

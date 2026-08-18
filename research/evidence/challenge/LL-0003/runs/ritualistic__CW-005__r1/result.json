@@ -1,0 +1,57 @@
+{
+  "condition": "ritualistic",
+  "elapsed_seconds": 19.53711986541748,
+  "family": "transfer",
+  "instruction_sha256": "98681a1ccca53080f8c828b1c19a1982bcc54f5c148a72468b3e1af30b630557",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "ritualistic__CW-005__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0160d-6a6f-7d63-ae43-6823837e95b3",
+  "turn_1": {
+    "decision_relevance": "P3 targets the highest-prior model (M2), yielding the greatest expected information gain per unit cost (1.00); a positive result identifies M2, while a negative result narrows the choice to M1 or M3.",
+    "positive_probability": 0.5,
+    "probe_choice": "P3"
+  },
+  "turn_2": {
+    "decision": "D2",
+    "lesson": "P3 was positive, and its unique positive signature identifies M2 under the stated observation model.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 1,
+      "M3": 0
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12802,
+      "output_tokens": 396
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 28234,
+      "output_tokens": 573
+    }
+  },
+  "world_id": "CW-005",
+  "world_sha256": "8d1bab35659432b9e1427f1a8fff1316de83b9090d64849932fa4fc6053afeb7"
+}

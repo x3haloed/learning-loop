@@ -1,0 +1,1 @@
+{"probe_choice":"P3","positive_probability":0.5,"decision_relevance":"P3 targets the highest-prior model (M2), yielding the greatest expected information gain per unit cost (1.00); a positive result identifies M2, while a negative result narrows the choice to M1 or M3."}

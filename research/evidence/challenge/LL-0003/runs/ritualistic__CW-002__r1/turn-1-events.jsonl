@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0160c-aa8e-7fc2-9858-6325fe618211"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"positive_probability\":0.5,\"decision_relevance\":\"P1 has the greatest expected information gain per unit cost: it tests the highest-prior mechanism (M2) and most sharply reduces uncertainty.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12794,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":360,"reasoning_output_tokens":300}}

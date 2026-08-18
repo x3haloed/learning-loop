@@ -27,7 +27,7 @@ has survived contact.
 
 ### 1.1 First-class hypotheses
 
-The program maintains two hypotheses of equal standing.
+The program maintains three hypotheses of equal standing.
 
 - **H-loop:** a minimal package of loop instructions and triggered corrective
   skills induces the seven behaviors above without substituting ceremony,
@@ -37,6 +37,18 @@ The program maintains two hypotheses of equal standing.
   representation-failure detection are sufficient to cause agents to construct
   useful representational machinery when their incumbent representation stops
   transferring learning.
+
+- **H-frontier-expansion:** the loop's default search is biased toward error
+  correction over an already-represented model, so a package that additionally
+  presses the agent to expand its model frontier outward—asking what relevant
+  structure, cause, purpose, actor, or larger system lies just beyond what it
+  currently represents, rather than only testing what it already believes—will
+  change prediction or action in cases where the inward-only loop stays silent.
+  This is distinct from `H-loop` and `H-representation-emergence`: it targets
+  coverage of the model (structure not yet represented) rather than accuracy of
+  an existing model or transfer of represented lessons. Its degenerate mode,
+  guarded against by the same restraint costs as the other hypotheses, is
+  infinite ontology excavation that never changes prediction or action.
 
 Three conditions are compared under progressively stronger representation
 pressure (Section 7.3):

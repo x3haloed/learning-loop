@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LL-0004",
+  "evaluator_epoch": "EVAL-0002",
+  "status": "planned",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "lane": "instrumented",
+  "conditions": [
+    "current-loop-contract",
+    "current-loop-plain",
+    "no-loop-contract",
+    "no-loop-plain"
+  ],
+  "condition_profiles": {
+    "current-loop-contract": {
+      "instruction_package": "adaptive-reference",
+      "prompt_design": "contract"
+    },
+    "current-loop-plain": {
+      "instruction_package": "adaptive-reference",
+      "prompt_design": "plain"
+    },
+    "no-loop-contract": {
+      "instruction_package": "no-loop",
+      "prompt_design": "contract"
+    },
+    "no-loop-plain": {
+      "instruction_package": "no-loop",
+      "prompt_design": "plain"
+    }
+  },
+  "worlds": [
+    "CW-001", "CW-002", "CW-003", "CW-004",
+    "CW-005", "CW-006", "CW-007", "CW-008",
+    "CW-009", "CW-010", "CW-011", "CW-012"
+  ],
+  "repetitions": 1,
+  "planned_runs": 48,
+  "turns_per_run": 2,
+  "skills_installed": false,
+  "allocation": "CHALLENGE",
+  "world_seed": 20260818,
+  "planning_cost_ceiling_usd": 3.0,
+  "cost_ceiling_semantics": "planning guardrail, not an external billing control",
+  "subject_workspace": {
+    "location": "temporary directory outside the research repository",
+    "git_repository": true,
+    "sandbox": "read-only",
+    "user_config": "ignored",
+    "codex_home": "temporary; contains only copied auth material and generated session state"
+  },
+  "primary_metrics": [
+    "posterior_l1_from_bayes",
+    "posterior_brier",
+    "fixed_checkpoint_brier",
+    "probe_information_ratio",
+    "decision_accuracy",
+    "next_action_accuracy"
+  ],
+  "diagnostic_metrics": [
+    "preferred_probe",
+    "probe_prediction_brier"
+  ],
+  "promotion_policy": "qualification challenge only; no AGENTS.md or skill promotion without adversarial transcript review and a fresh confirmatory allocation",
+  "kill_conditions": [
+    "The runner cannot isolate project and personal instructions.",
+    "Structured subject output cannot be captured reliably.",
+    "More than 25 percent of planned runs fail for harness reasons.",
+    "Any hidden truth or scorer implementation is exposed to a subject before its final response.",
+    "Estimated spend exceeds the planning ceiling before all subjects are dispatched."
+  ]
+}

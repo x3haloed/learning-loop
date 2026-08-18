@@ -56,14 +56,20 @@ class ContractIntegrityTests(unittest.TestCase):
 
     def test_ll0000_content_hashes_resolve(self) -> None:
         record = load_json(REPO_ROOT / "research/experiments/LL-0000-ruler-qualification.json")
-        candidate_paths = {
-            "target": "TARGET.md",
-            "red_lines": "RED_LINES.md",
-            "research_program": "RESEARCH_PROGRAM.md",
-            "control_manifest": "research/controls/manifest.json",
-        }
-        for name, relative_path in candidate_paths.items():
-            self.assertEqual(record["candidate_hashes"][name], file_sha256(REPO_ROOT / relative_path))
+        # The normative documents may change between evaluator epochs. LL-0000
+        # recorded the hashes of the versions under which it ran, and frozen
+        # copies of those versions are preserved so the record remains
+        # verifiable without freezing the live documents.
+        snapshot_dir = REPO_ROOT / "research/evidence/normative/ll0000"
+        snapshot_manifest = load_json(snapshot_dir / "manifest.json")
+        self.assertEqual(set(snapshot_manifest["files"]), set(record["candidate_hashes"]))
+        for name, entry in snapshot_manifest["files"].items():
+            self.assertEqual(
+                record["candidate_hashes"][name],
+                file_sha256(snapshot_dir / entry["path"]),
+                name,
+            )
+            self.assertEqual(entry["sha256"], record["candidate_hashes"][name], name)
         self.assertEqual(
             record["allocation"]["manifest_hash"],
             file_sha256(REPO_ROOT / "research/worlds/qualification/manifest.json"),

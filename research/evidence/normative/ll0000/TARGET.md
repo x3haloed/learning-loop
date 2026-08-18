@@ -59,8 +59,7 @@ A promotion claim must remain valid on:
 - boundaries and distribution shifts;
 - plausible competing causal explanations;
 - surprising success as well as failure;
-- lesson transfer with distractors, context loss, and escalating
-  representation pressure;
+- lesson transfer with distractors and context loss;
 - superficially similar cases where transfer would be wrong;
 - evaluator divergence and visible-proxy gaming;
 - repeated familiar success with an untested consequential regime;
@@ -81,23 +80,15 @@ Observed error encountered during self-selected contact is diagnostic. It is not
 a primary outcome because a strong error-seeking agent may expose more failures,
 while an evasive agent may expose few.
 
-## Representation is not prescribed
+## Machinery and process artifacts
 
-The intervention may define functional requirements on learning: relevant
-evidence should alter later prediction or action, contradictions should become
-legible, resolved errors should not be repeatedly rediscovered without
-explanation, and lessons should transfer only within their warranted scope.
+Instructions, skills, reminders, ledgers, receipts, schemas, tool gates, and
+retrieval mechanisms are permitted interventions. They may make desired action
+more likely and make evidence observable.
 
-No particular representation—ledger, schema, receipt, memory structure,
-knowledge graph, note format, retrieval system, or other mechanism—is part of
-the target.
-
-When the incumbent learning process fails these requirements, the subject agent
-may create, modify, or remove representational machinery as an adaptation. The
-fitness of that machinery is determined only by its later behavioral
-consequences. Completing any representational artifact earns no outcome credit
-by itself: process traces may explain a result, but promotion depends on
-primary outcomes and critical guardrails.
+Completing any such artifact earns no outcome credit by itself. Process traces
+may explain a result, but promotion depends on primary outcomes and critical
+guardrails.
 
 ## Valid completion claim
 

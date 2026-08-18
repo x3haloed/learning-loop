@@ -2,8 +2,8 @@
 
 ## 1. Research objective
 
-Find a minimal, scoped package of `AGENTS.md` instructions and skills that
-causes coding agents to:
+Find a minimal, scoped package of `AGENTS.md` instructions, skills, and optional
+behavioral machinery that causes coding agents to:
 
 1. form consequential expectations before contact with the world;
 2. choose contact that can discriminate between live explanations;
@@ -16,42 +16,14 @@ causes coding agents to:
 
 The research target is behavior, not textual agreement with the loop. A package
 does not receive credit for mentioning predictions, producing a ledger, invoking
-a skill, satisfying a schema, or claiming to have learned. Those are process
-observations, never success evidence. Credit comes only from externally
-observed changes in contact, prediction, transfer, and task outcomes.
+a skill, satisfying a schema, or claiming to have learned. Those are candidate
+mechanisms and process observations. Credit comes only from externally observed
+changes in contact, prediction, transfer, and task outcomes.
 
 There may be no universally exact package. The result of this program is a
 smallest-supported package with an explicit validity scope: agent models,
 tooling, task families, context lengths, and cost regime under which the result
 has survived contact.
-
-### 1.1 First-class hypotheses
-
-The program maintains two hypotheses of equal standing.
-
-- **H-loop:** a minimal package of loop instructions and triggered corrective
-  skills induces the seven behaviors above without substituting ceremony,
-  evaluator gaming, or local proxy improvement for useful progress.
-
-- **H-representation-emergence:** functional learning pressures plus
-  representation-failure detection are sufficient to cause agents to construct
-  useful representational machinery when their incumbent representation stops
-  transferring learning.
-
-Three conditions are compared under progressively stronger representation
-pressure (Section 7.3):
-
-- **A. No adaptive loop.** No loop instructions, no skills.
-- **B. Adaptive loop, representation unconstrained.** The package search space
-  of Section 4; no prescribed representation.
-- **C. Adaptive loop plus a prescribed ledger/schema/retrieval mechanism.** An
-  externally imposed representation, run only as a diagnostic comparison
-  condition, permitted by the representation red line.
-
-The decisive result would be **B eventually beating C**: B can invent
-representations matched to the actual failure regime, while C is confined to
-the researcher's ontology. That comparison tests the core claim the program
-exists to establish.
 
 ## 2. Central threat model
 
@@ -66,9 +38,6 @@ stable proxy it can see. Expected failure strategies include:
 - invoking a skill by keyword rather than by condition;
 - changing the evaluator or scope until a weak result passes;
 - preserving lessons that are never retrieved;
-- installing conventional ledgers, schemas, or retrieval machinery because
-  such structures are conventional rather than because an observed transfer
-  failure demands them;
 - repeating a successful subloop after its marginal value has collapsed;
 - avoiding ambitious claims, actions, or probes to protect calibration;
 - spending enough ceremony to crowd out the work being improved; and
@@ -111,17 +80,15 @@ An intervention can improve one while harming another.
 - promoting an aggregate improvement that hides a failed critical slice;
 - interpreting evaluator-dependent scores across evaluator epochs as comparable;
 - discarding failed, reversed, or exploitative trials;
-- allowing a model-based judge to override deterministic task failure;
-- requiring, rewarding, or preferentially exposing a particular durable
-  representation as part of the default intervention; and
+- allowing a model-based judge to override deterministic task failure; and
 - claiming universality outside the tested validity scope.
 
 ### 3.3 Raw evidence
 
-Task states, tool calls, captured predictions, contacts, outcomes, final
-artifacts, costs, evaluator versions, candidate-package hashes, and environment
-identities are retained independently of their interpretation. Derived scores
-may be recomputed; original observations may not be rewritten.
+Task states, tool calls, prediction receipts, contacts, outcomes, final artifacts,
+costs, evaluator versions, candidate-package hashes, and environment identities
+are retained independently of their interpretation. Derived scores may be
+recomputed; original observations may not be rewritten.
 
 ## 4. Unit under search
 
@@ -133,123 +100,99 @@ package = {
   installed_skills,
   skill_catalog_descriptions,
   skill_bodies,
+  optional_behavioral_machinery,
   package_manifest
 }
 ```
 
 The package manifest records exact content hashes, component IDs, ordering,
-token count, and installation/discovery state.
+token count, installation/discovery state, and any machinery enabled.
 
 Instructions are authored as independently switchable components before being
 compiled into natural prose. Skills are independently switchable at the
 catalog-description and body levels. This supports ablation without forcing the
 deployed artifact to read like a checklist.
 
-The intervention under test contains only things that define physics,
-motivation, and triggered corrective procedures: core loop instructions, skill
-descriptions and triggers, and skill bodies. Candidate component families
-include:
+Candidate component families include:
 
 - definitions and standing motivation;
 - orientation and uncertainty selection;
 - explicit prediction and precommitment;
 - discrepancy recovery and causal discrimination;
 - adaptation and adjacent probing;
-- representation-failure detection and repair;
+- durable lesson representation and retrieval;
 - evaluator-divergence handling;
 - completion and stopping conditions;
-- skill split, merge, trigger wording, and negative boundaries; and
+- skill split, merge, trigger wording, and negative boundaries;
+- reminders or state surfaced at relevant moments;
+- structured logs or receipts;
+- tool wrappers that require a receipt before selected consequential contacts;
+- automatic retrieval of prior lessons; and
 - escalation when repeated local work ceases to improve held-out outcomes.
 
 The search must include deletion, compression, and merge operations. More
 instruction is not presumed better.
 
-### 4.1 What is deliberately excluded from the package
+## 5. Machinery is an intervention, not a certificate
 
-The package contains no prescribed durable representation. No ledger, schema,
-receipt, memory format, knowledge graph, or automatic retrieval mechanism is a
-candidate component. The research question is not "which learning machinery
-should we install?" but "can we induce the agent to notice when its learning
-machinery is inadequate and invent an improvement?" Prescribing representation
-would pre-answer that question and bake the researcher's ontology into the
-intervention before any failure regime has demanded it.
+LLMs often ignore prose and respond to incomplete state, required fields, tool
+affordances, and visibly broken workflows. The program will deliberately test
+machinery that exploits this tendency.
 
-Representations appear in the program in exactly two places:
+One candidate mechanism is a prediction receipt:
 
-- as subject-invented adaptations, judged only by their later behavioral
-  consequences; and
-- as externally imposed comparison conditions in experiments that
-  specifically study imposed representation (condition C, Section 7.3),
-  permitted by the representation red line.
+```json
+{
+  "decision": "which consequential action this informs",
+  "expectation": "what should happen",
+  "basis": "why the agent expects it",
+  "material_alternatives": ["outcomes that would change the model or plan"],
+  "contact": "the observation about to be made",
+  "scope": "where the prediction applies"
+}
+```
 
-## 5. External research instrumentation
+Candidate implementations range from prose-only, to an optional log, to an
+automatic reminder, to a wrapper that withholds a selected observation until a
+valid receipt exists.
 
-The research program has two layers, and they must not blur.
+Receipt validity only unlocks the observation. It earns zero research utility.
+The receipt is useful as:
 
-### 5.1 Intervention under test
+- a behavioral push against narration and skipping;
+- a pre-outcome record that prevents hindsight reconstruction; and
+- process evidence for later causal analysis.
 
-Only the package of Section 4: instructions, skill descriptions and triggers,
-and skill bodies. No ledger, no durable schema, no automatic retrieval, no
-required receipt, no prescribed memory format.
+The external harness separately scores whether the prediction was informative,
+whether the contact discriminated, whether later forecasts improved, and
+whether the task benefited. A thousand valid receipts with no transfer or task
+gain score worse than a package that learns with little ceremony.
 
-### 5.2 Research instrumentation
-
-The harness may keep receipts, traces, hashes, predictions, and raw
-observations **for scientific measurement**. The subject agent should not
-experience those as part of its learning machinery.
-
-Instrumentation must be observational where possible. For example, the harness
-secretly snapshots the agent's stated expectation before an outcome is
-revealed, so researchers can score calibration. That is observation.
-
-Instrumentation is intervention-bearing when it changes the subject's
-available representations or required workflow. Requiring the agent to fill
-out `prediction_receipt.json` before a tool reveals a result changes the
-agent's epistemic machinery. Instrumentation that changes the subject's
-available representations or required workflow is a separate experimental
-condition, not part of the default adaptive-loop package.
-
-A captured prediction earns zero research utility by itself. The harness
-separately scores whether the prediction was informative, whether the contact
-discriminated, whether later forecasts improved, and whether the task
-benefited. A thousand compliant artifacts with no transfer or task gain score
-worse than a package that learns with little ceremony.
-
-The same rule applies to anything the subject agent invents on its own:
-existence is never success. Only a later behavioral consequence can validate
-it.
+The same rule applies to lesson ledgers and skill activation: their existence is
+never success. Only a later behavioral consequence can validate them.
 
 ## 6. Two evaluation lanes
 
 Forced instrumentation can create the behavior it purports to observe. Every
 candidate is therefore evaluated in two lanes.
 
-### 6.1 Free-action lane (default condition)
+### 6.1 Free-action lane
 
 The subject receives the task and intervention package, with ordinary tools.
-The harness observes—via tool calls, transcripts, and file snapshots—whether
-the agent spontaneously predicts, probes, invokes skills, updates, transfers,
-and stops appropriately. When the agent states an expectation before an
-outcome, the harness captures it observationally. This measures behavioral
-induction without altering the agent's machinery.
+The harness observes whether it spontaneously predicts, probes, invokes skills,
+updates, transfers, and stops appropriately. This measures behavioral induction.
 
-### 6.2 Forced-prediction lane (diagnostic manipulation)
+### 6.2 Instrumented lane
 
-At predeclared consequential boundaries, the harness requires the agent to
-state an expectation before revealing the next observation. This makes
-predictions externally scorable and measures the quality of the agent's model
-when elicitation is held constant.
-
-The forced-prediction lane is a diagnostic manipulation, not a candidate
-architecture for the final loop. A verified package cannot rely on forced
-receipts. Any gain observed only in this lane is reported as an artifact of
-the manipulation, and runs in this lane are labeled intervention-bearing
-measurement.
+At predeclared consequential boundaries, the harness requires a prediction
+receipt before revealing the next observation. This makes predictions
+externally scorable and measures the quality of the agent's model when
+elicitation is held constant.
 
 Together these lanes distinguish:
 
 - an agent that has a useful model but needs a behavioral nudge;
-- an agent that produces compliant predictions with no useful model;
+- an agent that produces compliant receipts with no useful model;
 - an agent that acts adaptively without explicit ceremony; and
 - an intervention that improves both spontaneous behavior and measured learning.
 
@@ -277,46 +220,18 @@ plausible explanations fit the initial symptoms, and cheap probes differ in
 their information value. The endpoint is scored by hidden tests and by whether
 the learned explanation predicts adjacent cases, not by the patch narrative.
 
-### 7.3 Representation-pressure worlds
+### 7.3 Representation-transfer episodes
 
-These worlds test `H-representation-emergence`. The agent receives work where
-ordinary context is initially sufficient for learning to transfer. Conditions
-are then introduced, progressively, under which its incumbent representation
-stops working:
+An agent observes evidence in one task, stores whatever the package permits,
+and later encounters a related decision in:
 
-- context compaction;
-- long delays between evidence and its later use;
-- many unrelated distractors;
-- contradictions;
-- multiple scopes where a lesson applies differently;
-- repeated rediscovery of the same constraint;
-- parallel subproblems;
-- prior evidence that must affect a much later decision; and
-- changed evaluator interpretations while raw evidence remains relevant.
+- the same context with distractors;
+- a compacted context;
+- a fresh task with only the durable representation available; and
+- a superficially similar case where the old lesson should *not* apply.
 
-The package does not tell the agent what representation to build. Worlds are
-scored on five questions:
-
-1. **Notice:** does the agent detect that transfer is failing?
-2. **Diagnose:** does it locate the failure in representation rather than in
-   the domain, the artifact, or the evaluator?
-3. **Invent:** does it construct a mechanism of its own?
-4. **Repair:** does that mechanism reduce recurrence and improve later
-   prediction or action?
-5. **Discard:** does it later modify or discard the mechanism when that
-   mechanism becomes maladaptive?
-
-The fifth criterion is load-bearing. The program rewards the full self-loop—
-*agent invented a ledger because causal lessons were being lost; later
-discovered the ledger was too noisy; replaced it with scoped causal summaries;
-transfer improved*—not the single act of *agent invented a ledger*. That
-trajectory is illustrative: the passing shape is repair followed by further
-repair under continuing pressure, not any particular representation.
-
-Conditions A, B, and C (Section 1.1) all run on this family under progressively
-stronger pressure, so the comparison tests whether an unconstrained loop
-eventually beats a prescribed representation when both face the same failure
-regime.
+These episodes test retrieval, scope, contradiction handling, and negative
+transfer.
 
 ### 7.4 Evaluator-divergence worlds
 
@@ -407,13 +322,6 @@ outcomes with conjunctive promotion gates.
 - informativeness and discriminating power of selected contacts;
 - material model revisions per unit of contact cost;
 - recurrence of previously resolved error;
-- transfer-failure detection latency under representation pressure;
-- whether a detected transfer failure is attributed to representation rather
-  than to the domain, artifact, or evaluator;
-- rate of subject-invented representational mechanisms and their causal
-  relation to reduced recurrence;
-- rate at which the agent later modifies or discards an invented mechanism
-  when that mechanism becomes maladaptive;
 - skill activation precision and recall;
 - causal explanation accuracy on hidden adjacent cases;
 - time, tokens, tool calls, and externally mutating actions;
@@ -519,9 +427,11 @@ inspectable:
 - add, remove, compress, expand, or reorder one instruction component;
 - split, merge, add, or remove one skill;
 - change a skill's catalog trigger separately from its body;
+- add or remove one machinery element;
+- change when a mechanism activates without changing what it does;
 - transplant a component from a successful package into a different lineage;
 - revert a prior edit; or
-- propose a larger component jump with an explicit reason smaller edits cannot
+- propose a larger mechanism jump with an explicit reason smaller edits cannot
   discriminate the live hypotheses.
 
 Ordinary experiments change one causal unit. Larger jumps receive a separate
@@ -562,7 +472,7 @@ Evaluation follows a funnel:
 1. installation and trigger smoke tests;
 2. cheap controlled micro-worlds and restraint controls;
 3. broader controlled worlds;
-4. representation-pressure episodes;
+4. transfer and context-loss episodes;
 5. seeded software investigations;
 6. ecological tasks; and
 7. sealed confirmation.
@@ -621,12 +531,10 @@ directions. Repair insensitive evaluators before candidate search begins.
 
 Run at least:
 
-- no loop instructions and no skills (condition A);
+- no loop instructions and no skills;
 - current `AGENTS.md` only;
 - current skills only where the host can discover them;
-- current `AGENTS.md` plus current skills (condition B);
-- the loop plus a prescribed ledger/schema/retrieval mechanism (condition C,
-  run as a diagnostic comparison, not a search candidate); and
+- current `AGENTS.md` plus current skills; and
 - a token-length-matched neutral instruction control.
 
 Use paired worlds, fixed budgets, repeated subject runs, and identical model
@@ -634,12 +542,9 @@ and tool configurations.
 
 ### Stage 2 — Isolate behavioral actuators
 
-Test instruction prose, skill triggers, and skill bodies separately and in
-combination. Begin with cheap trigger, micro-world, and restraint gates.
-Escalate only survivors to representation-pressure and ecological tasks. The
-package grammar contains no prescribed representation; any candidate that
-adds one is condition C, a diagnostic comparison rather than an adaptive-loop
-candidate.
+Test prose, reminders, logs, receipt gates, skill triggers, retrieval, and
+combinations thereof. Begin with cheap trigger, micro-world, and restraint
+gates. Escalate only survivors to transfer and ecological tasks.
 
 ### Stage 3 — Adversarial epoch
 
@@ -658,7 +563,7 @@ apparent gains disappear under the stronger evaluator.
 
 Take the strongest robust package and perform deletion and interaction tests:
 
-1. remove each instruction component and skill alone;
+1. remove each instruction component, skill, and machinery element alone;
 2. use grouped delta debugging to remove larger subsets;
 3. test pairwise and selected higher-order interactions where removals disagree;
 4. add removed components back to confirm reversibility; and
@@ -724,13 +629,13 @@ research/
   components/
     agents/
     skills/
-  instrumentation/
+    machinery/
   packages/
   contracts/
   worlds/
     micro/
     software/
-    representation-pressure/
+    transfer/
     evaluator-divergence/
     saturation/
     restraint/
@@ -756,15 +661,12 @@ when:
    prediction loss and transfer;
 2. underlying task fitness is non-inferior overall and on critical slices;
 3. its apparent gain survives an adversarial evaluator epoch;
-4. its gap between process compliance and outcome improvement is acceptably
-   small;
+4. its machinery-to-outcome gap is acceptably small;
 5. its skill triggers meet the frozen routing gates;
-6. it prescribes no durable representation and its measured gain does not
-   depend on forced receipt instrumentation;
-7. minimization has found no removable component under the declared smallest
+6. minimization has found no removable component under the declared smallest
    effect and uncertainty bounds;
-8. the result replicates across the declared scope; and
-9. the exact frozen package passes sealed confirmation.
+7. the result replicates across the declared scope; and
+8. the exact frozen package passes sealed confirmation.
 
 The package is not certified because it runs the loop. It is certified because,
 under representative pressure, agents using it make better held-out predictions,

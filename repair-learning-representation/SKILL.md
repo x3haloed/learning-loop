@@ -25,7 +25,9 @@ Keep a stable anchor: representative past evidence, decisions, or held-out scena
 
 ## Challenge the incumbent
 
-Change the smallest relevant mechanism. This may mean adding causal links, scope and confidence, contradiction handling, provenance, retrieval cues, a different granularity, or a better division between raw evidence and current interpretation. Do not redesign the entire knowledge system when one broken transfer explains the failure.
+Change the smallest mechanism that explains the failed transfer. The solution may alter what is preserved, how it is structured, where it lives, when it is surfaced, how contradiction is represented, or something else entirely. Choose the mechanism from the observed failure rather than from a preferred knowledge architecture. Do not redesign the entire knowledge system when one broken transfer explains the failure.
+
+Do not introduce a ledger, schema, database, graph, retrieval layer, or other persistent structure merely because such structures are conventional. Let the failed transfer determine the representation.
 
 Compare incumbent and challenger on representative decisions, including at least one case not used to design the challenger when practical. Check whether the challenger:
 

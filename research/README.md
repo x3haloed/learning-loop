@@ -32,8 +32,12 @@ control packages. Live experiment `LL-0002` exercised that runner with GPT-5.6
 Luna. The runner succeeded, but the live transcripts falsified evaluator epoch
 `EVAL-0001`; see `reports/LL-0002.md`.
 
-The next live run is blocked on qualification of `EVAL-0002`. Do not rerun the
-old allocation as though additional samples could repair its ambiguous oracle.
+`EVAL-0002` is qualified for balanced posterior and contact measurement after
+`LL-0003`. `LL-0004` then showed that deterministic probes still ceiling
+decision and next-action and do not cleanly separate prose from contract.
+
+The next live experiment is `LL-0005`: the same 2×2 on noisy `worlds-0003`.
+See `reports/LL-0005.md`. Do not reuse a prior evidence root.
 
 The pilot runner defaults to the frozen `LL-0002` contract and refuses to
 overwrite its evidence directory. Any future execution must use a new contract

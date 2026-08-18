@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LL-0005",
+  "status": "planned",
+  "evaluator_epoch": "EVAL-0002",
+  "candidate_hashes": {
+    "current_loop_contract": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+    "current_loop_plain": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+    "no_loop_contract": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+    "no_loop_plain": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa"
+  },
+  "allocation": {
+    "class": "CHALLENGE",
+    "manifest_hash": "b8227ea085bbbdbe008e6b9761f8d94def4b6d2f17bef9f49235ce36c6e15151"
+  },
+  "environment": {
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "medium",
+    "subject_agents_executed": false,
+    "conditions": 4,
+    "worlds": 12,
+    "repetitions": 1,
+    "planned_runs": 48,
+    "world_manifest": "research/worlds/challenge/worlds-0003.json"
+  },
+  "prediction": {
+    "expected_change": "Noisy likelihoods will leave residual posterior mass after one contact, un-ceilinging decision and next-action on at least the five preferred-probe worlds whose honest posterior max is below 0.80, and will enlarge Bayes-L1 and entropy-gap separation relative to LL-0004.",
+    "mechanism": "A 0.70/0.15 probe cannot collapse a three-model prior to a point mass. Instruction prose should matter more when the subject must leave probability on losing models and refrain from committing near the 0.80 knife-edge (CW-004, CW-010).",
+    "unchanged_guardrails": [
+      "Hidden truth and scoring remain unavailable to subjects.",
+      "No process artifact receives primary outcome credit.",
+      "Decision and next-action remain diagnostics, not promotion gates.",
+      "No intervention is promoted without transcript review and a fresh confirmatory allocation."
+    ],
+    "kill_condition": "Honest posteriors still collapse to near-certainty on every world, every condition again scores 1.0 on decision and next-action, or the runner fails to isolate instructions or capture structured output."
+  },
+  "raw_evidence": [
+    {
+      "path": "research/contracts/challenge-0005.json",
+      "sha256": "82f5a872194dc8daef2944c77353464ff4b165bfca26ca1fdf4f8478da9629c9"
+    },
+    {
+      "path": "research/worlds/challenge/worlds-0003.json",
+      "sha256": "b8227ea085bbbdbe008e6b9761f8d94def4b6d2f17bef9f49235ce36c6e15151"
+    }
+  ],
+  "results": {
+    "planned_runs": 48,
+    "complete_runs": 0,
+    "harness_failures": 0,
+    "interpretation": "Unexecuted. Proposal only."
+  },
+  "disposition": "unexecuted"
+}

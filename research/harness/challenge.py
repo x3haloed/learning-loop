@@ -166,6 +166,7 @@ def score_response(world: dict[str, Any], turn_1: dict[str, Any], turn_2: dict[s
     ideal_posterior = posterior(world, probe, observed)
     actual_outcomes = world["checkpoint_outcomes"][world["truth"]]
     gains = {candidate: information_gain(world, candidate) for candidate in PROBES}
+    implied_checkpoints = predictive_probabilities(world, turn_2["model_posterior"])
     return {
         "probe_information_ratio": gains[probe] / max(gains.values()),
         "preferred_probe": 1.0 if probe == preferred_probe(world) else 0.0,
@@ -173,6 +174,10 @@ def score_response(world: dict[str, Any], turn_1: dict[str, Any], turn_2: dict[s
         "posterior_brier": _brier_multiclass(turn_2["model_posterior"], world["truth"]),
         "posterior_l1_from_bayes": sum(abs(float(turn_2["model_posterior"][model]) - ideal_posterior[model]) for model in MODELS),
         "posterior_entropy_gap": abs(_posterior_entropy(ideal_posterior) - _posterior_entropy(turn_2["model_posterior"])),
+        "checkpoint_coherence_l1": sum(
+            abs(float(turn_2["probabilities"][checkpoint]) - implied_checkpoints[checkpoint])
+            for checkpoint in CHECKPOINTS
+        ),
         "fixed_checkpoint_brier": _brier_binary(turn_2["probabilities"], actual_outcomes),
         "decision_accuracy": 1.0 if turn_2["decision"] == evidence_decision(ideal_posterior) else 0.0,
         "next_action_accuracy": 1.0 if turn_2["next_action"] == evidence_next_action(ideal_posterior) else 0.0,

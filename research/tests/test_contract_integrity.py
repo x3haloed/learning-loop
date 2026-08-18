@@ -76,6 +76,8 @@ class ContractIntegrityTests(unittest.TestCase):
             "LL-0001-runner-invocation-failure.json",
             "LL-0002-live-control-pilot.json",
             "LL-0003-balanced-live-challenge.json",
+            "LL-0004-plausible-factorial.json",
+            "LL-0005-noisy-factorial.json",
         ):
             record = load_json(REPO_ROOT / "research/experiments" / filename)
             for item in record["raw_evidence"]:

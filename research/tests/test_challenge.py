@@ -12,7 +12,7 @@ from research.harness.challenge import (
     synthetic_response,
     validate_world,
 )
-from research.harness.challenge_runner import aggregate
+from research.harness.challenge_runner import METRICS, _prompt_design, aggregate
 from research.harness.scoring import load_json
 
 
@@ -62,7 +62,8 @@ class ChallengeEvaluatorTests(unittest.TestCase):
         scores = {
             "probe_information_ratio": 1.0, "preferred_probe": 1.0,
             "probe_prediction_brier": 0.1, "posterior_brier": 0.2,
-            "posterior_l1_from_bayes": 0.0, "fixed_checkpoint_brier": 0.2,
+            "posterior_l1_from_bayes": 0.0, "posterior_entropy_gap": 0.0,
+            "checkpoint_coherence_l1": 0.0, "fixed_checkpoint_brier": 0.2,
             "decision_accuracy": 1.0, "next_action_accuracy": 1.0,
         }
         rows = [
@@ -74,6 +75,47 @@ class ChallengeEvaluatorTests(unittest.TestCase):
         self.assertEqual(summary["harness_failures"], 1)
         self.assertEqual(summary["conditions"]["a"]["metrics"]["posterior_brier"], 0.2)
         self.assertIn("diagnostic", summary["conditions"]["a"]["families"])
+
+
+class NoisyChallengeTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.worlds = load_json(REPO_ROOT / "research/worlds/challenge/worlds-0003.json")["worlds"]
+
+    def test_noisy_worlds_validate_and_preserve_uncertainty(self) -> None:
+        for world in self.worlds:
+            validate_world(world)
+            self.assertIn("probe_signal", world)
+            turn_1, turn_2 = synthetic_response(world, "honest-bayesian")
+            scores = score_response(world, turn_1, turn_2)
+            self.assertEqual(0.0, scores["posterior_l1_from_bayes"])
+            self.assertEqual(0.0, scores["posterior_entropy_gap"])
+            self.assertEqual(0.0, scores["checkpoint_coherence_l1"])
+            self.assertLess(max(turn_2["model_posterior"].values()), 0.999)
+
+    def test_preferred_probe_does_not_always_commit(self) -> None:
+        commits = 0
+        for world in self.worlds:
+            turn_1, turn_2 = synthetic_response(world, "honest-bayesian")
+            commits += int(turn_2["decision"] != "D4")
+        self.assertEqual(7, commits)
+
+    def test_plain_prompt_removes_numeric_commit_rule(self) -> None:
+        world = self.worlds[0]
+        contract = _prompt_design("P2", "contract", world, turn_2=True, observed="positive")
+        plain = _prompt_design("P2", "plain", world, turn_2=True, observed="positive")
+        self.assertIn("0.80", contract)
+        self.assertNotIn("0.80", plain)
+        self.assertIn("clearly strongest", plain)
+
+    def test_ll0005_contract_is_ready(self) -> None:
+        contract = load_json(REPO_ROOT / "research/contracts/challenge-0005.json")
+        self.assertEqual("LL-0005", contract["experiment_id"])
+        self.assertEqual("research/worlds/challenge/worlds-0003.json", contract["world_manifest"])
+        self.assertEqual(48, contract["planned_runs"])
+        self.assertIn("posterior_entropy_gap", contract["primary_metrics"])
+        self.assertTrue(set(contract["primary_metrics"]) <= set(METRICS))
+        self.assertTrue(set(contract["diagnostic_metrics"]) <= set(METRICS))
 
 
 if __name__ == "__main__":

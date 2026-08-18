@@ -31,6 +31,8 @@ METRICS = (
     "probe_prediction_brier",
     "posterior_brier",
     "posterior_l1_from_bayes",
+    "posterior_entropy_gap",
+    "checkpoint_coherence_l1",
     "fixed_checkpoint_brier",
     "decision_accuracy",
     "next_action_accuracy",
@@ -51,6 +53,17 @@ LEGACY_INSTRUCTION_PACKAGES = {
 }
 
 PROMPT_STYLES = ("contract", "plain")
+
+# Worlds have used both verbs; strip whichever is present so the plain
+# condition actually removes the numeric 0.80 commit rule.
+_CONTRACT_THRESHOLD_RULES = (
+    "Select a model intervention only if its posterior is at least 0.80; otherwise choose D4.",
+    "Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4.",
+)
+_PLAIN_THRESHOLD_RULE = (
+    "If one model is clearly strongest, choose that model's intervention; "
+    "otherwise prefer to gather more evidence safely."
+)
 
 
 def _resolve_condition_metadata(contract: dict[str, any], condition: str) -> tuple[str, str]:
@@ -88,11 +101,9 @@ def _prompt_design(prompt_text: str, prompt_style: str, world: dict[str, Any], *
             probe=prompt_text,
             observation=f"{observed}. {world['observations'][observed]}",
         )
-        return (
-            base.replace("Select a model intervention only if its posterior is at least 0.80; otherwise choose D4.",
-                          "If one model is clearly strongest, choose that model's intervention; otherwise prefer to gather more evidence safely.")
-                   .replace("Return only the required JSON.", "Return a JSON payload with the required fields.")
-        )
+        for rule in _CONTRACT_THRESHOLD_RULES:
+            base = base.replace(rule, _PLAIN_THRESHOLD_RULE)
+        return base.replace("Return only the required JSON.", "Return a JSON payload with the required fields.")
 
     base = prompt_text.replace("Select the contact with the greatest expected information gain per unit cost.", "Choose one contact.")
     base = base.replace("Return only the required JSON.", "Return a JSON payload with the required fields.")

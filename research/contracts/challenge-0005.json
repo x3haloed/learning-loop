@@ -61,8 +61,14 @@
   "diagnostic_metrics": [
     "preferred_probe",
     "probe_prediction_brier",
+    "checkpoint_coherence_l1",
     "decision_accuracy",
     "next_action_accuracy"
+  ],
+  "harness_repairs_before_execution": [
+    "Aggregate posterior_entropy_gap, which score_response already computes.",
+    "Record posterior-checkpoint coherence as a diagnostic, not a promotion metric.",
+    "Make the plain prompt actually strip the numeric 0.80 commit rule (LL-0004 leaked it)."
   ],
   "promotion_policy": "qualification challenge only; no AGENTS.md or skill promotion without adversarial transcript review and a fresh confirmatory allocation",
   "kill_conditions": [

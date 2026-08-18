@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161f-b2fe-7933-aed7-ac2910c40c10"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P3\",\"positive_probability\":0.5,\"decision_relevance\":\"P3 has the greatest expected information gain per unit cost because its positive result occurs under the highest-prior model (M2), yielding the most balanced and informative possible outcome split (0.50 positive vs. 0.50 negative).\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12760,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":292,"reasoning_output_tokens":213}}

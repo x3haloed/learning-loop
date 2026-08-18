@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161d-d655-72f2-bbb3-0e39e4ea8c3c"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":0,\"M2\":1,\"M3\":0},\"probabilities\":{\"C1\":0,\"C2\":0,\"C3\":1},\"decision\":\"D2\",\"lesson\":\"P3 was positive, and its unique signature identifies M2; the evidence supports applying the M2 intervention.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":31636,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":522,"reasoning_output_tokens":365}}

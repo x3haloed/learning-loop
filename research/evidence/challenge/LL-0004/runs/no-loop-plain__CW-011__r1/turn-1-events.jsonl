@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161f-817c-7b30-afb8-62f713eada2d"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"positive_probability\":0.5,\"decision_relevance\":\"P1 has the highest chance of a positive result (0.50). A positive result supports M1, indicating the visible aggregate is a faithful proxy for customer outcome; a negative result argues against that interpretation.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12754,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":159,"reasoning_output_tokens":86}}

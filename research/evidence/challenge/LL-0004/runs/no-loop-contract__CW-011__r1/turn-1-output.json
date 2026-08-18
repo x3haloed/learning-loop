@@ -1,0 +1,1 @@
+{"probe_choice":"P1","positive_probability":0.5,"decision_relevance":"All three probes have identical expected information gain per unit cost because each perfectly identifies one hypothesis at equal cost; P1 is selected as a tie-breaker, with the highest probability of a positive result."}

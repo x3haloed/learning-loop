@@ -1,0 +1,57 @@
+{
+  "condition": "no-loop-contract",
+  "elapsed_seconds": 15.142979145050049,
+  "family": "proxy",
+  "instruction_sha256": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "no-loop-contract__CW-011__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.10666666666666669,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.10666666666666669,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0161f-77d0-7d12-aaeb-4b5c76b7f08a",
+  "turn_1": {
+    "decision_relevance": "All three probes have identical expected information gain per unit cost because each perfectly identifies one hypothesis at equal cost; P1 is selected as a tie-breaker, with the highest probability of a positive result.",
+    "positive_probability": 0.5,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P1 was negative, ruling out M1; M2 and M3 remain plausible, so no intervention meets the 0.80 threshold.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0.6,
+      "M3": 0.4
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.6,
+      "C2": 0.4,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 12751,
+      "output_tokens": 210
+    },
+    "turn_2": {
+      "cached_input_tokens": 19968,
+      "input_tokens": 27946,
+      "output_tokens": 406
+    }
+  },
+  "world_id": "CW-011",
+  "world_sha256": "03235fc0b7e3d4b22c4b8930b0b7310ad2adaf457e1855ea9fac74ff5813924c"
+}

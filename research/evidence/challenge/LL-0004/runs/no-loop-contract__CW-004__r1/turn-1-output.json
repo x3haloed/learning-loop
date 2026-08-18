@@ -1,0 +1,1 @@
+{"probe_choice":"P2","positive_probability":0.45,"decision_relevance":"P2 has the greatest expected information gain because it uniquely tests M1, whose prior probability (0.45) yields the highest binary entropy among the three options; all contacts cost 1.0."}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161f-4737-7230-a1ff-cf50404243bc"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"positive_probability\":0.45,\"decision_relevance\":\"An independent aggregate replication has the highest chance of a positive result and directly tests whether the visible metric is a faithful proxy for the customer outcome (M1).\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12748,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":114,"reasoning_output_tokens":52}}

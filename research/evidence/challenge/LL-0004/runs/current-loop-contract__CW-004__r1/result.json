@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop-contract",
+  "elapsed_seconds": 19.552034854888916,
+  "family": "diagnostic",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop-contract__CW-004__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.30250000000000005
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0161d-9e24-7c21-b8b5-c3d80b6c96b6",
+  "turn_1": {
+    "decision_relevance": "P2 has the greatest expected information gain per unit cost because it directly isolates the highest-prior alternative (M1); a positive result identifies M1, while a negative result substantially narrows probability to M2 versus M3.",
+    "positive_probability": 0.45,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D1",
+    "lesson": "P2 was positive, and its signature occurs only under M1; therefore M1 is fully supported under the stated model.",
+    "model_posterior": {
+      "M1": 1,
+      "M2": 0,
+      "M3": 0
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 0
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 14508,
+      "output_tokens": 281
+    },
+    "turn_2": {
+      "cached_input_tokens": 19968,
+      "input_tokens": 31529,
+      "output_tokens": 499
+    }
+  },
+  "world_id": "CW-004",
+  "world_sha256": "fadb900238167a7f4b75367b12eea771e5119de7dec36604956d8c120686d209"
+}

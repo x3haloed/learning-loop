@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161d-7959-7b80-967d-c1795b3dfa45"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P3\",\"positive_probability\":0.5,\"decision_relevance\":\"P3 has the highest chance of a positive result (50%) at the same cost; because it is positive only under M3, its result directly tests the most likely failure mechanism.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12745,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":125,"reasoning_output_tokens":57}}

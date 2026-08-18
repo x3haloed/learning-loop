@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161c-e039-7811-8acd-ac89ce9ee642"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"P2 has the greatest expected information gain per unit cost. A positive result uniquely identifies M1; a negative result rules out M1 and updates the remaining probabilities to M3 0.40 and M2 0.60.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12537,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":374,"reasoning_output_tokens":296}}

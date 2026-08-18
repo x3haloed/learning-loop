@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0,"M2":0.6,"M3":0.4},"probabilities":{"C1":0.6,"C2":0.4,"C3":1},"decision":"D4","lesson":"P1 being negative eliminates M1 under the deterministic evaluator signature, but M2 and M3 remain plausible; therefore no single intervention reaches the 0.80 threshold.","next_action":"N2"}

@@ -1,0 +1,1 @@
+{"probe_choice":"P2","positive_probability":0.5,"decision_relevance":"P2 has the greatest expected information gain per unit cost. A positive result uniquely identifies M1; a negative result rules out M1 and updates the remaining probabilities to M3 0.40 and M2 0.60."}

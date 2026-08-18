@@ -1,0 +1,1 @@
+{"probe_choice":"P2","positive_probability":0.5,"decision_relevance":"P2 has the greatest expected information gain per unit cost because its positive result uniquely supports M3, splitting the prior most evenly (0.50 vs. 0.50)."}

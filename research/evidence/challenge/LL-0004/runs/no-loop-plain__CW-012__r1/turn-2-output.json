@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0.285714,"M2":0,"M3":0.714286},"probabilities":{"C1":0.285714,"C2":1,"C3":0.714286},"decision":"D4","lesson":"P3 was negative, ruling out M2's unique signature. The remaining uncertainty favors M3 over M1, but neither posterior reaches the 0.80 threshold, so no model-specific intervention is justified.","next_action":"N2"}

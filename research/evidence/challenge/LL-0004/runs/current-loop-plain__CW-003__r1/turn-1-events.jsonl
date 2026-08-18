@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161d-6d79-7610-8edc-2f871d85bd7e"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P3\",\"positive_probability\":0.5,\"decision_relevance\":\"P3 has the highest chance of a positive result because M3 has the highest prior probability (0.50). Since each fixture is positive only under its corresponding mechanism and all cost 1.0, P3 maximizes expected diagnostic yield.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14502,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":118,"reasoning_output_tokens":38}}

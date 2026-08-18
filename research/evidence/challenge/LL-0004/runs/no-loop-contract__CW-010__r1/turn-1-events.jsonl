@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161f-20d6-7f23-a093-cd7af7c38f91"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"positive_probability\":0.45,\"decision_relevance\":\"P1 has the greatest expected information gain per unit cost because it is positive only under M1 and has the highest prior probability among the perfectly discriminating probes. A positive result supports the visible aggregate as a faithful proxy; a negative result shifts belief toward the subgroup-regression or measurement-noise explanations.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12754,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":466,"reasoning_output_tokens":375}}

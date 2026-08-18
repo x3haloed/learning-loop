@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0,"M2":0,"M3":1},"probabilities":{"C1":0,"C2":1,"C3":1},"decision":"D3","lesson":"P3 was positive, and its signature occurs only under M3; therefore M3 has posterior 1.0 under the stated model. The checkpoint predictions follow M3: C1 fails, while C2 and C3 pass.","next_action":"N1"}

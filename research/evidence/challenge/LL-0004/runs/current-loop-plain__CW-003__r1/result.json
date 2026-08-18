@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop-plain",
+  "elapsed_seconds": 13.514299869537354,
+  "family": "diagnostic",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop-plain__CW-003__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0161d-6d79-7610-8edc-2f871d85bd7e",
+  "turn_1": {
+    "decision_relevance": "P3 has the highest chance of a positive result because M3 has the highest prior probability (0.50). Since each fixture is positive only under its corresponding mechanism and all cost 1.0, P3 maximizes expected diagnostic yield.",
+    "positive_probability": 0.5,
+    "probe_choice": "P3"
+  },
+  "turn_2": {
+    "decision": "D3",
+    "lesson": "P3 was positive, and its signature is present only under M3; therefore M3 is supported with posterior probability 1.0. Under M3, C2 and C3 pass while C1 fails.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0,
+      "M3": 1
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 14502,
+      "output_tokens": 118
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 31357,
+      "output_tokens": 342
+    }
+  },
+  "world_id": "CW-003",
+  "world_sha256": "a141e3295fb01dc5ca0aeb78f61b120b3ddb6a78a7883cabf98b1ba28c38fd98"
+}

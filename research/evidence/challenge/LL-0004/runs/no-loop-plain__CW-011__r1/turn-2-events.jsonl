@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161f-817c-7b30-afb8-62f713eada2d"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":0,\"M2\":0.375,\"M3\":0.625},\"probabilities\":{\"C1\":0.375,\"C2\":0.625,\"C3\":1},\"decision\":\"D4\",\"lesson\":\"P1 was negative, eliminating M1 because its unique positive signature was absent. M2 and M3 remain plausible, with M3 favored but below the 0.80 intervention threshold.\",\"next_action\":\"N2\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":27904,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":393,"reasoning_output_tokens":210}}

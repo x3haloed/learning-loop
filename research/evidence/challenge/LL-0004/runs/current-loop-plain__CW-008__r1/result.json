@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop-plain",
+  "elapsed_seconds": 15.598176002502441,
+  "family": "transfer",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop-plain__CW-008__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.10666666666666669,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.10666666666666669,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0161e-95b4-7502-824e-b1731452081b",
+  "turn_1": {
+    "decision_relevance": "P2 has the highest probability of a positive result and directly tests whether the old rule transfers globally under M1; with equal costs, it offers the strongest chance of informative contact.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P2 was negative, eliminating M1 because its unique signature was absent. M2 and M3 remain plausible, with M2 more likely; neither reaches the 0.80 intervention threshold.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0.6,
+      "M3": 0.4
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.6,
+      "C2": 0.4,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 14519,
+      "output_tokens": 127
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 31402,
+      "output_tokens": 374
+    }
+  },
+  "world_id": "CW-008",
+  "world_sha256": "048ca8ef86ec3cbcc3c94ad86dbf63df65f41cc60e44f70c2330e7d98675ee4a"
+}

@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0,"M2":0.285714,"M3":0.714286},"probabilities":{"C1":0.285714,"C2":0.714286,"C3":1},"decision":"D4","lesson":"P1 was negative, so M1 is ruled out; M2 and M3 remain plausible, with M3 more likely but below the 0.80 intervention threshold.","next_action":"N2"}

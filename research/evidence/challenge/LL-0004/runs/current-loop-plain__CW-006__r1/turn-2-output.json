@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0,"M2":0,"M3":1},"probabilities":{"C1":0,"C2":1,"C3":1},"decision":"D3","lesson":"P2 was positive, and its unique signature supports M3; under the stated likelihoods, M3 is the only remaining model.","next_action":"N1"}

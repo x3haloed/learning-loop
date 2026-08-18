@@ -1,0 +1,1 @@
+{"probe_choice":"P2","positive_probability":0.5,"decision_relevance":"P2 has the greatest expected information gain because its positive result occurs under the highest-uncertainty hypothesis (M3, prior 0.50), giving the most balanced outcome split; all probes have equal cost."}

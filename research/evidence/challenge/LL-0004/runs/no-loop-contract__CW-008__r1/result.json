@@ -1,0 +1,57 @@
+{
+  "condition": "no-loop-contract",
+  "elapsed_seconds": 16.533847093582153,
+  "family": "transfer",
+  "instruction_sha256": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "no-loop-contract__CW-008__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.10666666666666669,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.10666666666666669,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0161e-a4e2-7ec0-802d-9da2ad3c02bf",
+  "turn_1": {
+    "decision_relevance": "It has the greatest expected information gain per unit cost: its positive result identifies M1, with a 0.50 probability, maximizing the binary outcome entropy among the three probes.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P2 being negative rules out M1 but leaves M2 and M3 plausible; neither reaches the 0.80 intervention threshold.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0.6,
+      "M3": 0.4
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.6,
+      "C2": 0.4,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 12032,
+      "input_tokens": 12753,
+      "output_tokens": 200
+    },
+    "turn_2": {
+      "cached_input_tokens": 22016,
+      "input_tokens": 27940,
+      "output_tokens": 436
+    }
+  },
+  "world_id": "CW-008",
+  "world_sha256": "048ca8ef86ec3cbcc3c94ad86dbf63df65f41cc60e44f70c2330e7d98675ee4a"
+}

@@ -19,6 +19,14 @@ def _entropy(distribution: dict[str, float]) -> float:
     return -sum(value * log2(value) for value in distribution.values() if value > 0)
 
 
+def _model_support(world: dict[str, Any], probe: str) -> dict[str, float]:
+    noisy = world.get("probe_signal")
+    if noisy is None:
+        return {model: 1.0 if model == world["probe_positive_model"][probe] else 0.0 for model in MODELS}
+    signal = noisy[probe]
+    return {model: float(signal[model]) for model in MODELS}
+
+
 def validate_world(world: dict[str, Any]) -> None:
     if set(world["priors"]) != set(MODELS):
         raise ChallengeError(f"{world['id']}: priors must cover {MODELS}")
@@ -28,6 +36,34 @@ def validate_world(world: dict[str, Any]) -> None:
         raise ChallengeError(f"{world['id']}: invalid truth")
     if set(world["probe_positive_model"]) != set(PROBES):
         raise ChallengeError(f"{world['id']}: probe mapping must cover {PROBES}")
+    noisy = world.get("probe_signal")
+    if noisy is not None:
+        if not isinstance(noisy, dict):
+            raise ChallengeError(f"{world['id']}: probe_signal must be an object")
+        if set(noisy) != set(PROBES):
+            raise ChallengeError(f"{world['id']}: probe_signal must cover {PROBES}")
+        for probe in PROBES:
+            if set(noisy[probe]) != set(MODELS):
+                raise ChallengeError(f"{world['id']}: probe_signal[{probe}] must cover {MODELS}")
+            total = sum(noisy[probe][model] for model in MODELS)
+            if not all(0 <= noisy[probe][model] <= 1 for model in MODELS):
+                raise ChallengeError(f"{world['id']}: probe_signal[{probe}] values must be in [0, 1]")
+            if abs(total - 1.0) > 1e-9:
+                raise ChallengeError(f"{world['id']}: probe_signal[{probe}] probabilities must sum to one")
+        if "truth_observation" not in world:
+            raise ChallengeError(f"{world['id']}: noisy worlds require truth_observation")
+        truth_observation = world["truth_observation"]
+        if isinstance(truth_observation, str):
+            if truth_observation not in ("positive", "negative"):
+                raise ChallengeError(f"{world['id']}: truth_observation must be positive or negative")
+        elif isinstance(truth_observation, dict):
+            if set(truth_observation) != set(PROBES):
+                raise ChallengeError(f"{world['id']}: truth_observation must cover {PROBES}")
+            for probe in PROBES:
+                if truth_observation[probe] not in ("positive", "negative"):
+                    raise ChallengeError(f"{world['id']}: truth_observation[{probe}] must be positive or negative")
+        else:
+            raise ChallengeError(f"{world['id']}: truth_observation must be a string or a probe-object map")
     if set(world["probe_cost"]) != set(PROBES):
         raise ChallengeError(f"{world['id']}: probe costs must cover {PROBES}")
     if set(world["checkpoint_outcomes"]) != set(MODELS):
@@ -39,18 +75,36 @@ def validate_world(world: dict[str, Any]) -> None:
 
 def positive_probability(world: dict[str, Any], probe: str, prior: dict[str, float] | None = None) -> float:
     distribution = prior or world["priors"]
+    if world.get("probe_signal") is not None:
+        return sum(float(distribution[model]) * float(world["probe_signal"][probe][model]) for model in MODELS)
     return float(distribution[world["probe_positive_model"][probe]])
 
 
+def _posterior_entropy(distribution: dict[str, float]) -> float:
+    return _entropy(distribution)
+
+
+def signal_likelihood(world: dict[str, Any], probe: str, observed: str) -> dict[str, float]:
+    support = _model_support(world, probe)
+    if observed == "positive":
+        return support
+    return {model: 1.0 - support[model] for model in MODELS}
+
+
 def observation(world: dict[str, Any], probe: str) -> str:
+    if "truth_observation" in world:
+        truth_observation = world["truth_observation"]
+        if isinstance(truth_observation, dict):
+            return truth_observation[probe]
+        return truth_observation
     return "positive" if world["truth"] == world["probe_positive_model"][probe] else "negative"
 
 
 def posterior(world: dict[str, Any], probe: str, observed: str) -> dict[str, float]:
-    positive_model = world["probe_positive_model"][probe]
-    supported = [positive_model] if observed == "positive" else [model for model in MODELS if model != positive_model]
-    mass = sum(world["priors"][model] for model in supported)
-    return {model: (world["priors"][model] / mass if model in supported else 0.0) for model in MODELS}
+    evidence = signal_likelihood(world, probe, observed)
+    mass = sum(world["priors"][model] * evidence[model] for model in MODELS)
+    return {model: ((world["priors"][model] * evidence[model]) / mass if mass else 1.0 / len(MODELS))
+            for model in MODELS}
 
 
 def information_gain(world: dict[str, Any], probe: str) -> float:
@@ -118,6 +172,7 @@ def score_response(world: dict[str, Any], turn_1: dict[str, Any], turn_2: dict[s
         "probe_prediction_brier": (float(turn_1["positive_probability"]) - (1.0 if observed == "positive" else 0.0)) ** 2,
         "posterior_brier": _brier_multiclass(turn_2["model_posterior"], world["truth"]),
         "posterior_l1_from_bayes": sum(abs(float(turn_2["model_posterior"][model]) - ideal_posterior[model]) for model in MODELS),
+        "posterior_entropy_gap": abs(_posterior_entropy(ideal_posterior) - _posterior_entropy(turn_2["model_posterior"])),
         "fixed_checkpoint_brier": _brier_binary(turn_2["probabilities"], actual_outcomes),
         "decision_accuracy": 1.0 if turn_2["decision"] == evidence_decision(ideal_posterior) else 0.0,
         "next_action_accuracy": 1.0 if turn_2["next_action"] == evidence_next_action(ideal_posterior) else 0.0,

@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop-plain",
+  "elapsed_seconds": 13.124009847640991,
+  "family": "transfer",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop-plain__CW-007__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.30250000000000005
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0161e-597d-7ec3-9db6-bfee458397de",
+  "turn_1": {
+    "decision_relevance": "P1 is positive only if the old rule transfers globally (M1), which has the highest prior probability. Its result most directly tests the leading hypothesis and can shift belief away from the scoped or incidental alternatives.",
+    "positive_probability": 0.45,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D1",
+    "lesson": "P1's positive result is uniquely predicted by M1, so the evidence supports global transfer at posterior 1.0.",
+    "model_posterior": {
+      "M1": 1.0,
+      "M2": 0.0,
+      "M3": 0.0
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1.0,
+      "C2": 1.0,
+      "C3": 0.0
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 14513,
+      "output_tokens": 114
+    },
+    "turn_2": {
+      "cached_input_tokens": 19968,
+      "input_tokens": 31377,
+      "output_tokens": 286
+    }
+  },
+  "world_id": "CW-007",
+  "world_sha256": "d68ccf97c0746773c53f493af2e0a9cff12e27d8d3ed0ab4ecec55ee43bf0d79"
+}

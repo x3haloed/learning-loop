@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":1.0,"M2":0.0,"M3":0.0},"probabilities":{"C1":1.0,"C2":1.0,"C3":0.0},"decision":"D1","lesson":"P1's positive result is uniquely predicted by M1, so the evidence supports global transfer at posterior 1.0.","next_action":"N1"}

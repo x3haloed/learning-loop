@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161d-3311-75d3-ab79-9e1ce4870f21"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P1\",\"positive_probability\":0.5,\"decision_relevance\":\"Greatest expected information gain per unit cost; a positive result identifies M2, while a negative result narrows the possibilities to M3 and M1.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12745,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":348,"reasoning_output_tokens":286}}

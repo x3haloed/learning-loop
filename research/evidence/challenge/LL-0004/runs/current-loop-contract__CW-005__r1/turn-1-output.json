@@ -1,0 +1,1 @@
+{"probe_choice":"P3","positive_probability":0.5,"decision_relevance":"Highest expected information gain per unit cost: P3 uniquely tests M2, so a positive result identifies M2; a negative result rules out M2 and reallocates probability to M3/M1."}

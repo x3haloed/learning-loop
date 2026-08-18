@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161e-8cc6-7d83-82cc-c25e599303b6"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":1,\"M2\":0,\"M3\":0},\"probabilities\":{\"C1\":1,\"C2\":1,\"C3\":0},\"decision\":\"D1\",\"lesson\":\"P1 was positive, and its signature is unique to M1; the evidence therefore supports global transfer. Apply M1's intervention.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":27859,"cached_input_tokens":19968,"cache_write_input_tokens":0,"output_tokens":331,"reasoning_output_tokens":175}}

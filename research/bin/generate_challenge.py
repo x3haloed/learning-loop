@@ -8,10 +8,12 @@ import json
 from pathlib import Path
 import random
 import tempfile
+from typing import Any
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUTPUT = REPO_ROOT / "research/worlds/challenge/worlds-0002.json"
+NOISY_OUTPUT = REPO_ROOT / "research/worlds/challenge/worlds-0003.json"
 
 
 SURFACES = {
@@ -76,6 +78,11 @@ TRUTHS = {
     "proxy": ["M3", "M1", "M2", "M3"]
 }
 
+NOISY_SIGNAL = {
+    "target": 0.70,
+    "other": 0.15,
+}
+
 CHECKPOINT_TABLE = {
     "M1": {"C1": 1, "C2": 1, "C3": 0},
     "M2": {"C1": 1, "C2": 0, "C3": 1},
@@ -83,35 +90,76 @@ CHECKPOINT_TABLE = {
 }
 
 
-def build_worlds() -> dict:
+def _ordered_families() -> tuple[str, ...]:
+    return tuple(SURFACES)
+
+
+def _model_lines(surface: dict[str, Any], priors: dict[str, float], order: list[str]) -> str:
+    return " ".join(f"{model}: {surface['models'][model]} (prior {priors[model]:.2f})." for model in order)
+
+
+def build_worlds(noisy: bool = False) -> dict:
     rng = random.Random(20260818)
+    families = _ordered_families()
     worlds = []
     index = 1
     for family, surface in SURFACES.items():
         for variant in range(4):
             order = list(("M1", "M2", "M3"))
             rng.shuffle(order)
+            priors = PRIORS[(variant + families.index(family)) % len(PRIORS)]
             probes = list(("P1", "P2", "P3"))
             rng.shuffle(probes)
             probe_mapping = {probe: model for probe, model in zip(probes, order)}
-            priors = PRIORS[(variant + list(SURFACES).index(family)) % len(PRIORS)]
             costs = {"P1": 1.0, "P2": 1.0, "P3": 1.0}
-            model_lines = " ".join(f"{model}: {surface['models'][model]} (prior {priors[model]:.2f})." for model in order)
+            signal: dict[str, Any] = {}
+            if noisy:
+                for probe in probes:
+                    signal_model = probe_mapping[probe]
+                    signal[probe] = {
+                        "M1": float(NOISY_SIGNAL["other"]),
+                        "M2": float(NOISY_SIGNAL["other"]),
+                        "M3": float(NOISY_SIGNAL["other"]),
+                    }
+                    signal[probe][signal_model] = float(NOISY_SIGNAL["target"])
+            model_lines = _model_lines(surface, priors, order)
             probe_lines = " ".join(
                 f"{probe}: {surface['probes'][probe]}; it is positive only under {probe_mapping[probe]}; cost {costs[probe]:.1f}."
                 for probe in probes
             )
+            if noisy:
+                probe_lines = " ".join(
+                    f"{probe}: {surface['probes'][probe]}; it is positive with probability {NOISY_SIGNAL['target']:.2f} "
+                    f"under {probe_mapping[probe]} and {NOISY_SIGNAL['other']:.2f} otherwise; cost {costs[probe]:.1f}."
+                    for probe in probes
+                )
+            world_truth = TRUTHS[family][variant]
+            if noisy:
+                truth_observation = {}
+                for probe in probes:
+                    truth_observation[probe] = "positive" if rng.random() < signal[probe][world_truth] else "negative"
+
             turn_1 = (
                 f"{surface['context']} {model_lines} You may make exactly one contact. "
                 f"{probe_lines} Select the contact with the greatest expected information gain per unit cost. "
                 "Report the probability that its result will be positive and explain its decision relevance. Return only the required JSON."
             )
-            turn_2 = (
-                "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. "
-                "The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. "
-                "Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. "
-                "Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON."
-            )
+            if noisy:
+                turn_2 = (
+                    "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3 using the noisy signal above; "
+                    "do not force certainty if multiple models remain. The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; "
+                    "under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. Predict probability of PASS for C1, C2, and C3. "
+                    "Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. "
+                    "Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; "
+                    "N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON."
+                )
+            else:
+                turn_2 = (
+                    "Observed result from {probe}: {observation} Update to a probability distribution over M1, M2, and M3; do not force certainty if multiple models remain. "
+                    "The fixed checkpoints behave as follows: under M1, C1 and C2 pass while C3 fails; under M2, C1 and C3 pass while C2 fails; under M3, C2 and C3 pass while C1 fails. "
+                    "Predict probability of PASS for C1, C2, and C3. Decisions D1, D2, and D3 apply the corresponding model's intervention; D4 gathers more evidence without applying one. "
+                    "Choose a model intervention only if its posterior is at least 0.80; otherwise choose D4. Next actions: N1 stop contact and apply the justified decision; N2 run another discriminating contact; N3 repeat the same contact or add documentation. Return only the required JSON."
+                )
             worlds.append({
                 "id": f"CW-{index:03d}",
                 "family": family,
@@ -121,27 +169,31 @@ def build_worlds() -> dict:
                 "probe_positive_model": probe_mapping,
                 "probe_cost": costs,
                 "checkpoint_outcomes": CHECKPOINT_TABLE,
-                "truth": TRUTHS[family][variant],
+                "truth": world_truth,
                 "turn_1": turn_1,
                 "turn_2": turn_2,
-                "observations": {"positive": surface["positive"], "negative": surface["negative"]}
+                "observations": {"positive": surface["positive"], "negative": surface["negative"]},
             })
+            if noisy:
+                worlds[-1]["probe_signal"] = signal
+                worlds[-1]["truth_observation"] = truth_observation
             index += 1
     return {
         "schema_version": 1,
         "evaluator_epoch": "EVAL-0002",
         "allocation": "CHALLENGE",
         "seed": 20260818,
-        "worlds": worlds
+        "worlds": worlds,
     }
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--noisy", action="store_true", help="Emit worlds with noisy probe channels (worlds-0003)")
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
-    payload = build_worlds()
+    payload = build_worlds(noisy=args.noisy or args.output == NOISY_OUTPUT)
     rendered = json.dumps(payload, indent=2, sort_keys=True) + "\n"
     if args.check:
         if not args.output.is_file() or args.output.read_text(encoding="utf-8") != rendered:

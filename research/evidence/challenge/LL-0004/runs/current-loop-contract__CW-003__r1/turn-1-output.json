@@ -1,0 +1,1 @@
+{"probe_choice":"P3","positive_probability":0.5,"decision_relevance":"P3 has the greatest expected information gain per unit cost: a positive result identifies M3, while a negative result rules out the highest-prior mechanism and narrows the cause to M1 (0.60) versus M2 (0.40)."}

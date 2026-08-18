@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0,"M2":0,"M3":1},"probabilities":{"C1":0,"C2":1,"C3":1},"decision":"D3","lesson":"P2 was positive, uniquely supporting M3; its scoped compatibility rule transfers, while M1 and M2 are unsupported.","next_action":"N1"}

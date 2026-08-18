@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161e-56d4-7290-9b0e-51370bd1a074"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":1,\"M2\":0,\"M3\":0},\"probabilities\":{\"C1\":1,\"C2\":1,\"C3\":0},\"decision\":\"D1\",\"lesson\":\"P1 was positive, uniquely supporting M1; the transfer rule is global.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":31607,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":473,"reasoning_output_tokens":321}}

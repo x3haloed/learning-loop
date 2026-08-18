@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop-plain",
+  "elapsed_seconds": 18.825747966766357,
+  "family": "proxy",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop-plain__CW-011__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.10666666666666669,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.10666666666666669,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0161f-5a2a-7331-91a6-275f2f035f43",
+  "turn_1": {
+    "decision_relevance": "Most likely to yield a positive result; it tests whether the visible aggregate is a faithful proxy for the customer outcome and supports acting on the apparent gain.",
+    "positive_probability": 0.5,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P1 being negative eliminates M1 under the deterministic evaluator signature, but M2 and M3 remain plausible; therefore no single intervention reaches the 0.80 threshold.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0.6,
+      "M3": 0.4
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.6,
+      "C2": 0.4,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 14514,
+      "output_tokens": 135
+    },
+    "turn_2": {
+      "cached_input_tokens": 19968,
+      "input_tokens": 31400,
+      "output_tokens": 418
+    }
+  },
+  "world_id": "CW-011",
+  "world_sha256": "03235fc0b7e3d4b22c4b8930b0b7310ad2adaf457e1855ea9fac74ff5813924c"
+}

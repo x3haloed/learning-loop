@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161d-5be2-7f51-9e31-7749f18cbadc"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P3\",\"positive_probability\":0.5,\"decision_relevance\":\"P3 has the greatest expected information gain per unit cost: a positive result identifies M3, while a negative result rules out the highest-prior mechanism and narrows the cause to M1 (0.60) versus M2 (0.40).\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14508,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":318,"reasoning_output_tokens":236}}

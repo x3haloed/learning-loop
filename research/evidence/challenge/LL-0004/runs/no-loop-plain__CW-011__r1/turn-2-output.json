@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0,"M2":0.375,"M3":0.625},"probabilities":{"C1":0.375,"C2":0.625,"C3":1},"decision":"D4","lesson":"P1 was negative, eliminating M1 because its unique positive signature was absent. M2 and M3 remain plausible, with M3 favored but below the 0.80 intervention threshold.","next_action":"N2"}

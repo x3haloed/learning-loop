@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161e-d2a9-7e71-9f23-1e2ff981c574"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"P2 has the highest probability of a positive result (0.50) and directly tests customer-outcome behavior in a held-out subgroup, making it the most decision-relevant contact under the stated hypotheses.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14514,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":200,"reasoning_output_tokens":128}}

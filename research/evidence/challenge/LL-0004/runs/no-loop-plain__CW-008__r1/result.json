@@ -1,0 +1,57 @@
+{
+  "condition": "no-loop-plain",
+  "elapsed_seconds": 18.104204893112183,
+  "family": "transfer",
+  "instruction_sha256": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "no-loop-plain__CW-008__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.054421768702040824,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.054421768702040824,
+    "posterior_l1_from_bayes": 0.22857142860000002,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0161e-c9e3-7073-a58a-bd85e3fb1c23",
+  "turn_1": {
+    "decision_relevance": "A positive result uniquely supports M1, indicating the old rule transfers globally rather than being limited to the compatibility configuration.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P2 was negative, ruling out M1's unique signature. M2 remains more likely than M3, but neither reaches the 0.80 intervention threshold.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0.7142857143,
+      "M3": 0.2857142857
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.7142857143,
+      "C2": 0.2857142857,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12753,
+      "output_tokens": 138
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 27881,
+      "output_tokens": 390
+    }
+  },
+  "world_id": "CW-008",
+  "world_sha256": "048ca8ef86ec3cbcc3c94ad86dbf63df65f41cc60e44f70c2330e7d98675ee4a"
+}

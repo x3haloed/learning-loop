@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161e-19ac-7851-b7b6-31dff91f5797"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"P2 has the greatest expected information gain per unit cost because it tests the highest-prior hypothesis (M3), sharply distinguishing it from M1 and M2.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14522,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":291,"reasoning_output_tokens":227}}

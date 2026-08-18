@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":1,"M2":0,"M3":0},"probabilities":{"C1":1,"C2":1,"C3":0},"decision":"D1","lesson":"P1 was positive and is specified to be positive only under M1, so the evidence supports M1 decisively. Its intervention is justified because the posterior exceeds 0.80.","next_action":"N1"}

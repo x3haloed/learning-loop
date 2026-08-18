@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161e-0a1e-7dc1-8b3a-4db85d511a52"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":0,\"M2\":1,\"M3\":0},\"probabilities\":{\"C1\":1,\"C2\":0,\"C3\":1},\"decision\":\"D2\",\"lesson\":\"P3 was positive, and that signature occurs only under M2, so the posterior supports the compatibility-scoped rule. The evidence justifies applying M2's intervention.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":27966,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":480,"reasoning_output_tokens":309}}

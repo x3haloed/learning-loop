@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop-contract",
+  "elapsed_seconds": 15.855100870132446,
+  "family": "proxy",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop-contract__CW-012__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.10666666666666669,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.10666666666666669,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0161f-a3b7-7d30-9929-11b826f92562",
+  "turn_1": {
+    "decision_relevance": "P3 has the greatest expected information gain per unit cost because its positive result uniquely identifies M2, the highest-prior explanation (0.50), while a negative result rules out M2 and distinguishes the subgroup-regression hypothesis from the alternatives. Its result is most decision-relevant for determining whether the aggregate improvement masks customer harm in a subgroup.",
+    "positive_probability": 0.5,
+    "probe_choice": "P3"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P3 being negative rules out M2; M1 and M3 remain plausible, so no model-specific intervention reaches the 0.80 threshold.",
+    "model_posterior": {
+      "M1": 0.4,
+      "M2": 0,
+      "M3": 0.6
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.4,
+      "C2": 1,
+      "C3": 0.6
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 14520,
+      "output_tokens": 213
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 31487,
+      "output_tokens": 427
+    }
+  },
+  "world_id": "CW-012",
+  "world_sha256": "1ab65020a640d37884d889da1fde8f476e30dfd8e76b31a3e36b398055dec978"
+}

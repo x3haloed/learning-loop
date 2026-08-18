@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161d-d655-72f2-bbb3-0e39e4ea8c3c"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P3\",\"positive_probability\":0.5,\"decision_relevance\":\"Highest expected information gain per unit cost: P3 uniquely tests M2, so a positive result identifies M2; a negative result rules out M2 and reallocates probability to M3/M1.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14522,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":358,"reasoning_output_tokens":287}}

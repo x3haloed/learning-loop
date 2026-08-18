@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "experiment_id": "LL-0004",
+  "status": "complete",
+  "evaluator_epoch": "EVAL-0002",
+  "candidate_hashes": {
+    "current_loop_contract": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+    "current_loop_plain": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+    "no_loop_contract": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+    "no_loop_plain": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa"
+  },
+  "allocation": {
+    "class": "CHALLENGE",
+    "manifest_hash": "24dfda5211edd58187e1ed1c216007e43549bdd1d6aafaaf52153ac8956b0791"
+  },
+  "environment": {
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "medium",
+    "codex_cli": "0.148.0-alpha.15",
+    "subject_agents_executed": true,
+    "conditions": 4,
+    "worlds": 12,
+    "repetitions": 1,
+    "planned_runs": 48,
+    "complete_runs": 48,
+    "harness_failures": 0
+  },
+  "prediction": {
+    "expected_change": "Separate explicit instruction-prose effects from schema-driven machinery effects across all surfaces.",
+    "mechanism": "The 2×2 design exposes whether contract structure, independent of prose style, drives probe selection, posterior calibration, and checkpoint predictions.",
+    "unchanged_guardrails": [
+      "Hidden truth and scoring remain unavailable to subjects.",
+      "No process artifact receives primary outcome credit.",
+      "No intervention is promoted without fresh transcript review and confirmatory allocation."
+    ],
+    "kill_condition": "The plain-task conditions dominate with unchanged error surfaces or the explicit contract fails to move posterior behavior while preserving hard endpoint validity."
+  },
+  "raw_evidence": [
+    {
+      "path": "research/evidence/challenge/LL-0004/manifest.json",
+      "sha256": "de86160ad60eed98069685be3e47cf4285d2845728ff5fb1ed379e7f241bb244"
+    },
+    {
+      "path": "research/evidence/challenge/LL-0004/summary.json",
+      "sha256": "b02bd7426033f4a260d0bbf780614f27ee346cf20e3107c653165b77fe9dc00b"
+    },
+    {
+      "path": "research/evidence/challenge/LL-0004/content-manifest.json",
+      "sha256": "43c5fdafe2c778be9ce199546a9aca44b2a4667dd628fb8732a5b7063f060bb4"
+    }
+  ],
+  "results": {
+    "planned_runs": 48,
+    "complete_runs": 48,
+    "harness_failures": 0,
+    "input_tokens": 2079730,
+    "cached_input_tokens": 535552,
+    "output_tokens": 31528,
+    "estimated_api_cost_usd": 1.95,
+    "interpretation": "No condition achieves a robust overall edge. Current-loop prose improves fixed-checkpoint calibration relative to plain current-loop, but both current-loop conditions match the exact posterior. Plain no-loop remains competitive and sometimes superior on probe precision in transfer/safe probes. This does not establish a clean prose-vs-contract separation."
+  },
+  "disposition": "conditional"
+}

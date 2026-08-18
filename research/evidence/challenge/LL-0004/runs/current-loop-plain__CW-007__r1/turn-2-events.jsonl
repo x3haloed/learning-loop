@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161e-597d-7ec3-9db6-bfee458397de"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":1.0,\"M2\":0.0,\"M3\":0.0},\"probabilities\":{\"C1\":1.0,\"C2\":1.0,\"C3\":0.0},\"decision\":\"D1\",\"lesson\":\"P1's positive result is uniquely predicted by M1, so the evidence supports global transfer at posterior 1.0.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":31377,"cached_input_tokens":19968,"cache_write_input_tokens":0,"output_tokens":286,"reasoning_output_tokens":112}}

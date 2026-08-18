@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0,"M2":0,"M3":1},"probabilities":{"C1":0,"C2":1,"C3":1},"decision":"D3","lesson":"P2's positive result is uniquely diagnostic of M3, so the posterior fully favors M3. Its intervention is justified because the posterior exceeds the 0.80 threshold.","next_action":"N1"}

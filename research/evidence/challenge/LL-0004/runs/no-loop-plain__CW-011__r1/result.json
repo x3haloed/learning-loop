@@ -1,0 +1,57 @@
+{
+  "condition": "no-loop-plain",
+  "elapsed_seconds": 15.010074138641357,
+  "family": "proxy",
+  "instruction_sha256": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "no-loop-plain__CW-011__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.2604166666666667,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.2604166666666667,
+    "posterior_l1_from_bayes": 0.44999999999999996,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0161f-817c-7b30-afb8-62f713eada2d",
+  "turn_1": {
+    "decision_relevance": "P1 has the highest chance of a positive result (0.50). A positive result supports M1, indicating the visible aggregate is a faithful proxy for customer outcome; a negative result argues against that interpretation.",
+    "positive_probability": 0.5,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P1 was negative, eliminating M1 because its unique positive signature was absent. M2 and M3 remain plausible, with M3 favored but below the 0.80 intervention threshold.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0.375,
+      "M3": 0.625
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.375,
+      "C2": 0.625,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12754,
+      "output_tokens": 159
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 27904,
+      "output_tokens": 393
+    }
+  },
+  "world_id": "CW-011",
+  "world_sha256": "03235fc0b7e3d4b22c4b8930b0b7310ad2adaf457e1855ea9fac74ff5813924c"
+}

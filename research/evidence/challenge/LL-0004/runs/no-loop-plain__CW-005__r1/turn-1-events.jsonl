@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161e-0a1e-7dc1-8b3a-4db85d511a52"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P3\",\"positive_probability\":0.5,\"decision_relevance\":\"A positive result uniquely supports M2, the compatibility-scoped rule; a negative result rules out M2 and shifts probability toward M3/M1. It is the most likely positive finding among the available contacts.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12750,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":229,"reasoning_output_tokens":156}}

@@ -1,0 +1,57 @@
+{
+  "condition": "no-loop-contract",
+  "elapsed_seconds": 15.199623823165894,
+  "family": "proxy",
+  "instruction_sha256": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "no-loop-contract__CW-009__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0161e-e56e-71d0-a84b-87b8f0ff84cf",
+  "turn_1": {
+    "decision_relevance": "P2 has the greatest expected information gain because its positive result occurs under the highest-uncertainty hypothesis (M3, prior 0.50), giving the most balanced outcome split; all probes have equal cost.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D3",
+    "lesson": "P2's positive result uniquely supports M3, so the posterior is concentrated on M3; its intervention is justified at the 0.80 threshold.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0,
+      "M3": 1
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12757,
+      "output_tokens": 161
+    },
+    "turn_2": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 27909,
+      "output_tokens": 374
+    }
+  },
+  "world_id": "CW-009",
+  "world_sha256": "9e0250c4cf68190d32736e37c3e2eeae7d1c1957c4e7e04710952e996c94efee"
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161f-10a1-7f00-8c3f-4dce79ee7b44"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":1,\"M2\":0,\"M3\":0},\"probabilities\":{\"C1\":1,\"C2\":1,\"C3\":0},\"decision\":\"D1\",\"lesson\":\"P1 was positive and is uniquely positive under M1, so the posterior supports M1 at 1.00 under the stated model.\",\"next_action\":\"N1\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":31608,"cached_input_tokens":19968,"cache_write_input_tokens":0,"output_tokens":603,"reasoning_output_tokens":433}}

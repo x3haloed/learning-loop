@@ -1,0 +1,57 @@
+{
+  "condition": "no-loop-contract",
+  "elapsed_seconds": 21.648324728012085,
+  "family": "diagnostic",
+  "instruction_sha256": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "no-loop-contract__CW-001__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0161c-e039-7811-8acd-ac89ce9ee642",
+  "turn_1": {
+    "decision_relevance": "P2 has the greatest expected information gain per unit cost. A positive result uniquely identifies M1; a negative result rules out M1 and updates the remaining probabilities to M3 0.40 and M2 0.60.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D1",
+    "lesson": "P2's positive result uniquely supports M1, so the parser-rejection mechanism is justified with certainty under the stated model.",
+    "model_posterior": {
+      "M1": 1,
+      "M2": 0,
+      "M3": 0
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 0
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12537,
+      "output_tokens": 374
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 27893,
+      "output_tokens": 522
+    }
+  },
+  "world_id": "CW-001",
+  "world_sha256": "ab804199bb19f847ad461e658fe0b5654651d468ad5c00f22e12d6569dd2f9fd"
+}

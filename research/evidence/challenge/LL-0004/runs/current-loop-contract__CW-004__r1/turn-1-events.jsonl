@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161d-9e24-7c21-b8b5-c3d80b6c96b6"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.45,\"decision_relevance\":\"P2 has the greatest expected information gain per unit cost because it directly isolates the highest-prior alternative (M1); a positive result identifies M1, while a negative result substantially narrows probability to M2 versus M3.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14508,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":281,"reasoning_output_tokens":204}}

@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop-plain",
+  "elapsed_seconds": 15.685507774353027,
+  "family": "proxy",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop-plain__CW-010__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.30250000000000005
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0161f-1294-7a90-a2d5-6ff1f350646f",
+  "turn_1": {
+    "decision_relevance": "P1 has the highest chance of a positive result (0.45). A positive replication would support M1, indicating the visible aggregate is a faithful customer-outcome proxy; a negative result would weaken that assumption and favor investigating subgroup regression or measurement noise.",
+    "positive_probability": 0.45,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D1",
+    "lesson": "P1 was positive and is specified to be positive only under M1, so the evidence supports M1 decisively. Its intervention is justified because the posterior exceeds 0.80.",
+    "model_posterior": {
+      "M1": 1,
+      "M2": 0,
+      "M3": 0
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 0
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 14514,
+      "output_tokens": 122
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 31387,
+      "output_tokens": 385
+    }
+  },
+  "world_id": "CW-010",
+  "world_sha256": "4412a9d36a0fd1bc78dea02c65ca201dc6c090c494d0c11a1994161c6070a0ff"
+}

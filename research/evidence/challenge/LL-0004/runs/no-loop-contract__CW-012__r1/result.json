@@ -1,0 +1,57 @@
+{
+  "condition": "no-loop-contract",
+  "elapsed_seconds": 19.84886407852173,
+  "family": "proxy",
+  "instruction_sha256": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "no-loop-contract__CW-012__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.09375,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.09375,
+    "posterior_l1_from_bayes": 0.050000000000000044,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0161f-b2fe-7933-aed7-ac2910c40c10",
+  "turn_1": {
+    "decision_relevance": "P3 has the greatest expected information gain per unit cost because its positive result occurs under the highest-prior model (M2), yielding the most balanced and informative possible outcome split (0.50 positive vs. 0.50 negative).",
+    "positive_probability": 0.5,
+    "probe_choice": "P3"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P3 negative rules out M2; M3 remains more likely than M1, but uncertainty is substantial.",
+    "model_posterior": {
+      "M1": 0.375,
+      "M2": 0,
+      "M3": 0.625
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.375,
+      "C2": 1,
+      "C3": 0.625
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 9984,
+      "input_tokens": 12760,
+      "output_tokens": 292
+    },
+    "turn_2": {
+      "cached_input_tokens": 19968,
+      "input_tokens": 28046,
+      "output_tokens": 508
+    }
+  },
+  "world_id": "CW-012",
+  "world_sha256": "1ab65020a640d37884d889da1fde8f476e30dfd8e76b31a3e36b398055dec978"
+}

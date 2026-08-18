@@ -1,0 +1,1 @@
+{"probe_choice":"P3","positive_probability":0.5,"decision_relevance":"P3 has the highest chance of a positive result (50%) at the same cost; because it is positive only under M3, its result directly tests the most likely failure mechanism."}

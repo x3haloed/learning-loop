@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0,"M2":0.6,"M3":0.4},"probabilities":{"C1":0.6,"C2":0.4,"C3":0.6},"decision":"D4","lesson":"P1's negative result rules out M1's faithful-proxy explanation, but M2 and M3 remain plausible; neither has sufficient posterior support for intervention.","next_action":"N2"}

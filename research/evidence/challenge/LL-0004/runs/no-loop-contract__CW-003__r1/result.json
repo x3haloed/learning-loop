@@ -1,0 +1,57 @@
+{
+  "condition": "no-loop-contract",
+  "elapsed_seconds": 19.3606219291687,
+  "family": "diagnostic",
+  "instruction_sha256": "b438a3e5f60159827f47853343254233b79d5057f475625ad0d2b7e31c199dfa",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "no-loop-contract__CW-003__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.054421659864000015,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.054421659864000015,
+    "posterior_l1_from_bayes": 5.714285714053524e-07,
+    "preferred_probe": 0.0,
+    "probe_information_ratio": 0.8812908992306927,
+    "probe_prediction_brier": 0.09
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0161d-76f7-7383-9ce0-e1315d2bff55",
+  "turn_1": {
+    "decision_relevance": "P1 has the greatest expected information gain per unit cost; a positive result identifies M1, while a negative result rules out M1 and reallocates probability to M2 and M3.",
+    "positive_probability": 0.3,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P1 was negative, so M1 is ruled out; M2 and M3 remain plausible, with M3 more likely but below the 0.80 intervention threshold.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0.285714,
+      "M3": 0.714286
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.285714,
+      "C2": 0.714286,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 12745,
+      "output_tokens": 358
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 28080,
+      "output_tokens": 639
+    }
+  },
+  "world_id": "CW-003",
+  "world_sha256": "a141e3295fb01dc5ca0aeb78f61b120b3ddb6a78a7883cabf98b1ba28c38fd98"
+}

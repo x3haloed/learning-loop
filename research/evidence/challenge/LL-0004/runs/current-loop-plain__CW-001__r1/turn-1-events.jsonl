@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161c-e081-7ae2-9ef3-96964ee92925"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"P2 is positive only under M1, which has the highest prior probability (0.50); with equal costs, it offers the greatest chance of a decisive positive result and directly tests the leading mechanism.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":14297,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":152,"reasoning_output_tokens":80}}

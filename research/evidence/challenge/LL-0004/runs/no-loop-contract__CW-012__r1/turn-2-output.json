@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":0.375,"M2":0,"M3":0.625},"probabilities":{"C1":0.375,"C2":1,"C3":0.625},"decision":"D4","lesson":"P3 negative rules out M2; M3 remains more likely than M1, but uncertainty is substantial.","next_action":"N2"}

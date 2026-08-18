@@ -201,7 +201,14 @@ def aggregate(results: list[dict[str, Any]]) -> dict[str, Any]:
 async def run_challenge(*, repo_root: Path, evidence_root: Path, contract_path: Path,
                         codex_home: Path, codex_binary: str, concurrency: int) -> dict[str, Any]:
     contract = load_json(contract_path)
-    worlds_path = repo_root / "research/worlds/challenge/worlds-0002.json"
+    worlds_path = contract.get("world_manifest", "research/worlds/challenge/worlds-0002.json")
+    if isinstance(worlds_path, str):
+        worlds_path = repo_root / worlds_path
+    elif not isinstance(worlds_path, Path):
+        raise PilotError("world_manifest must be a string path")
+    worlds_path = worlds_path.resolve()
+    if not str(worlds_path).startswith(str(repo_root.resolve())):
+        raise PilotError("world_manifest must be within repository")
     worlds_doc = load_json(worlds_path)
     worlds = {world["id"]: world for world in worlds_doc["worlds"]}
     plans: list[tuple[str, Path, str]] = []

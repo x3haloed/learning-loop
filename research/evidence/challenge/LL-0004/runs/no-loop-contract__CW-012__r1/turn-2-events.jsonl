@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161f-b2fe-7933-aed7-ac2910c40c10"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":0.375,\"M2\":0,\"M3\":0.625},\"probabilities\":{\"C1\":0.375,\"C2\":1,\"C3\":0.625},\"decision\":\"D4\",\"lesson\":\"P3 negative rules out M2; M3 remains more likely than M1, but uncertainty is substantial.\",\"next_action\":\"N2\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":28046,"cached_input_tokens":19968,"cache_write_input_tokens":0,"output_tokens":508,"reasoning_output_tokens":335}}

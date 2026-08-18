@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop-plain",
+  "elapsed_seconds": 18.30997109413147,
+  "family": "diagnostic",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop-plain__CW-001__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0161c-e081-7ae2-9ef3-96964ee92925",
+  "turn_1": {
+    "decision_relevance": "P2 is positive only under M1, which has the highest prior probability (0.50); with equal costs, it offers the greatest chance of a decisive positive result and directly tests the leading mechanism.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D1",
+    "lesson": "P2 was positive, and its signature occurs only under M1; therefore the posterior supports M1 at 1.00. Under M1, C1 and C2 should pass while C3 should fail.",
+    "model_posterior": {
+      "M1": 1,
+      "M2": 0,
+      "M3": 0
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1,
+      "C2": 1,
+      "C3": 0
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 14297,
+      "output_tokens": 152
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 31194,
+      "output_tokens": 390
+    }
+  },
+  "world_id": "CW-001",
+  "world_sha256": "ab804199bb19f847ad461e658fe0b5654651d468ad5c00f22e12d6569dd2f9fd"
+}

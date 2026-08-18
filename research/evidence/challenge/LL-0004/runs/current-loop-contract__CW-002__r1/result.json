@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop-contract",
+  "elapsed_seconds": 18.46418309211731,
+  "family": "diagnostic",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop-contract__CW-002__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0161d-254f-7e22-85e8-60417332e230",
+  "turn_1": {
+    "decision_relevance": "P1 has the greatest expected information gain per unit cost (approximately 1.00); a positive result identifies M2, while a negative result narrows the cause to M1 or M3.",
+    "positive_probability": 0.5,
+    "probe_choice": "P1"
+  },
+  "turn_2": {
+    "decision": "D2",
+    "lesson": "P1 positive uniquely supports M2, so apply the M2 intervention.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 1,
+      "M3": 0
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 14508,
+      "output_tokens": 290
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 31538,
+      "output_tokens": 460
+    }
+  },
+  "world_id": "CW-002",
+  "world_sha256": "4879ad776e97d7f380b5025d554f6c5ab556bb3e57ae92cb959ea2bc1b9d0ad2"
+}

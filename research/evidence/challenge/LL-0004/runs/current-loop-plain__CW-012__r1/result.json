@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop-plain",
+  "elapsed_seconds": 16.483312845230103,
+  "family": "proxy",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop-plain__CW-012__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.10666666666666669,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.10666666666666669,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "negative",
+  "status": "complete",
+  "thread_id": "01a0161f-a778-7452-895d-6b820ebfc7b8",
+  "turn_1": {
+    "decision_relevance": "P3 has the highest probability of a positive result (0.50) and directly tests whether the apparent gain reflects measurement noise or order effects, which would support M2\u2014the subgroup-regression explanation.",
+    "positive_probability": 0.5,
+    "probe_choice": "P3"
+  },
+  "turn_2": {
+    "decision": "D4",
+    "lesson": "P3 was negative, so M2's unique positive signature was absent. M1 and M3 remain plausible at 0.40 and 0.60; neither reaches the 0.80 intervention threshold.",
+    "model_posterior": {
+      "M1": 0.4,
+      "M2": 0,
+      "M3": 0.6
+    },
+    "next_action": "N2",
+    "probabilities": {
+      "C1": 0.4,
+      "C2": 1,
+      "C3": 0.6
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 12032,
+      "input_tokens": 14511,
+      "output_tokens": 145
+    },
+    "turn_2": {
+      "cached_input_tokens": 22016,
+      "input_tokens": 31404,
+      "output_tokens": 397
+    }
+  },
+  "world_id": "CW-012",
+  "world_sha256": "1ab65020a640d37884d889da1fde8f476e30dfd8e76b31a3e36b398055dec978"
+}

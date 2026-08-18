@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161e-294c-74e2-b64b-169730299ef7"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.5,\"decision_relevance\":\"P2 has the greatest expected information gain per unit cost because its positive result uniquely supports M3, splitting the prior most evenly (0.50 vs. 0.50).\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12756,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":200,"reasoning_output_tokens":133}}

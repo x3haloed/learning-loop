@@ -1,0 +1,57 @@
+{
+  "condition": "current-loop-contract",
+  "elapsed_seconds": 16.340145111083984,
+  "family": "transfer",
+  "instruction_sha256": "1d8f28601a38327d323d3ed417fd535da4005726e141652a31278b5a812a1652",
+  "model": "gpt-5.6-luna",
+  "reasoning_effort": "medium",
+  "repetition": 1,
+  "run_id": "current-loop-contract__CW-006__r1",
+  "scores": {
+    "decision_accuracy": 1.0,
+    "fixed_checkpoint_brier": 0.0,
+    "next_action_accuracy": 1.0,
+    "posterior_brier": 0.0,
+    "posterior_l1_from_bayes": 0.0,
+    "preferred_probe": 1.0,
+    "probe_information_ratio": 1.0,
+    "probe_prediction_brier": 0.25
+  },
+  "selected_observation": "positive",
+  "status": "complete",
+  "thread_id": "01a0161e-19ac-7851-b7b6-31dff91f5797",
+  "turn_1": {
+    "decision_relevance": "P2 has the greatest expected information gain per unit cost because it tests the highest-prior hypothesis (M3), sharply distinguishing it from M1 and M2.",
+    "positive_probability": 0.5,
+    "probe_choice": "P2"
+  },
+  "turn_2": {
+    "decision": "D3",
+    "lesson": "P2 was positive, uniquely supporting M3; its scoped compatibility rule transfers, while M1 and M2 are unsupported.",
+    "model_posterior": {
+      "M1": 0,
+      "M2": 0,
+      "M3": 1
+    },
+    "next_action": "N1",
+    "probabilities": {
+      "C1": 0,
+      "C2": 1,
+      "C3": 1
+    }
+  },
+  "usage": {
+    "turn_1": {
+      "cached_input_tokens": 0,
+      "input_tokens": 14522,
+      "output_tokens": 291
+    },
+    "turn_2": {
+      "cached_input_tokens": 0,
+      "input_tokens": 31569,
+      "output_tokens": 492
+    }
+  },
+  "world_id": "CW-006",
+  "world_sha256": "70733977e037a2ee9c26a19f95011f64ca6a91afcf53dfff052b0ff62124c0c5"
+}

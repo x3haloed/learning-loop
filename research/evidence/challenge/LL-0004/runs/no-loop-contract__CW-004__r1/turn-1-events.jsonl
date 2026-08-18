@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161d-b404-7321-a354-dfe48f559ecf"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"probe_choice\":\"P2\",\"positive_probability\":0.45,\"decision_relevance\":\"P2 has the greatest expected information gain because it uniquely tests M1, whose prior probability (0.45) yields the highest binary entropy among the three options; all contacts cost 1.0.\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":12751,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":249,"reasoning_output_tokens":177}}

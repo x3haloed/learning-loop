@@ -1,0 +1,1 @@
+{"probe_choice":"P3","positive_probability":0.5,"decision_relevance":"P3 has the greatest expected information gain per unit cost because its positive result occurs under the highest-prior model (M2), yielding the most balanced and informative possible outcome split (0.50 positive vs. 0.50 negative)."}

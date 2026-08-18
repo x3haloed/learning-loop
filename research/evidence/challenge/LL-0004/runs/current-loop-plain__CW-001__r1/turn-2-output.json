@@ -1,0 +1,1 @@
+{"model_posterior":{"M1":1,"M2":0,"M3":0},"probabilities":{"C1":1,"C2":1,"C3":0},"decision":"D1","lesson":"P2 was positive, and its signature occurs only under M1; therefore the posterior supports M1 at 1.00. Under M1, C1 and C2 should pass while C3 should fail.","next_action":"N1"}

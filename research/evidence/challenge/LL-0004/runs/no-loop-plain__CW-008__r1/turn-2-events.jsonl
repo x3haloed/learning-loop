@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0161e-c9e3-7073-a58a-bd85e3fb1c23"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"model_posterior\":{\"M1\":0,\"M2\":0.7142857143,\"M3\":0.2857142857},\"probabilities\":{\"C1\":0.7142857143,\"C2\":0.2857142857,\"C3\":1},\"decision\":\"D4\",\"lesson\":\"P2 was negative, ruling out M1's unique signature. M2 remains more likely than M3, but neither reaches the 0.80 intervention threshold.\",\"next_action\":\"N2\"}"}}
+{"type":"turn.completed","usage":{"input_tokens":27881,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":390,"reasoning_output_tokens":219}}
